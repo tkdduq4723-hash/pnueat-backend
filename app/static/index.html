@@ -72,7 +72,7 @@
 
 <header>
   <h1>🍚 부산대 맛집·카페 지도 ☕</h1>
-  <p>부산대학교 주변 1km 이내</p>
+  <p>부산대학교 주변 1km 이내 · 도보시간은 직선거리 기준 예상값입니다</p>
 </header>
 
 <div class="tabs">
@@ -156,7 +156,7 @@
         <div class="card-name">${item['이름']}</div>
         <div class="card-meta">
           <span class="badge">${item['대분류'] || item['카테고리']}</span>
-          ${item['도보시간'] !== '-' ? `<span class="walk">🚶 ${item['도보시간']}</span>` : ''}
+          ${item['도보시간'] !== '-' ? `<span class="walk">🚶 ${item['도보시간']} (직선거리 기준)</span>` : ''}
           <span style="margin-left:6px">${item['출처']}</span>
         </div>
         <div class="card-meta" style="margin-top:6px">📍 ${item['주소'] || '-'}</div>

@@ -1,12 +1,24 @@
 import math
 import re
 
+from app.core.config import PNU_LAT, PNU_LNG
+
+
+def haversine(lat: float, lng: float) -> int:
+    """PNU 기준 직선거리(m) 계산"""
+    R = 6371000
+    p1, p2 = math.radians(lat), math.radians(PNU_LAT)
+    dp = math.radians(PNU_LAT - lat)
+    dl = math.radians(PNU_LNG - lng)
+    a = math.sin(dp / 2) ** 2 + math.cos(p1) * math.cos(p2) * math.sin(dl / 2) ** 2
+    return int(2 * R * math.asin(math.sqrt(a)))
+
 
 def calc_walk_time(distance_m) -> str:
     """직선거리 × 1.3 ÷ 67m/분"""
     if not distance_m or distance_m == "-":
         return "-"
-    real_distance = int(distance_m) * 1.3
+    real_distance = int(distance_m) * 1.5
     minutes = real_distance / 67
     if minutes < 1:
         return "1분 이내"
