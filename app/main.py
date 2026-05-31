@@ -22,12 +22,22 @@ app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
 
 @app.get("/")
 def index():
-    return FileResponse(os.path.join(STATIC_DIR, "index.html"))
+    return FileResponse(os.path.join(STATIC_DIR, "home.html"))
 
 
 @app.get("/search")
 def search():
     return FileResponse(os.path.join(STATIC_DIR, "search.html"))
+
+
+@app.get("/recommend")
+def recommend_page():
+    return FileResponse(os.path.join(STATIC_DIR, "recommend.html"))
+
+
+@app.get("/mylist")
+def mylist():
+    return FileResponse(os.path.join(STATIC_DIR, "mylist.html"))
 
 
 @app.get("/health")

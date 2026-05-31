@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>밥약맵 - 내 목록</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+    }
+    .phone {
+      width: 390px;
+      min-height: 844px;
+      background: #fff;
+      border: 1px solid #bbb;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .header {
+      padding: 20px 16px 16px;
+      border-bottom: 1px solid #eee;
+    }
+    .header-title { font-size: 20px; font-weight: 800; color: #111; }
+    .header-sub { font-size: 13px; color: #888; margin-top: 4px; }
+
+    .tab-row {
+      display: flex;
+      border-bottom: 1px solid #eee;
+    }
+    .tab {
+      flex: 1;
+      padding: 12px 0;
+      text-align: center;
+      font-size: 13px;
+      color: #888;
+      border-bottom: 2px solid transparent;
+      cursor: pointer;
+    }
+    .tab.active { color: #111; font-weight: 700; border-bottom-color: #111; }
+
+    .list-scroll { flex: 1; overflow-y: auto; }
+
+    .restaurant-card {
+      display: flex;
+      gap: 12px;
+      padding: 14px 16px;
+      border-bottom: 1px solid #eee;
+    }
+    .card-thumb {
+      width: 64px;
+      height: 64px;
+      background: #f4f4f4;
+      border-radius: 10px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+    }
+    .card-info { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 4px; }
+    .card-name { font-size: 15px; font-weight: 700; color: #111; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .card-meta { display: flex; gap: 6px; align-items: center; }
+    .tag {
+      font-size: 11px;
+      color: #555;
+      background: #f2f2f2;
+      border-radius: 4px;
+      padding: 2px 6px;
+    }
+    .tag.cafe { background: #fef3e2; color: #e67e22; }
+    .card-addr { font-size: 12px; color: #888; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .card-bottom { display: flex; justify-content: space-between; align-items: center; }
+    .card-dist { font-size: 11px; color: #34a853; font-weight: 600; }
+    .remove-btn {
+      font-size: 18px;
+      cursor: pointer;
+      padding: 4px;
+    }
+
+    .empty-state {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 60px 20px;
+    }
+    .empty-icon { font-size: 48px; }
+    .empty-text { font-size: 14px; color: #aaa; text-align: center; line-height: 1.6; }
+    .empty-btn {
+      margin-top: 8px;
+      padding: 10px 24px;
+      background: #111;
+      color: #fff;
+      border: none;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    /* 하단 네비 */
+    .bottom-nav {
+      display: flex;
+      border-top: 1px solid #ddd;
+      background: #fff;
+      padding: 8px 0 16px;
+      margin-top: auto;
+    }
+    .nav-item {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      cursor: pointer;
+    }
+    .nav-icon { font-size: 20px; color: #ccc; }
+    .nav-item.active .nav-icon { color: #111; }
+    .nav-label { font-size: 10px; color: #aaa; }
+    .nav-item.active .nav-label { color: #111; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="phone">
+
+    <div class="header">
+      <div class="header-title">🔖 내 목록</div>
+      <div class="header-sub">저장한 식당 <span id="countBadge" style="font-weight:700;color:#111">0</span>개</div>
+    </div>
+
+    <div class="tab-row">
+      <div class="tab active" onclick="switchTab('all')">전체</div>
+      <div class="tab" onclick="switchTab('food')">밥집</div>
+      <div class="tab" onclick="switchTab('cafe')">카페</div>
+    </div>
+
+    <div class="list-scroll" id="listScroll"></div>
+
+    <div class="bottom-nav">
+      <div class="nav-item" onclick="location.href='/'">
+        <div class="nav-icon">🏠</div>
+        <div class="nav-label">홈</div>
+      </div>
+      <div class="nav-item" onclick="location.href='/search'">
+        <div class="nav-icon">🔍</div>
+        <div class="nav-label">탐색</div>
+      </div>
+      <div class="nav-item" onclick="location.href='/recommend'">
+        <div class="nav-icon">✨</div>
+        <div class="nav-label">추천</div>
+      </div>
+      <div class="nav-item active">
+        <div class="nav-icon">🔖</div>
+        <div class="nav-label">내 목록</div>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    const catEmoji = {
+      '돈까스·회': '🍱', '한식': '🍚', '치킨': '🍗', '피자·버거': '🍔',
+      '분식': '🥢', '중식': '🥡', '일식': '🍣', '양식': '🍝',
+      '고기·구이': '🥩', '카페·디저트': '☕', '기타': '🍽'
+    };
+
+    let allItems = [];
+    let bookmarks = JSON.parse(localStorage.getItem('bookmarks') || '[]');
+    let currentTab = 'all';
+
+    async function load() {
+      const [food, cafe] = await Promise.all([
+        fetch('/api/food').then(r => r.json()),
+        fetch('/api/cafe').then(r => r.json()),
+      ]);
+      allItems = [
+        ...food.map(i => ({ ...i, _type: 'food' })),
+        ...cafe.map(i => ({ ...i, _type: 'cafe' })),
+      ];
+      render();
+    }
+
+    function switchTab(tab) {
+      currentTab = tab;
+      document.querySelectorAll('.tab').forEach((t, i) => {
+        t.classList.toggle('active', ['all','food','cafe'][i] === tab);
+      });
+      render();
+    }
+
+    function removeBookmark(name) {
+      bookmarks = bookmarks.filter(b => b !== name);
+      localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
+      render();
+    }
+
+    function render() {
+      let saved = allItems.filter(i => bookmarks.includes(i['이름']));
+      if (currentTab === 'food') saved = saved.filter(i => i._type === 'food');
+      if (currentTab === 'cafe') saved = saved.filter(i => i._type === 'cafe');
+
+      document.getElementById('countBadge').textContent = allItems.filter(i => bookmarks.includes(i['이름'])).length;
+
+      if (saved.length === 0) {
+        document.getElementById('listScroll').innerHTML = `
+          <div class="empty-state">
+            <div class="empty-icon">🔖</div>
+            <div class="empty-text">저장한 식당이 없어요<br>탐색에서 🤍를 눌러 저장해보세요</div>
+            <button class="empty-btn" onclick="location.href='/search'">식당 탐색하기</button>
+          </div>`;
+        return;
+      }
+
+      window._mylistItems = saved;
+      document.getElementById('listScroll').innerHTML = saved.map((item, idx) => {
+        const isCafe = item._type === 'cafe';
+        const emoji = isCafe ? '☕' : (catEmoji[item['대분류']] || '🍽');
+        const dist = item['거리(m)'] !== '-' ? `🚶 ${item['도보시간']} · ${item['거리(m)']}m` : '';
+        return `
+          <div class="restaurant-card">
+            <div class="card-thumb">${emoji}</div>
+            <div class="card-info">
+              <div class="card-name">${item['이름']}</div>
+              <div class="card-meta">
+                <div class="tag ${isCafe ? 'cafe' : ''}">${item['대분류'] || item['카테고리']}</div>
+                <div class="tag" style="background:#f0f0f0;color:#888">${item['출처']}</div>
+              </div>
+              <div class="card-addr">📍 ${item['주소'] || '-'}</div>
+              <div class="card-bottom">
+                <div class="card-dist">${dist}</div>
+                <div class="remove-btn" data-idx="${idx}">🔖</div>
+              </div>
+            </div>
+          </div>`;
+      }).join('');
+    }
+
+    // 북마크 제거 이벤트 위임
+    document.getElementById('listScroll').addEventListener('click', e => {
+      const btn = e.target.closest('.remove-btn');
+      if (!btn) return;
+      const item = window._mylistItems?.[parseInt(btn.dataset.idx)];
+      if (item) removeBookmark(item['이름']);
+    });
+
+    load();
+  </script>
+</body>
+</html>

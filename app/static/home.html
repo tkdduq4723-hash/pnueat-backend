@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>밥약맵</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+    }
+    .phone {
+      width: 390px;
+      min-height: 844px;
+      background: #fff;
+      border: 1px solid #bbb;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* 헤더 */
+    .header {
+      padding: 20px 16px 16px;
+      background: #fff;
+      border-bottom: 1px solid #eee;
+    }
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 4px;
+    }
+    .logo { font-size: 20px; font-weight: 800; color: #111; }
+    .location-badge {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 12px;
+      color: #34a853;
+      font-weight: 600;
+      background: #f0faf3;
+      padding: 4px 10px;
+      border-radius: 20px;
+    }
+    .subtitle { font-size: 13px; color: #888; }
+
+    /* 추천 배너 */
+    .recommend-banner {
+      margin: 16px;
+      background: linear-gradient(135deg, #111 0%, #444 100%);
+      border-radius: 14px;
+      padding: 20px;
+      color: #fff;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+    .recommend-banner::after {
+      content: '✨';
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 36px;
+    }
+    .banner-label { font-size: 11px; color: #aaa; margin-bottom: 6px; }
+    .banner-title { font-size: 18px; font-weight: 800; line-height: 1.3; }
+    .banner-sub { font-size: 12px; color: #ccc; margin-top: 6px; }
+
+    /* 섹션 */
+    .section { padding: 0 16px 8px; }
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 0 10px;
+    }
+    .section-title { font-size: 15px; font-weight: 700; color: #111; }
+    .section-more { font-size: 12px; color: #888; cursor: pointer; }
+
+    /* 가로 스크롤 카드 */
+    .card-scroll {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      padding-bottom: 4px;
+      scrollbar-width: none;
+    }
+    .card-scroll::-webkit-scrollbar { display: none; }
+
+    .mini-card {
+      flex-shrink: 0;
+      width: 140px;
+      background: #f8f8f8;
+      border-radius: 12px;
+      overflow: hidden;
+      cursor: pointer;
+      border: 1px solid #eee;
+    }
+    .mini-card:active { opacity: 0.8; }
+    .mini-thumb {
+      width: 100%;
+      height: 90px;
+      background: #e8e8e8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+    }
+    .mini-info { padding: 8px 10px; }
+    .mini-name {
+      font-size: 13px;
+      font-weight: 700;
+      color: #111;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-bottom: 3px;
+    }
+    .mini-meta { font-size: 11px; color: #888; }
+    .mini-dist { font-size: 11px; color: #34a853; font-weight: 600; margin-top: 2px; }
+
+    /* 카테고리 그리드 */
+    .cat-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      padding: 4px 0 8px;
+    }
+    .cat-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+    }
+    .cat-item:active { opacity: 0.7; }
+    .cat-circle {
+      width: 52px;
+      height: 52px;
+      background: #f4f4f4;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+    }
+    .cat-name { font-size: 11px; color: #555; font-weight: 500; }
+
+    /* 통계 바 */
+    .stats-row {
+      display: flex;
+      margin: 0 16px 16px;
+      background: #f8f8f8;
+      border-radius: 12px;
+      padding: 14px;
+      gap: 0;
+    }
+    .stat-item {
+      flex: 1;
+      text-align: center;
+    }
+    .stat-item + .stat-item {
+      border-left: 1px solid #eee;
+    }
+    .stat-num { font-size: 20px; font-weight: 800; color: #111; }
+    .stat-label { font-size: 11px; color: #888; margin-top: 2px; }
+
+    .loading { text-align: center; padding: 40px; color: #aaa; font-size: 13px; }
+
+    /* 하단 네비 */
+    .bottom-nav {
+      display: flex;
+      border-top: 1px solid #ddd;
+      background: #fff;
+      padding: 8px 0 16px;
+      margin-top: auto;
+    }
+    .nav-item {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      cursor: pointer;
+    }
+    .nav-icon { font-size: 20px; color: #ccc; }
+    .nav-item.active .nav-icon { color: #111; }
+    .nav-label { font-size: 10px; color: #aaa; }
+    .nav-item.active .nav-label { color: #111; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="phone">
+
+    <div class="header">
+      <div class="header-top">
+        <div class="logo">밥약맵 🍚</div>
+        <div class="location-badge">📍 부산대 주변</div>
+      </div>
+      <div class="subtitle">지금 주변 <span id="totalCount" style="font-weight:700;color:#111">-</span>개 식당</div>
+    </div>
+
+    <!-- 추천 배너 -->
+    <div class="recommend-banner" onclick="location.href='/recommend'">
+      <div class="banner-label">오늘 메뉴 고민 중?</div>
+      <div class="banner-title">오늘 뭐 먹지?<br>랜덤 추천 받기</div>
+      <div class="banner-sub">밥집 + 카페 한 번에 추천</div>
+    </div>
+
+    <!-- 통계 -->
+    <div class="stats-row">
+      <div class="stat-item">
+        <div class="stat-num" id="foodCount">-</div>
+        <div class="stat-label">밥집</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num" id="cafeCount">-</div>
+        <div class="stat-label">카페</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num" id="nearCount">-</div>
+        <div class="stat-label">300m 이내</div>
+      </div>
+    </div>
+
+    <!-- 카테고리 -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-title">카테고리</div>
+      </div>
+      <div class="cat-grid" id="catGrid">
+        <div class="loading">불러오는 중...</div>
+      </div>
+    </div>
+
+    <!-- 가까운 밥집 -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-title">🏃 가까운 밥집</div>
+        <div class="section-more" onclick="location.href='/search'">전체보기</div>
+      </div>
+      <div class="card-scroll" id="nearFood">
+        <div class="loading">불러오는 중...</div>
+      </div>
+    </div>
+
+    <!-- 가까운 카페 -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-title">☕ 가까운 카페</div>
+        <div class="section-more" onclick="location.href='/search'">전체보기</div>
+      </div>
+      <div class="card-scroll" id="nearCafe">
+        <div class="loading">불러오는 중...</div>
+      </div>
+    </div>
+
+    <div class="bottom-nav">
+      <div class="nav-item active">
+        <div class="nav-icon">🏠</div>
+        <div class="nav-label">홈</div>
+      </div>
+      <div class="nav-item" onclick="location.href='/search'">
+        <div class="nav-icon">🔍</div>
+        <div class="nav-label">탐색</div>
+      </div>
+      <div class="nav-item" onclick="location.href='/recommend'">
+        <div class="nav-icon">✨</div>
+        <div class="nav-label">추천</div>
+      </div>
+      <div class="nav-item" onclick="location.href='/mylist'">
+        <div class="nav-icon">🔖</div>
+        <div class="nav-label">내 목록</div>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    const catEmoji = {
+      '돈까스·회': '🍱', '한식': '🍚', '치킨': '🍗', '피자·버거': '🍔',
+      '분식': '🥢', '중식': '🥡', '일식': '🍣', '양식': '🍝',
+      '고기·구이': '🥩', '카페·디저트': '☕', '기타': '🍽'
+    };
+
+    async function load() {
+      const [food, cafe] = await Promise.all([
+        fetch('/api/food').then(r => r.json()),
+        fetch('/api/cafe').then(r => r.json()),
+      ]);
+
+      // 통계
+      const near = food.filter(i => i['거리(m)'] !== '-' && parseInt(i['거리(m)']) <= 300);
+      document.getElementById('totalCount').textContent = food.length + cafe.length;
+      document.getElementById('foodCount').textContent = food.length;
+      document.getElementById('cafeCount').textContent = cafe.length;
+      document.getElementById('nearCount').textContent = near.length;
+
+      // 카테고리
+      const cats = [...new Set(food.map(i => i['대분류']).filter(Boolean))].sort();
+      document.getElementById('catGrid').innerHTML = cats.slice(0, 8).map(c => `
+        <div class="cat-item" onclick="location.href='/search'">
+          <div class="cat-circle">${catEmoji[c] || '🍽'}</div>
+          <div class="cat-name">${c}</div>
+        </div>
+      `).join('');
+
+      // 가까운 밥집 top 6
+      document.getElementById('nearFood').innerHTML = food.slice(0, 6).map(item => `
+        <div class="mini-card">
+          <div class="mini-thumb">${catEmoji[item['대분류']] || '🍽'}</div>
+          <div class="mini-info">
+            <div class="mini-name">${item['이름']}</div>
+            <div class="mini-meta">${item['대분류'] || ''}</div>
+            <div class="mini-dist">${item['거리(m)'] !== '-' ? item['거리(m)'] + 'm' : ''}</div>
+          </div>
+        </div>
+      `).join('');
+
+      // 가까운 카페 top 6
+      document.getElementById('nearCafe').innerHTML = cafe.slice(0, 6).map(item => `
+        <div class="mini-card">
+          <div class="mini-thumb">☕</div>
+          <div class="mini-info">
+            <div class="mini-name">${item['이름']}</div>
+            <div class="mini-meta">${item['대분류'] || item['카테고리'] || ''}</div>
+            <div class="mini-dist">${item['거리(m)'] !== '-' ? item['거리(m)'] + 'm' : ''}</div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    load();
+  </script>
+</body>
+</html>
