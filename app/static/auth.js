@@ -41,7 +41,7 @@ document.addEventListener('click', e => {
   if (menu && !e.target.closest('#authArea')) menu.style.display = 'none';
 });
 
-// 서버 북마크 동기화 (로그인 상태일 때)
+// 서버 북마크 동기화 (로그인 상태일 때) — 로컬 + 서버 합치기
 async function syncBookmarks() {
   const token = getToken();
   if (!token) return;
@@ -51,8 +51,11 @@ async function syncBookmarks() {
     });
     if (res.ok) {
       const serverBookmarks = await res.json();
-      if (serverBookmarks.length > 0) {
-        localStorage.setItem('bookmarks', JSON.stringify(serverBookmarks));
+      const local = JSON.parse(localStorage.getItem('bookmarks') || '[]');
+      const merged = [...new Set([...local, ...serverBookmarks])];
+      localStorage.setItem('bookmarks', JSON.stringify(merged));
+      if (merged.length !== serverBookmarks.length) {
+        await pushBookmarks(merged);
       }
     }
   } catch {}

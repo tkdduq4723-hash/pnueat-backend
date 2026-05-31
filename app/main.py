@@ -47,6 +47,11 @@ def login_page():
     return FileResponse(os.path.join(STATIC_DIR, "login.html"))
 
 
+@app.get("/detail")
+def detail_page():
+    return FileResponse(os.path.join(STATIC_DIR, "detail.html"))
+
+
 @app.get("/health")
 def health():
     return {"status": "ok"}

@@ -290,11 +290,20 @@
       '고기·구이': '🥩', '카페·디저트': '☕', '기타': '🍽'
     };
 
+    let foodData = [], cafeData = [];
+
+    function openDetail(item) {
+      sessionStorage.setItem('detailItem', JSON.stringify(item));
+      location.href = '/detail';
+    }
+
     async function load() {
       const [food, cafe] = await Promise.all([
         fetch('/api/food').then(r => r.json()),
         fetch('/api/cafe').then(r => r.json()),
       ]);
+      foodData = food.map(i => ({ ...i, _type: 'food' }));
+      cafeData = cafe.map(i => ({ ...i, _type: 'cafe' }));
 
       // 통계
       const near = food.filter(i => i['거리(m)'] !== '-' && parseInt(i['거리(m)']) <= 300);
@@ -303,18 +312,18 @@
       document.getElementById('cafeCount').textContent = cafe.length;
       document.getElementById('nearCount').textContent = near.length;
 
-      // 카테고리
+      // 카테고리 — 클릭 시 탐색 카테고리 필터로
       const cats = [...new Set(food.map(i => i['대분류']).filter(Boolean))].sort();
       document.getElementById('catGrid').innerHTML = cats.slice(0, 8).map(c => `
-        <div class="cat-item" onclick="location.href='/search'">
+        <div class="cat-item" onclick="location.href='/search?cat=${encodeURIComponent(c)}'">
           <div class="cat-circle">${catEmoji[c] || '🍽'}</div>
           <div class="cat-name">${c}</div>
         </div>
       `).join('');
 
       // 가까운 밥집 top 6
-      document.getElementById('nearFood').innerHTML = food.slice(0, 6).map(item => `
-        <div class="mini-card">
+      document.getElementById('nearFood').innerHTML = foodData.slice(0, 6).map((item, idx) => `
+        <div class="mini-card" onclick="openDetail(foodData[${idx}])" style="cursor:pointer">
           <div class="mini-thumb">${catEmoji[item['대분류']] || '🍽'}</div>
           <div class="mini-info">
             <div class="mini-name">${item['이름']}</div>
@@ -325,8 +334,8 @@
       `).join('');
 
       // 가까운 카페 top 6
-      document.getElementById('nearCafe').innerHTML = cafe.slice(0, 6).map(item => `
-        <div class="mini-card">
+      document.getElementById('nearCafe').innerHTML = cafeData.slice(0, 6).map((item, idx) => `
+        <div class="mini-card" onclick="openDetail(cafeData[${idx}])" style="cursor:pointer">
           <div class="mini-thumb">☕</div>
           <div class="mini-info">
             <div class="mini-name">${item['이름']}</div>

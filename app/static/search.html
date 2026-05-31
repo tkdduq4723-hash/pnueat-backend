@@ -18,7 +18,7 @@
 
     .phone {
       width: 390px;
-      min-height: 844px;
+      height: 844px;
       background: #fff;
       border: 1px solid #bbb;
       display: flex;
@@ -98,7 +98,10 @@
       gap: 8px;
       overflow-x: auto;
       padding-bottom: 12px;
+      padding-right: 16px;
       scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+      touch-action: pan-x;
     }
 
     .category-scroll::-webkit-scrollbar { display: none; }
@@ -183,6 +186,7 @@
       flex: 1;
       overflow-y: auto;
       display: block;
+      min-height: 0;
     }
 
     .restaurant-card {
@@ -669,7 +673,8 @@
 
     // ── 카테고리 탭 ──
     function renderCategories() {
-      const cats = [...new Set(allItems.map(i => i['대분류']).filter(Boolean))].sort();
+      const raw = [...new Set(allItems.map(i => i['대분류']).filter(Boolean))].sort();
+      const cats = [...raw.filter(c => c !== '기타'), ...(raw.includes('기타') ? ['기타'] : [])];
       const scroll = document.getElementById('categoryScroll');
       scroll.innerHTML = ['전체', ...cats].map(c => `
         <div class="cat-tab ${c === currentCategory ? 'active' : ''}" onclick="selectCategory('${c}')">${c}</div>
@@ -756,7 +761,7 @@
         const isCafe = item._type === 'cafe';
         const saved = isBookmarked(item['이름']);
         return `
-          <div class="restaurant-card">
+          <div class="restaurant-card" data-idx="${idx}">
             <div class="card-thumb">${getEmoji(item)}</div>
             <div class="card-info">
               <div class="card-name">${item['이름']}</div>
@@ -989,22 +994,31 @@
       render();
     });
 
-    // 북마크 이벤트 위임 (inline onclick 대신 - 특수문자 오류 방지)
     document.getElementById('listView').addEventListener('click', e => {
       const btn = e.target.closest('.bookmark-btn');
-      if (!btn) return;
-      e.stopPropagation();
-      const idx = parseInt(btn.dataset.idx);
-      const item = window._renderedItems?.[idx];
-      if (!item) return;
-      const name = item['이름'];
-      const i = bookmarks.indexOf(name);
-      if (i === -1) bookmarks.push(name);
-      else bookmarks.splice(i, 1);
-      localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
-      pushBookmarks(bookmarks);
-      btn.textContent = bookmarks.includes(name) ? '🔖' : '🤍';
+      if (btn) {
+        const idx = parseInt(btn.dataset.idx);
+        const item = window._renderedItems?.[idx];
+        if (!item) return;
+        const name = item['이름'];
+        const i = bookmarks.indexOf(name);
+        if (i === -1) bookmarks.push(name);
+        else bookmarks.splice(i, 1);
+        localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
+        pushBookmarks(bookmarks);
+        btn.textContent = bookmarks.includes(name) ? '🔖' : '🤍';
+        return;
+      }
+      const card = e.target.closest('.restaurant-card');
+      if (card) {
+        const item = window._renderedItems?.[parseInt(card.dataset.idx)];
+        if (item) { sessionStorage.setItem('detailItem', JSON.stringify(item)); location.href = '/detail'; }
+      }
     });
+
+    // URL 파라미터로 카테고리 초기 선택
+    const _urlCat = new URLSearchParams(location.search).get('cat');
+    if (_urlCat) currentCategory = _urlCat;
 
     loadData();
     renderUserBadge('authArea');
