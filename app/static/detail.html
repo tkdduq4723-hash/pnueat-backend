@@ -550,11 +550,17 @@
         try {
           await loadGoogleSDK(cfg.google_maps_key);
 
-          const map = new google.maps.Map(mapDiv, {
-            center: { lat: item.lat, lng: item.lng },
-            zoom: 16,
-            disableDefaultUI: true,
-            zoomControl: true,
+          // tilesloaded → 인증 성공, gm_authFailure → 키 오류로 reject
+          const map = await new Promise((resolve, reject) => {
+            const timer = setTimeout(() => reject(new Error('timeout')), 10000);
+            window.gm_authFailure = () => { clearTimeout(timer); reject(new Error('auth')); };
+            const m = new google.maps.Map(mapDiv, {
+              center: { lat: item.lat, lng: item.lng },
+              zoom: 16,
+              disableDefaultUI: true,
+              zoomControl: true,
+            });
+            google.maps.event.addListenerOnce(m, 'tilesloaded', () => { clearTimeout(timer); resolve(m); });
           });
 
           new google.maps.Marker({
