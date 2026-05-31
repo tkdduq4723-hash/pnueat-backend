@@ -67,11 +67,44 @@ def _sort(items: list[dict], sort: str) -> list[dict]:
     return items
 
 
+def _score(item: dict) -> float:
+    """추천 지수: (거리×0.35) + (가격×0.25) + (별점×0.25) + (리뷰신뢰도×0.15)"""
+    dist = item.get("거리(m)", "-")
+    try:
+        dist_score = max(0.0, 1 - int(dist) / 1000)  # 1km 기준
+    except (ValueError, TypeError):
+        dist_score = 0.5
+
+    try:
+        price = item.get("가격")
+        price_score = max(0.0, 1 - int(price) / 10000) if price else 0.5
+    except (ValueError, TypeError):
+        price_score = 0.5
+
+    rating = item.get("별점")
+    # 현실적 범위 2.5~5.0 → 0~1 로 정규화
+    rating_score = max(0.0, (float(rating) - 2.5) / 2.5) if rating is not None else 0.5
+
+    reviews = item.get("리뷰수")
+    trust = min(int(reviews) / 100, 1.0) if reviews is not None else 0.3
+
+    return round((dist_score * 0.35) + (price_score * 0.25) + (rating_score * 0.25) + (trust * 0.15), 4)
+
+
 def get_recommend() -> dict:
-    """거리 기준 상위 5개 중 각 1개씩 추천"""
+    """추천 지수 상위 10개 중 가중 랜덤 추천"""
     import random
-    food_pool = _sort(_load(FOOD_JSON), "거리순")[:5]
-    cafe_pool = _sort(_load(CAFE_JSON), "거리순")[:5]
+    food_items = _load(FOOD_JSON)
+    cafe_items = _load(CAFE_JSON)
+
+    for item in food_items:
+        item["추천점수"] = _score(item)
+    for item in cafe_items:
+        item["추천점수"] = _score(item)
+
+    food_pool = sorted(food_items, key=lambda x: x["추천점수"], reverse=True)[:10]
+    cafe_pool = sorted(cafe_items, key=lambda x: x["추천점수"], reverse=True)[:10]
+
     return {
         "밥집": random.choice(food_pool) if food_pool else None,
         "카페": random.choice(cafe_pool) if cafe_pool else None,
