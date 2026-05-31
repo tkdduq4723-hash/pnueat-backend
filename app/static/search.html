@@ -584,12 +584,8 @@
     let currentView = 'list';
     let bookmarks = JSON.parse(localStorage.getItem('bookmarks') || '[]');
     let showBookmarksOnly = false;
-    let mapType = null; // 'kakao' | 'google'
-    let kakaoMap = null;
-    let kakaoMarkers = [];
-    let gmap = null;
-    let gmarkers = [];
-    let directionsRenderer = null;
+    let leafletMap = null;
+    let leafletMarkers = [];
     let mapReady = false;
 
     // 필터 임시 상태
@@ -785,93 +781,36 @@
     // ── 지도 초기화 ──
     const PNU = { lat: 35.2323, lng: 129.0876 };
 
-    function loadKakaoSDK(key) {
-      return new Promise((resolve, reject) => {
-        if (window.kakao?.maps) { resolve(); return; }
-        const timer = setTimeout(() => reject(new Error('timeout')), 8000);
+    function loadLeaflet() {
+      return new Promise(resolve => {
+        if (window.L) { resolve(); return; }
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';
+        document.head.appendChild(link);
         const s = document.createElement('script');
-        s.onload = () => { clearTimeout(timer); resolve(); };
-        s.onerror = () => { clearTimeout(timer); reject(new Error('error')); };
-        s.src = `https://dapi.kakao.com/v2/maps/sdk.js?appkey=${key}&autoload=false`;
-        document.head.appendChild(s);
-      });
-    }
-
-    function loadGoogleSDK(key) {
-      return new Promise((resolve, reject) => {
-        if (window.google?.maps) { resolve(); return; }
-        const timer = setTimeout(() => reject(new Error('timeout')), 8000);
-        window.__gmInit = () => { clearTimeout(timer); resolve(); };
-        const s = document.createElement('script');
-        s.onerror = () => { clearTimeout(timer); reject(new Error('error')); };
-        s.src = `https://maps.googleapis.com/maps/api/js?key=${key}&callback=__gmInit&language=ko`;
+        s.onload = resolve;
+        s.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
         document.head.appendChild(s);
       });
     }
 
     async function initMap() {
-      const mapDiv = document.getElementById('map');
-      let cfg = {};
-      try { cfg = await fetch('/api/config').then(r => r.json()); } catch {}
+      await loadLeaflet();
 
-      // 카카오맵 시도 (1순위)
-      if (cfg.kakao_key) {
-        try {
-          await loadKakaoSDK(cfg.kakao_key);
-          await new Promise(resolve => kakao.maps.load(resolve));
+      leafletMap = L.map('map', { attributionControl: false, zoomControl: true })
+        .setView([PNU.lat, PNU.lng], 16);
 
-          kakaoMap = new kakao.maps.Map(mapDiv, {
-            center: new kakao.maps.LatLng(PNU.lat, PNU.lng),
-            level: 5,
-          });
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19 }).addTo(leafletMap);
 
-          const pnuPos = new kakao.maps.LatLng(PNU.lat, PNU.lng);
-          const pnuMarker = new kakao.maps.Marker({ position: pnuPos, map: kakaoMap });
-          new kakao.maps.InfoWindow({
-            content: '<div style="padding:4px 8px;font-size:11px;font-weight:700;white-space:nowrap">📍 부산대 정문</div>'
-          }).open(kakaoMap, pnuMarker);
+      const pnuIcon = L.divIcon({
+        html: '<div style="background:#111;width:12px;height:12px;border-radius:50%;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,0.5)"></div>',
+        iconSize: [12, 12], iconAnchor: [6, 6], className: '',
+      });
+      L.marker([PNU.lat, PNU.lng], { icon: pnuIcon })
+        .bindPopup('📍 부산대 정문').addTo(leafletMap);
 
-          mapType = 'kakao';
-          mapReady = true;
-          return;
-        } catch {}
-      }
-
-      // 구글맵 폴백 (2순위)
-      if (cfg.google_maps_key) {
-        try {
-          await loadGoogleSDK(cfg.google_maps_key);
-
-          gmap = await new Promise((resolve, reject) => {
-            const timer = setTimeout(() => reject(new Error('timeout')), 10000);
-            window.gm_authFailure = () => { clearTimeout(timer); reject(new Error('auth')); };
-            const m = new google.maps.Map(mapDiv, {
-              center: PNU, zoom: 16,
-              mapTypeControl: false, streetViewControl: false, fullscreenControl: false,
-              zoomControlOptions: { position: google.maps.ControlPosition.RIGHT_CENTER },
-            });
-            google.maps.event.addListenerOnce(m, 'tilesloaded', () => { clearTimeout(timer); resolve(m); });
-          });
-
-          new google.maps.Marker({
-            position: PNU, map: gmap,
-            icon: { path: google.maps.SymbolPath.CIRCLE, scale: 10, fillColor: '#111', fillOpacity: 1, strokeColor: '#fff', strokeWeight: 3 },
-            zIndex: 999, title: '부산대 정문',
-          });
-
-          directionsRenderer = new google.maps.DirectionsRenderer({
-            suppressMarkers: true,
-            polylineOptions: { strokeColor: '#1a73e8', strokeWeight: 5, strokeOpacity: 0.85 },
-          });
-          directionsRenderer.setMap(gmap);
-
-          mapType = 'google';
-          mapReady = true;
-          return;
-        } catch {}
-      }
-
-      mapDiv.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#aaa;font-size:13px">🗺 지도를 불러올 수 없어요</div>';
+      mapReady = true;
     }
 
     // ── 지도 렌더 ──
@@ -881,9 +820,7 @@
       if (!mapReady) {
         document.getElementById('map').innerHTML =
           '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#aaa;font-size:13px">🗺 지도 로딩 중...</div>';
-        initMap().then(() => {
-          if (mapReady) { renderGmarkers(items); renderMapList(items); }
-        });
+        initMap().then(() => { renderGmarkers(items); renderMapList(items); });
         return;
       }
 
@@ -892,73 +829,38 @@
     }
 
     function renderGmarkers(items) {
-      if (mapType === 'kakao') {
-        kakaoMarkers.forEach(m => m.setMap(null));
-        kakaoMarkers = [];
-        items.filter(i => i.lat && i.lng).forEach((item, idx) => {
-          const pos = new kakao.maps.LatLng(item.lat, item.lng);
-          const marker = new kakao.maps.Marker({ position: pos, map: kakaoMap });
-          kakao.maps.event.addListener(marker, 'click', () => showRoute(item, idx));
-          kakaoMarkers.push(marker);
-        });
-        return;
-      }
+      leafletMarkers.forEach(m => leafletMap.removeLayer(m));
+      leafletMarkers = [];
 
-      // 구글맵
-      gmarkers.forEach(({ marker }) => marker.setMap(null));
-      gmarkers = [];
-      items.filter(i => i.lat && Math.abs(i.lat - 35.2323) > 0.0002).forEach((item, idx) => {
+      items.filter(i => i.lat && i.lng).forEach((item, idx) => {
         const isCafe = item._type === 'cafe';
-        const marker = new google.maps.Marker({
-          position: { lat: item.lat, lng: item.lng }, map: gmap, title: item['이름'],
-          icon: { path: google.maps.SymbolPath.CIRCLE, scale: 14, fillColor: isCafe ? '#e67e22' : '#ea4335', fillOpacity: 0.9, strokeColor: '#fff', strokeWeight: 2 },
-          label: { text: item['이름'].substring(0, 2), color: '#fff', fontSize: '10px', fontWeight: '700' },
+        const color = isCafe ? '#e67e22' : '#ea4335';
+        const icon = L.divIcon({
+          html: `<div style="background:${color};color:#fff;font-size:10px;font-weight:700;width:28px;height:28px;border-radius:50%;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,0.4);display:flex;align-items:center;justify-content:center">${item['이름'].substring(0,2)}</div>`,
+          iconSize: [28, 28], iconAnchor: [14, 14], className: '',
         });
-        marker.addListener('click', () => showRoute(item, idx));
-        gmarkers.push({ marker, item, idx });
+        const marker = L.marker([item.lat, item.lng], { icon })
+          .addTo(leafletMap)
+          .on('click', () => showRoute(item, idx));
+        leafletMarkers.push(marker);
       });
     }
 
     function showRoute(item, listIdx) {
       if (!item.lat || !item.lng) return;
       highlightMapCard(listIdx);
-
-      if (mapType === 'kakao') {
-        kakaoMap.panTo(new kakao.maps.LatLng(item.lat, item.lng));
-        document.getElementById('routeName').textContent = item['이름'];
-        const walkText = item['도보시간'] !== '-' ? `🚶 ${item['도보시간']}` : '';
-        const distText = item['거리(m)'] !== '-' ? `${item['거리(m)']}m` : '';
-        document.getElementById('routeDetail').textContent = [walkText, distText].filter(Boolean).join(' · ');
-        document.getElementById('routeInfo').classList.add('show');
-        return;
-      }
-
-      // 구글맵 경로
-      if (Math.abs(item.lat - 35.2323) < 0.0002) return;
-      gmap.panTo({ lat: item.lat, lng: item.lng });
-      new google.maps.DirectionsService().route({
-        origin: PNU,
-        destination: { lat: item.lat, lng: item.lng },
-        travelMode: google.maps.TravelMode.WALKING,
-      }, (result, status) => {
-        if (status !== 'OK') return;
-        directionsRenderer.setDirections(result);
-        const leg = result.routes[0].legs[0];
-        document.getElementById('routeName').textContent = item['이름'];
-        document.getElementById('routeDetail').textContent = `🚶 ${leg.duration.text} (${leg.distance.text})`;
-        document.getElementById('routeInfo').classList.add('show');
-        const card = document.getElementById(`mc-${listIdx}`);
-        if (card) {
-          const meta = card.querySelector('.map-card-meta');
-          if (meta) meta.textContent = `🚶 ${leg.duration.text} · ${leg.distance.text} · ${item['대분류'] || ''}`;
-        }
-      });
+      leafletMap.setView([item.lat, item.lng], 17);
+      document.getElementById('routeName').textContent = item['이름'];
+      const walkText = item['도보시간'] !== '-' ? `🚶 ${item['도보시간']}` : '';
+      const distText = item['거리(m)'] !== '-' ? `${item['거리(m)']}m` : '';
+      document.getElementById('routeDetail').textContent = [walkText, distText].filter(Boolean).join(' · ');
+      document.getElementById('routeInfo').classList.add('show');
     }
 
     function clearRoute() {
-      if (mapType === 'google' && directionsRenderer) directionsRenderer.setDirections({ routes: [] });
       document.getElementById('routeInfo').classList.remove('show');
       document.querySelectorAll('.map-card').forEach(el => el.classList.remove('highlighted'));
+      if (leafletMap) leafletMap.setView([PNU.lat, PNU.lng], 16);
     }
 
     function renderMapList(items) {
@@ -982,10 +884,7 @@
       const items = getFilteredItems();
       const item = items[listIdx];
       if (!item || !item.lat || !item.lng) return;
-      if (mapType === 'kakao') kakaoMap.setLevel(4);
-      else if (gmap) gmap.setZoom(17);
       showRoute(item, listIdx);
-      highlightMapCard(listIdx);
     }
 
     function highlightMapCard(idx) {
