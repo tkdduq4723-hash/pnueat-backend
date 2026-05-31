@@ -1,5 +1,6 @@
 from fastapi import APIRouter, Query
 from app.services import data_service
+from app.core.config import GOOGLE_MAPS_API_KEY
 
 router = APIRouter(prefix="/api")
 
@@ -22,6 +23,11 @@ async def cafe(
 @router.get("/recommend")
 async def recommend():
     return data_service.get_recommend()
+
+
+@router.get("/config")
+def config():
+    return {"google_maps_key": GOOGLE_MAPS_API_KEY}
 
 
 # 데이터 수집 트리거 (배포 후 한 번만 호출하면 JSON에 캐시됨)

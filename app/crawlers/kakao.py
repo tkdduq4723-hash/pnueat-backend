@@ -77,7 +77,7 @@ async def _keyword_search(keywords: list[str], exclude: list[str], seen: set, ra
 
 def _make_item(doc: dict, dist) -> dict:
     cat = doc.get("category_name", "")
-    return {
+    item = {
         "이름": doc["place_name"],
         "주소": doc.get("road_address_name", doc.get("address_name", "")),
         "카테고리": cat.split(">")[1].strip() if ">" in cat else cat,
@@ -85,6 +85,12 @@ def _make_item(doc: dict, dist) -> dict:
         "도보시간": calc_walk_time(dist),
         "출처": "카카오",
     }
+    try:
+        item["lat"] = float(doc["y"])
+        item["lng"] = float(doc["x"])
+    except (KeyError, ValueError, TypeError):
+        pass
+    return item
 
 
 async def get_food() -> list[dict]:

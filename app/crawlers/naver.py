@@ -51,14 +51,20 @@ async def _search(queries: list[str], exclude: list[str]) -> list[dict]:
                     dist_str = "-"
                     walk_time = "-"
 
-                results.append({
+                entry = {
                     "이름": name,
                     "주소": item.get("roadAddress", item.get("address", "")),
                     "카테고리": cat.split(">")[1].strip() if ">" in cat else cat,
                     "거리(m)": dist_str,
                     "도보시간": walk_time,
                     "출처": "네이버",
-                })
+                }
+                try:
+                    entry["lat"] = int(item["mapy"]) / 1e7
+                    entry["lng"] = int(item["mapx"]) / 1e7
+                except (KeyError, ValueError, TypeError):
+                    pass
+                results.append(entry)
     return results
 
 

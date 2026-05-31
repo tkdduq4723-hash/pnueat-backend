@@ -4,8 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>밥약맵 - 식당 탐색</title>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -447,32 +445,21 @@
       margin-top: 4px;
     }
 
-    /* ── 커스텀 마커 ── */
-    .map-marker {
-      background: #111;
+    /* ── 경로 정보 바 ── */
+    .route-info {
+      display: none;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 14px;
+      background: #1a73e8;
       color: #fff;
-      font-size: 10px;
-      font-weight: 700;
-      padding: 3px 6px;
-      border-radius: 6px;
-      white-space: nowrap;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-      cursor: pointer;
+      font-size: 13px;
+      flex-shrink: 0;
     }
-
-    .map-marker.cafe { background: #e67e22; }
-    .map-marker::after {
-      content: '';
-      position: absolute;
-      bottom: -5px;
-      left: 50%;
-      transform: translateX(-50%);
-      border: 5px solid transparent;
-      border-top-color: #111;
-      border-bottom: none;
-    }
-
-    .map-marker.cafe::after { border-top-color: #e67e22; }
+    .route-info.show { display: flex; }
+    .route-name { font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; flex: 1; }
+    .route-detail { font-size: 12px; white-space: nowrap; opacity: 0.9; }
+    .route-close { width: 22px; height: 22px; border-radius: 50%; background: rgba(255,255,255,0.2); display: flex; align-items: center; justify-content: center; cursor: pointer; flex-shrink: 0; font-size: 12px; }
   </style>
 </head>
 <body>
@@ -519,6 +506,11 @@
     <!-- 지도뷰 -->
     <div id="mapView">
       <div id="map"></div>
+      <div class="route-info" id="routeInfo">
+        <div class="route-name" id="routeName"></div>
+        <div class="route-detail" id="routeDetail"></div>
+        <div class="route-close" onclick="clearRoute()">✕</div>
+      </div>
       <div class="map-list" id="mapList"></div>
     </div>
 
@@ -588,8 +580,10 @@
     let currentView = 'list';
     let bookmarks = JSON.parse(localStorage.getItem('bookmarks') || '[]');
     let showBookmarksOnly = false;
-    let leafletMap = null;
-    let markers = [];
+    let gmap = null;
+    let gmarkers = [];
+    let directionsRenderer = null;
+    let mapReady = false;
 
     // 필터 임시 상태
     let pendingType = '전체';
@@ -780,62 +774,155 @@
       }).join('');
     }
 
+    // ── Google Maps 초기화 ──
+    const PNU = { lat: 35.2323, lng: 129.0876 };
+
+    async function loadGoogleMaps() {
+      if (window.google?.maps) return;
+      const { google_maps_key } = await fetch('/api/config').then(r => r.json());
+      await new Promise(resolve => {
+        window.__gmInit = resolve;
+        const s = document.createElement('script');
+        s.src = `https://maps.googleapis.com/maps/api/js?key=${google_maps_key}&callback=__gmInit&language=ko`;
+        document.head.appendChild(s);
+      });
+    }
+
+    function initGmap() {
+      gmap = new google.maps.Map(document.getElementById('map'), {
+        center: PNU,
+        zoom: 16,
+        mapTypeControl: false,
+        streetViewControl: false,
+        fullscreenControl: false,
+        zoomControlOptions: { position: google.maps.ControlPosition.RIGHT_CENTER },
+      });
+
+      // 부산대 정문 마커
+      new google.maps.Marker({
+        position: PNU,
+        map: gmap,
+        icon: {
+          path: google.maps.SymbolPath.CIRCLE,
+          scale: 10,
+          fillColor: '#111',
+          fillOpacity: 1,
+          strokeColor: '#fff',
+          strokeWeight: 3,
+        },
+        zIndex: 999,
+        title: '부산대 정문',
+      });
+
+      directionsRenderer = new google.maps.DirectionsRenderer({
+        suppressMarkers: true,
+        polylineOptions: { strokeColor: '#1a73e8', strokeWeight: 5, strokeOpacity: 0.85 },
+      });
+      directionsRenderer.setMap(gmap);
+      mapReady = true;
+    }
+
     // ── 지도 렌더 ──
     function renderMap() {
       const items = getFilteredItems();
 
-      if (!leafletMap) {
-        leafletMap = L.map('map', { zoomControl: true }).setView([35.2323, 129.0876], 15);
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-          attribution: '© OpenStreetMap contributors'
-        }).addTo(leafletMap);
+      if (!mapReady) {
+        document.getElementById('map').innerHTML =
+          '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#aaa;font-size:13px">🗺 지도 로딩 중...</div>';
+        loadGoogleMaps().then(() => {
+          initGmap();
+          renderGmarkers(items);
+          renderMapList(items);
+        });
+        return;
       }
 
-      // 기존 마커 제거
-      markers.forEach(m => m.remove());
-      markers = [];
+      renderGmarkers(items);
+      renderMapList(items);
+    }
 
-      const withCoords = items.filter(i => i.lat && i.lng && i.lat !== 35.2323);
+    function renderGmarkers(items) {
+      gmarkers.forEach(({ marker }) => marker.setMap(null));
+      gmarkers = [];
 
-      withCoords.forEach((item, idx) => {
+      items.filter(i => i.lat && Math.abs(i.lat - 35.2323) > 0.0002).forEach((item, idx) => {
         const isCafe = item._type === 'cafe';
-        const icon = L.divIcon({
-          className: '',
-          html: `<div class="map-marker ${isCafe ? 'cafe' : ''}" style="position:relative">${item['이름'].substring(0, 6)}</div>`,
-          iconAnchor: [30, 28],
+        const marker = new google.maps.Marker({
+          position: { lat: item.lat, lng: item.lng },
+          map: gmap,
+          title: item['이름'],
+          icon: {
+            path: google.maps.SymbolPath.CIRCLE,
+            scale: 14,
+            fillColor: isCafe ? '#e67e22' : '#ea4335',
+            fillOpacity: 0.9,
+            strokeColor: '#fff',
+            strokeWeight: 2,
+          },
+          label: { text: item['이름'].substring(0, 2), color: '#fff', fontSize: '10px', fontWeight: '700' },
         });
-        const marker = L.marker([item.lat, item.lng], { icon })
-          .addTo(leafletMap)
-          .bindPopup(`<b>${item['이름']}</b><br>${item['대분류'] || ''}<br>🚶 ${item['도보시간'] !== '-' ? item['도보시간'] : '-'}`);
-
-        marker.on('click', () => highlightMapCard(idx));
-        markers.push(marker);
+        marker.addListener('click', () => showRoute(item, idx));
+        gmarkers.push({ marker, item, idx });
       });
+    }
 
-      // 지도 하단 리스트
+    function showRoute(item, listIdx) {
+      if (!item.lat || Math.abs(item.lat - 35.2323) < 0.0002) return;
+
+      highlightMapCard(listIdx);
+      gmap.panTo({ lat: item.lat, lng: item.lng });
+
+      new google.maps.DirectionsService().route({
+        origin: PNU,
+        destination: { lat: item.lat, lng: item.lng },
+        travelMode: google.maps.TravelMode.WALKING,
+      }, (result, status) => {
+        if (status !== 'OK') return;
+        directionsRenderer.setDirections(result);
+        const leg = result.routes[0].legs[0];
+        document.getElementById('routeName').textContent = item['이름'];
+        document.getElementById('routeDetail').textContent =
+          `🚶 ${leg.duration.text} (${leg.distance.text})`;
+        document.getElementById('routeInfo').classList.add('show');
+        // 하단 카드 도보시간도 업데이트
+        const card = document.getElementById(`mc-${listIdx}`);
+        if (card) {
+          const meta = card.querySelector('.map-card-meta');
+          if (meta) meta.textContent = `🚶 ${leg.duration.text} · ${leg.distance.text} · ${item['대분류'] || ''}`;
+        }
+      });
+    }
+
+    function clearRoute() {
+      directionsRenderer.setDirections({ routes: [] });
+      document.getElementById('routeInfo').classList.remove('show');
+      document.querySelectorAll('.map-card').forEach(el => el.classList.remove('highlighted'));
+    }
+
+    function renderMapList(items) {
       document.getElementById('mapList').innerHTML = items.map((item, idx) => {
-        const hasCoord = item.lat && item.lat !== 35.2323;
+        const hasCoord = item.lat && Math.abs(item.lat - 35.2323) > 0.0002;
+        const dist = item['거리(m)'] !== '-' ? item['거리(m)'] + 'm' : '';
+        const walk = item['도보시간'] !== '-' ? item['도보시간'] : '';
         return `
           <div class="map-card" id="mc-${idx}" onclick="focusMarker(${idx})">
             <div class="map-card-icon">${getEmoji(item)}</div>
             <div class="map-card-info">
               <div class="map-card-name">${item['이름']}</div>
-              <div class="map-card-meta">${item['거리(m)'] !== '-' ? item['거리(m)'] + 'm' : ''} · ${item['대분류'] || ''}</div>
+              <div class="map-card-meta">${[walk, dist, item['대분류']].filter(Boolean).join(' · ')}</div>
             </div>
-            ${!hasCoord ? '<span style="font-size:10px;color:#ccc">좌표 없음</span>' : ''}
+            ${!hasCoord ? '<span style="font-size:10px;color:#ccc">위치 없음</span>' : ''}
           </div>`;
       }).join('');
-
-      setTimeout(() => leafletMap.invalidateSize(), 100);
     }
 
     function focusMarker(listIdx) {
       const items = getFilteredItems();
       const item = items[listIdx];
-      if (item?.lat && item.lat !== 35.2323) {
-        leafletMap.setView([item.lat, item.lng], 17);
-        const coordIdx = getFilteredItems().filter((i, j) => i.lat && i.lat !== 35.2323 && j <= listIdx).length - 1;
-        if (markers[coordIdx]) markers[coordIdx].openPopup();
+      if (!item) return;
+      if (item.lat && Math.abs(item.lat - 35.2323) > 0.0002) {
+        gmap.setZoom(17);
+        showRoute(item, listIdx);
       }
       highlightMapCard(listIdx);
     }
