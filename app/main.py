@@ -25,6 +25,11 @@ def index():
     return FileResponse(os.path.join(STATIC_DIR, "index.html"))
 
 
+@app.get("/search")
+def search():
+    return FileResponse(os.path.join(STATIC_DIR, "search.html"))
+
+
 @app.get("/health")
 def health():
     return {"status": "ok"}
