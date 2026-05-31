@@ -133,7 +133,10 @@
   <div class="phone">
 
     <div class="header">
-      <div class="header-title">🔖 내 목록</div>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px">
+        <div class="header-title">🔖 내 목록</div>
+        <div style="position:relative" id="authArea"></div>
+      </div>
       <div class="header-sub">저장한 식당 <span id="countBadge" style="font-weight:700;color:#111">0</span>개</div>
     </div>
 
@@ -166,6 +169,7 @@
 
   </div>
 
+  <script src="/static/auth.js"></script>
   <script>
     const catEmoji = {
       '돈까스·회': '🍱', '한식': '🍚', '치킨': '🍗', '피자·버거': '🍔',
@@ -253,6 +257,11 @@
     });
 
     load();
+    renderUserBadge('authArea');
+    syncBookmarks().then(() => {
+      bookmarks = JSON.parse(localStorage.getItem('bookmarks') || '[]');
+      render();
+    });
   </script>
 </body>
 </html>

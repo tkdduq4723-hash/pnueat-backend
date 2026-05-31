@@ -480,7 +480,10 @@
 
     <!-- 헤더 -->
     <div class="header">
-      <div class="header-title">식당 탐색</div>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+      <div class="header-title" style="margin-bottom:0">식당 탐색</div>
+      <div style="position:relative" id="authArea"></div>
+    </div>
       <div class="search-row">
         <div class="search-box">
           <span class="search-icon">🔍</span>
@@ -575,6 +578,7 @@
     </div>
   </div>
 
+  <script src="/static/auth.js"></script>
   <script>
     // ── 상태 ──
     let allItems = [];
@@ -911,10 +915,15 @@
       if (i === -1) bookmarks.push(name);
       else bookmarks.splice(i, 1);
       localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
+      pushBookmarks(bookmarks);
       btn.textContent = bookmarks.includes(name) ? '🔖' : '🤍';
     });
 
     loadData();
+    renderUserBadge('authArea');
+    syncBookmarks().then(() => {
+      bookmarks = JSON.parse(localStorage.getItem('bookmarks') || '[]');
+    });
   </script>
 </body>
 </html>

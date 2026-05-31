@@ -1,11 +1,16 @@
 from dotenv import load_dotenv
-import os
+import os, secrets
 
 load_dotenv()
 
 NAVER_CLIENT_ID = os.getenv("NAVER_CLIENT_ID", "")
 NAVER_CLIENT_SECRET = os.getenv("NAVER_CLIENT_SECRET", "")
 KAKAO_API_KEY = os.getenv("KAKAO_API_KEY", "")
+
+GOOGLE_CLIENT_ID = os.getenv("GOOGLE_CLIENT_ID", "")
+JWT_SECRET = os.getenv("JWT_SECRET", secrets.token_hex(32))
+JWT_ALGORITHM = "HS256"
+JWT_EXPIRE_DAYS = 30
 
 PNU_LAT = 35.2323
 PNU_LNG = 129.0847

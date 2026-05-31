@@ -144,7 +144,10 @@
   <div class="phone">
 
     <div class="header">
-      <div class="header-title">✨ 오늘의 추천</div>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px">
+        <div class="header-title">✨ 오늘의 추천</div>
+        <div style="position:relative" id="authArea"></div>
+      </div>
       <div class="header-sub">주변 식당 중 랜덤으로 골라드려요</div>
     </div>
 
@@ -176,6 +179,7 @@
 
   </div>
 
+  <script src="/static/auth.js"></script>
   <script>
     const catEmoji = {
       '돈까스·회': '🍱', '한식': '🍚', '치킨': '🍗', '피자·버거': '🍔',
@@ -225,6 +229,7 @@
     }
 
     getRecommend();
+    renderUserBadge('authArea');
   </script>
 </body>
 </html>

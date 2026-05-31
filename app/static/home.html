@@ -201,7 +201,7 @@
     <div class="header">
       <div class="header-top">
         <div class="logo">밥약맵 🍚</div>
-        <div class="location-badge">📍 부산대 주변</div>
+        <div style="position:relative" id="authArea"></div>
       </div>
       <div class="subtitle">지금 주변 <span id="totalCount" style="font-weight:700;color:#111">-</span>개 식당</div>
     </div>
@@ -282,6 +282,7 @@
 
   </div>
 
+  <script src="/static/auth.js"></script>
   <script>
     const catEmoji = {
       '돈까스·회': '🍱', '한식': '🍚', '치킨': '🍗', '피자·버거': '🍔',
@@ -337,6 +338,8 @@
     }
 
     load();
+    renderUserBadge('authArea');
+    syncBookmarks();
   </script>
 </body>
 </html>

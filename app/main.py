@@ -4,6 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from app.api.routes import router
+from app.api.auth import router as auth_router
 
 app = FastAPI(title="PNUeat API", version="1.0.0")
 
@@ -15,6 +16,7 @@ app.add_middleware(
 )
 
 app.include_router(router)
+app.include_router(auth_router)
 
 STATIC_DIR = os.path.join(os.path.dirname(__file__), "static")
 app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
@@ -38,6 +40,11 @@ def recommend_page():
 @app.get("/mylist")
 def mylist():
     return FileResponse(os.path.join(STATIC_DIR, "mylist.html"))
+
+
+@app.get("/login")
+def login_page():
+    return FileResponse(os.path.join(STATIC_DIR, "login.html"))
 
 
 @app.get("/health")
