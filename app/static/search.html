@@ -1016,9 +1016,12 @@
       }
     });
 
-    // URL 파라미터로 카테고리 초기 선택
-    const _urlCat = new URLSearchParams(location.search).get('cat');
+    // URL 파라미터로 초기 필터 설정
+    const _params = new URLSearchParams(location.search);
+    const _urlCat = _params.get('cat');
+    const _urlType = _params.get('type');
     if (_urlCat) currentCategory = _urlCat;
+    if (_urlType) filterType = _urlType;
 
     loadData();
     renderUserBadge('authArea');
