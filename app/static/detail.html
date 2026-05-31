@@ -464,78 +464,134 @@
       location.reload();
     }
 
+    /* ── 지도 헬퍼 ── */
+    function loadKakaoSDK(key) {
+      return new Promise((resolve, reject) => {
+        if (window.kakao?.maps) { resolve(); return; }
+        const timer = setTimeout(() => reject(new Error('timeout')), 8000);
+        const s = document.createElement('script');
+        s.onload = () => { clearTimeout(timer); resolve(); };
+        s.onerror = () => { clearTimeout(timer); reject(new Error('error')); };
+        s.src = `https://dapi.kakao.com/v2/maps/sdk.js?appkey=${key}&autoload=false`;
+        document.head.appendChild(s);
+      });
+    }
+
+    function loadGoogleSDK(key) {
+      return new Promise((resolve, reject) => {
+        if (window.google?.maps) { resolve(); return; }
+        const timer = setTimeout(() => reject(new Error('timeout')), 8000);
+        window.__gmDetailInit = () => { clearTimeout(timer); resolve(); };
+        const s = document.createElement('script');
+        s.onerror = () => { clearTimeout(timer); reject(new Error('error')); };
+        s.src = `https://maps.googleapis.com/maps/api/js?key=${key}&callback=__gmDetailInit&language=ko`;
+        document.head.appendChild(s);
+      });
+    }
+
+    function showMapFallback(mapDiv) {
+      const kakaoUrl = `https://map.kakao.com/link/search/${encodeURIComponent(item['이름'] || '')}`;
+      const googleUrl = (item.lat && item.lng)
+        ? `https://www.google.com/maps?q=${item.lat},${item.lng}`
+        : `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent((item['이름'] || '') + ' ' + (item['주소'] || ''))}`;
+      mapDiv.innerHTML = `
+        <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;gap:10px;background:#f8f8f8;border-radius:8px;padding:16px">
+          <div style="font-size:12px;color:#555;text-align:center">📍 ${item['주소'] || '주소 정보 없음'}</div>
+          <div style="display:flex;gap:8px">
+            <a href="${kakaoUrl}" target="_blank" style="font-size:12px;background:#FFCD00;color:#3C1E1E;padding:7px 14px;border-radius:8px;text-decoration:none;font-weight:700">카카오맵</a>
+            <a href="${googleUrl}" target="_blank" style="font-size:12px;background:#4285F4;color:#fff;padding:7px 14px;border-radius:8px;text-decoration:none;font-weight:700">구글맵</a>
+          </div>
+        </div>`;
+    }
+
     /* ── 지도 ── */
     async function loadMap() {
-      if (!item.lat || Math.abs(item.lat - PNU.lat) < 0.0002) {
-        document.getElementById('detailMap').innerHTML =
-          '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#aaa;font-size:13px">위치 정보 없음</div>';
+      const mapDiv = document.getElementById('detailMap');
+
+      if (!item.lat || !item.lng) {
+        mapDiv.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#aaa;font-size:13px">위치 정보 없음</div>';
         return;
       }
-      try {
-        const { google_maps_key } = await fetch('/api/config').then(r => r.json());
-        await new Promise(resolve => {
-          window.__gmDetailInit = resolve;
-          const s = document.createElement('script');
-          s.src = `https://maps.googleapis.com/maps/api/js?key=${google_maps_key}&callback=__gmDetailInit&language=ko`;
-          document.head.appendChild(s);
-        });
-        const map = new google.maps.Map(document.getElementById('detailMap'), {
-          center: { lat: item.lat, lng: item.lng },
-          zoom: 16,
-          disableDefaultUI: true,
-          zoomControl: true,
-        });
-        new google.maps.Marker({
-          position: { lat: item.lat, lng: item.lng },
-          map,
-          icon: {
-            path: google.maps.SymbolPath.CIRCLE,
-            scale: 12,
-            fillColor: '#ea4335',
-            fillOpacity: 1,
-            strokeColor: '#fff',
-            strokeWeight: 2,
-          },
-          title: item['이름'],
-        });
-        new google.maps.Marker({
-          position: PNU,
-          map,
-          icon: {
-            path: google.maps.SymbolPath.CIRCLE,
-            scale: 8,
-            fillColor: '#111',
-            fillOpacity: 1,
-            strokeColor: '#fff',
-            strokeWeight: 2,
-          },
-          title: '부산대 정문',
-        });
 
-        // 도보 경로
-        new google.maps.DirectionsService().route({
-          origin: PNU,
-          destination: { lat: item.lat, lng: item.lng },
-          travelMode: google.maps.TravelMode.WALKING,
-        }, (result, status) => {
-          if (status !== 'OK') return;
-          new google.maps.DirectionsRenderer({
-            suppressMarkers: true,
-            polylineOptions: { strokeColor: '#1a73e8', strokeWeight: 4 },
-          }).setMap(map);
-          new google.maps.DirectionsRenderer({
-            suppressMarkers: true,
-            polylineOptions: { strokeColor: '#1a73e8', strokeWeight: 4 },
-          }).setDirections(result);
-          // 실제 경로로 fit
-          const bounds = new google.maps.LatLngBounds();
-          result.routes[0].legs[0].steps.forEach(step => {
-            bounds.extend(step.start_location);
-            bounds.extend(step.end_location);
+      let cfg = {};
+      try { cfg = await fetch('/api/config').then(r => r.json()); } catch {}
+
+      // 카카오맵 시도 (1순위)
+      if (cfg.kakao_key) {
+        try {
+          await loadKakaoSDK(cfg.kakao_key);
+          await new Promise(resolve => kakao.maps.load(resolve));
+
+          const center = new kakao.maps.LatLng(item.lat, item.lng);
+          const map = new kakao.maps.Map(mapDiv, { center, level: 4 });
+
+          const marker = new kakao.maps.Marker({ position: center, map });
+          const infowindow = new kakao.maps.InfoWindow({
+            content: `<div style="padding:5px 10px;font-size:12px;font-weight:700;white-space:nowrap">${item['이름']}</div>`
           });
-          map.fitBounds(bounds);
-        });
-      } catch {}
+          infowindow.open(map, marker);
+
+          const pnuPos = new kakao.maps.LatLng(PNU.lat, PNU.lng);
+          const pnuMarker = new kakao.maps.Marker({ position: pnuPos, map });
+          new kakao.maps.InfoWindow({
+            content: '<div style="padding:4px 8px;font-size:11px;white-space:nowrap">부산대 정문</div>'
+          }).open(map, pnuMarker);
+
+          const bounds = new kakao.maps.LatLngBounds();
+          bounds.extend(center);
+          bounds.extend(pnuPos);
+          map.setBounds(bounds);
+          return;
+        } catch {}
+      }
+
+      // 구글맵 폴백 (2순위)
+      if (cfg.google_maps_key) {
+        try {
+          await loadGoogleSDK(cfg.google_maps_key);
+
+          const map = new google.maps.Map(mapDiv, {
+            center: { lat: item.lat, lng: item.lng },
+            zoom: 16,
+            disableDefaultUI: true,
+            zoomControl: true,
+          });
+
+          new google.maps.Marker({
+            position: { lat: item.lat, lng: item.lng }, map,
+            icon: { path: google.maps.SymbolPath.CIRCLE, scale: 12, fillColor: '#ea4335', fillOpacity: 1, strokeColor: '#fff', strokeWeight: 2 },
+            title: item['이름'],
+          });
+          new google.maps.Marker({
+            position: PNU, map,
+            icon: { path: google.maps.SymbolPath.CIRCLE, scale: 8, fillColor: '#111', fillOpacity: 1, strokeColor: '#fff', strokeWeight: 2 },
+            title: '부산대 정문',
+          });
+
+          const renderer = new google.maps.DirectionsRenderer({
+            map, suppressMarkers: true,
+            polylineOptions: { strokeColor: '#1a73e8', strokeWeight: 4 },
+          });
+          new google.maps.DirectionsService().route({
+            origin: PNU,
+            destination: { lat: item.lat, lng: item.lng },
+            travelMode: google.maps.TravelMode.WALKING,
+          }, (result, status) => {
+            if (status !== 'OK') return;
+            renderer.setDirections(result);
+            const bounds = new google.maps.LatLngBounds();
+            result.routes[0].legs[0].steps.forEach(s => {
+              bounds.extend(s.start_location);
+              bounds.extend(s.end_location);
+            });
+            map.fitBounds(bounds);
+          });
+          return;
+        } catch {}
+      }
+
+      // 최종 폴백: 주소 + 외부 링크
+      showMapFallback(mapDiv);
     }
 
     loadItem();

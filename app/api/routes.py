@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Query
 from app.services import data_service
-from app.core.config import GOOGLE_MAPS_API_KEY
+from app.core.config import GOOGLE_MAPS_API_KEY, KAKAO_JS_KEY
 
 router = APIRouter(prefix="/api")
 
@@ -27,7 +27,7 @@ async def recommend():
 
 @router.get("/config")
 def config():
-    return {"google_maps_key": GOOGLE_MAPS_API_KEY}
+    return {"google_maps_key": GOOGLE_MAPS_API_KEY, "kakao_key": KAKAO_JS_KEY}
 
 
 # 데이터 수집 트리거 (배포 후 한 번만 호출하면 JSON에 캐시됨)
