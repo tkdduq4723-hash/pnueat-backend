@@ -14,6 +14,10 @@ KAKAO_REDIRECT_URI = os.getenv(
     "KAKAO_REDIRECT_URI",
     "http://127.0.0.1:8000/api/auth/kakao/callback"
 )
+GOOGLE_REDIRECT_URI = os.getenv(
+    "GOOGLE_REDIRECT_URI",
+    "http://127.0.0.1:8000/api/auth/google/callback"
+)
 
 router = APIRouter(prefix="/api/auth")
 bearer = HTTPBearer(auto_error=False)
@@ -99,6 +103,53 @@ def get_visited_list(user=Depends(get_current_user)):
 @router.post("/visited")
 def save_visited(body: VisitedRequest, user=Depends(get_current_user)):
     return user_service.set_visited(user["email"], body.visited)
+
+
+@router.get("/google/url")
+def google_auth_url():
+    params = urllib.parse.urlencode({
+        "client_id": GOOGLE_CLIENT_ID,
+        "redirect_uri": GOOGLE_REDIRECT_URI,
+        "response_type": "code",
+        "scope": "openid email profile",
+        "access_type": "online",
+    })
+    return {"url": f"https://accounts.google.com/o/oauth2/v2/auth?{params}"}
+
+
+@router.get("/google/callback")
+async def google_callback(code: str):
+    try:
+        async with httpx.AsyncClient() as client:
+            res = await client.post("https://oauth2.googleapis.com/token", data={
+                "code": code,
+                "client_id": GOOGLE_CLIENT_ID,
+                "client_secret": os.getenv("GOOGLE_CLIENT_SECRET", ""),
+                "redirect_uri": GOOGLE_REDIRECT_URI,
+                "grant_type": "authorization_code",
+            })
+            token_data = res.json()
+            if "id_token" not in token_data:
+                print(f"[GOOGLE ERROR] {token_data}")
+                return RedirectResponse("/login?google_error=1")
+            id_tok = token_data["id_token"]
+    except Exception as e:
+        print(f"[GOOGLE REQUEST ERROR] {e}")
+        return RedirectResponse("/login?google_error=1")
+
+    try:
+        info = id_token.verify_oauth2_token(id_tok, google_requests.Request(), GOOGLE_CLIENT_ID)
+    except Exception as e:
+        print(f"[GOOGLE TOKEN ERROR] {e}")
+        return RedirectResponse("/login?google_error=1")
+
+    email = info["email"]
+    name = info.get("name", "")
+    picture = info.get("picture", "")
+    user = user_service.upsert_user(email, name, picture)
+    jwt_token = create_jwt(email)
+    user_encoded = urllib.parse.quote(json.dumps(user, ensure_ascii=False))
+    return RedirectResponse(f"/?_kt={jwt_token}&_ku={user_encoded}")
 
 
 @router.get("/kakao/url")

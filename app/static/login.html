@@ -458,12 +458,13 @@
       btn.appendChild(circle);
     });
 
-    document.getElementById('googleBtn').addEventListener('click', () => {
-      google.accounts.id.initialize({
-        client_id: '292150912704-f9cli9v1a77bepo3ilv15n1tdv2ap2i5.apps.googleusercontent.com',
-        callback: handleGoogleLogin,
-      });
-      google.accounts.id.prompt();
+    document.getElementById('googleBtn').addEventListener('click', async () => {
+      showLoading();
+      try {
+        const res = await fetch('/api/auth/google/url');
+        const { url } = await res.json();
+        location.href = url;
+      } catch { showError(); }
     });
 
     // ── 카카오 로그인 (REST API 방식) ──
