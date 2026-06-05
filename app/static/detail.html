@@ -3,7 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>밥약맵 - 식당 상세</title>
+  <title>Bab 밥 in PNU</title>
+  <meta name="description" content="Bab 밥 Navigation for U — 부산대 맛집·카페 길잡이" />
+  <meta property="og:title" content="Bab 밥 in PNU" />
+  <meta property="og:description" content="Bab 밥 Navigation for U — 부산대 맛집·카페 길잡이" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://pnueat-backend.onrender.com" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Bab 밥 in PNU" />
+  <meta name="twitter:description" content="Bab 밥 Navigation for U — 부산대 맛집·카페 길잡이" />
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -527,7 +535,6 @@
         const timeShort = todayText.replace(/^[^:]+:\s*/, '');
         rows.push(`<div class="info-row"><div class="info-icon">🕐</div><div class="info-text">오늘 ${timeShort}</div></div>`);
       }
-      rows.push(`<div class="info-row"><div class="info-icon">🏷</div><div class="info-text light">${item['출처']} 데이터</div></div>`);
       document.getElementById('infoRows').innerHTML = rows.join('');
 
       // 사진 갤러리
@@ -655,11 +662,12 @@
 
     /* ── 공유 ── */
     function shareItem() {
-      const text = `${item['이름']} - 밥약맵에서 확인`;
+      const title = 'Bab 밥 in PNU';
+      const text = `${item['이름']} — Bab 밥 Navigation for U`;
       if (navigator.share) {
-        navigator.share({ title: item['이름'], text, url: location.href }).catch(() => {});
+        navigator.share({ title, text, url: location.href }).catch(() => {});
       } else {
-        navigator.clipboard?.writeText(text).then(() => alert('클립보드에 복사됐어요!'));
+        navigator.clipboard?.writeText(`${text}\n${location.href}`).then(() => showToast('링크가 복사됐어요!'));
       }
     }
 
