@@ -263,4 +263,5 @@ if not NAVER_ID or not NAVER_SECRET:
 
 base = os.path.join(os.path.dirname(__file__), "..", "data")
 enrich(os.path.join(base, "restaurants.json"))
+enrich(os.path.join(base, "cafe.json"))
 print("전체 완료!")
