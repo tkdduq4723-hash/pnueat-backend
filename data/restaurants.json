@@ -17,7 +17,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZOPQIfcA18KW_O2g4NdLOED3p3o5KmV3QrcbO-inRsDQEZK6uj-G_nwQD_jTaQOPphY35FzFbuNph-fDjAMc8r0Vlw5buW0z9LwUA_qriS7x67d23N0Yin8EObL4sLplR4l71b9nGMC0lZnSSPRIcIzfA=s1600-w800",
     "lat": 35.2324776,
-    "lng": 129.0844689
+    "lng": 129.0844689,
+    "전화번호": "051-516-3980",
+    "운영시간": [
+      "월요일: 오전 10:30 ~ 오후 9:30",
+      "화요일: 오전 10:30 ~ 오후 9:30",
+      "수요일: 오전 10:30 ~ 오후 9:30",
+      "목요일: 오전 10:30 ~ 오후 9:30",
+      "금요일: 오전 10:30 ~ 오후 2:00",
+      "토요일: 오전 11:00 ~ 오후 9:30",
+      "일요일: 오전 11:00 ~ 오후 9:30"
+    ]
   },
   {
     "이름": "피자먹다 부산대점",
@@ -39,7 +49,9 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZNFR7eIWTZDpkw1gHvhW_AEQArisPaX6Twk1pBCgPcwBx-HVxTyd01vs9neJTAR7ep6_9evEqEmnC3rNUqE_QnPOx2wjRrI-U8ScRBjWunxLaEl2-lx3WofTz0mUqFYOwt3LtPugg3SMCks5g=s1600-w800",
     "lat": 35.2646009,
-    "lng": 129.0885944
+    "lng": 129.0885944,
+    "전화번호": "051-581-3229",
+    "운영시간": []
   },
   {
     "이름": "모시모시",
@@ -61,7 +73,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZMJnixAIbkfMt2tBXsiU2r-XSJLHMJ1FlKYl4Jg4-Pq0duMDWy7B1HVcXoqxBlpA_lxpoJaxnWZETz4_4qC4lljbpoQ-SYm0gCO1ydu2T2rFKNTqw5XUiJd5vWzZYJh0J5jkVCuPLESQdu7=s1600-w800",
     "lat": 35.2646009,
-    "lng": 129.0885944
+    "lng": 129.0885944,
+    "전화번호": "051-515-6245",
+    "운영시간": [
+      "월요일: 오전 11:30 ~ 오후 10:00",
+      "화요일: 오전 11:30 ~ 오후 10:00",
+      "수요일: 오전 11:30 ~ 오후 10:00",
+      "목요일: 오전 11:30 ~ 오후 10:00",
+      "금요일: 오전 11:30 ~ 오후 10:00",
+      "토요일: 오전 11:30 ~ 오후 10:00",
+      "일요일: 오전 11:30 ~ 오후 10:00"
+    ]
   },
   {
     "이름": "칠칠켄터키 부산대본점",
@@ -83,7 +105,9 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZN7705mT4M-kimO-01MM4iJpam-4wC0qjsJS3-i3q3Kb9gIr2QdIo7HviNjS_9vLpzWGrlDCosKeuUyKS7gp71ABi_13qihsrj9V1kLFhm7VL3epr1EbH-J9vgr5mEMdWOXI_U_3mcccAmu_I8=s1600-w800",
     "lat": 35.2624194,
-    "lng": 129.0880929
+    "lng": 129.0880929,
+    "전화번호": "051-518-9777",
+    "운영시간": []
   },
   {
     "이름": "전주콩나물국밥전문점",
@@ -105,7 +129,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZPlIBMCSFaHaXBVo8iXtaUYlND5CfwNJgv7rgjvMhAJiE-oUmFdupk85fwNZSkO2vBRJjz-dzLuvsN2oTW9a-bj1Nk-GyN_YGURnEhjRXMlAXY_O1p0u79pzegub89uGPv7aWLu1d8ScVkv_w=s1600-w800",
     "lat": 35.2324776,
-    "lng": 129.0844689
+    "lng": 129.0844689,
+    "전화번호": "051-582-7318",
+    "운영시간": [
+      "월요일: 오전 7:30 ~ 오후 8:00",
+      "화요일: 오전 7:30 ~ 오후 8:00",
+      "수요일: 오전 7:30 ~ 오후 8:00",
+      "목요일: 오전 7:30 ~ 오후 8:00",
+      "금요일: 오전 7:30 ~ 오후 8:00",
+      "토요일: 오전 7:30 ~ 오후 8:00",
+      "일요일: 휴무일"
+    ]
   },
   {
     "이름": "뭄바이",
@@ -127,7 +161,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZNkzQLPEjlxf7oXGYB1v48rAqTOeixFNIEVoxP_YOpbWn5dan_V65LehmKu6KQxXHXPgAvVfwB8pWiSvOU9VkECHjeVtJOQgRPZfOnCrBiXp_4pXxBBNRN0mXyHQsiZFUKgE5ObO-idp22Z6WccCUE97A=s1600-w800",
     "lat": 35.2279521,
-    "lng": 129.0836587
+    "lng": 129.0836587,
+    "전화번호": null,
+    "운영시간": [
+      "월요일: 오전 11:30 ~ 오후 3:00, 오후 4:30~10:00",
+      "화요일: 오전 11:30 ~ 오후 3:00, 오후 4:30~10:00",
+      "수요일: 오전 11:30 ~ 오후 3:00, 오후 4:30~10:00",
+      "목요일: 오전 11:30 ~ 오후 3:00, 오후 4:30~10:00",
+      "금요일: 오전 11:30 ~ 오후 3:00, 오후 4:30~10:00",
+      "토요일: 오전 11:30 ~ 오후 10:00",
+      "일요일: 오전 11:30 ~ 오후 10:00"
+    ]
   },
   {
     "이름": "송림",
@@ -142,7 +186,17 @@
     "리뷰수": 49,
     "사진목록": [],
     "lat": 35.2356089,
-    "lng": 129.0855054
+    "lng": 129.0855054,
+    "전화번호": "051-518-6565",
+    "운영시간": [
+      "월요일: 오전 11:30 ~ 오후 8:00",
+      "화요일: 오전 11:30 ~ 오후 8:00",
+      "수요일: 오전 11:30 ~ 오후 8:00",
+      "목요일: 오전 11:30 ~ 오후 8:00",
+      "금요일: 오전 11:30 ~ 오후 8:00",
+      "토요일: 휴무일",
+      "일요일: 휴무일"
+    ]
   },
   {
     "이름": "큰맘할매순대국 부산대정문점",
@@ -160,7 +214,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZMnmbNzFpmbTOU8CdD9eN6Hh3nuhxFJz9wMJJvSCJXsppSBmVBXqbPyKVK7mIlct-k2ZEvJo2dl5ihPhYVO_WeLokOsEhptSBA-2ioLe5z-VNyKoBr7XnyzRZ6IkEToIkkfaxkuffcQcrY-fyo=s1600-w800",
     "lat": 35.2279521,
-    "lng": 129.0836587
+    "lng": 129.0836587,
+    "전화번호": "051-582-9216",
+    "운영시간": [
+      "월요일: 오전 11:00 ~ 오후 9:00",
+      "화요일: 오전 11:00 ~ 오후 9:00",
+      "수요일: 오전 11:00 ~ 오후 9:00",
+      "목요일: 오전 11:00 ~ 오후 9:00",
+      "금요일: 오전 11:00 ~ 오후 9:00",
+      "토요일: 오전 11:00 ~ 오후 9:00",
+      "일요일: 오전 11:00 ~ 오후 9:00"
+    ]
   },
   {
     "이름": "진국명가",
@@ -182,7 +246,9 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZMBBJxusUHtQxyZ0TJp-XYsNwfca-u3LpJzCg-bL38VdkBiJZ2RKBBoPgcC3fdNyckrXBWcZOKRS7U5KJb-Vy6A5w8h0wfubwGNpRsTSxk_IVd9sG4qMe-WLHOmJroBKzYPDiEXT3nbzJLKXLMDta7w9g=s1600-w800",
     "lat": 35.2624194,
-    "lng": 129.0880929
+    "lng": 129.0880929,
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "부산생아구야",
@@ -201,7 +267,9 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZOS2hmBKJOr9NIjWjE5aoezVAvZtF9Us99-rL3D5NRLzJzvHcb65NldW29gAPh60PnA0jfav-VgQj6DEFxHfWktZVgx3GeyLaedO_zsFpSI-nNmHamhAXYG5aOY1fJuGI4-w7UyCjDHTU3OlLBYJ74igQ=s1600-w800",
     "lat": 35.2324776,
-    "lng": 129.0844689
+    "lng": 129.0844689,
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "애요스다이닝 부산대점",
@@ -216,7 +284,9 @@
     "리뷰수": 369,
     "사진목록": [],
     "lat": 35.265852,
-    "lng": 129.0888809
+    "lng": 129.0888809,
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "한끼닭칼국수 부산대점",
@@ -238,7 +308,9 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZM6sXZsujuH5ztjljRj0i2WtEntaNQmYYE8PGo_5JaSgsvLaPbgNw77q4zK0mJ7PnfCKGopSHIN978L-xnwzxDZyybQVAQ2dtBpLEuSgnhx73pjPTZQDttGi-rH1DAJ5JH6LXIl7tHjT_GcOGHI0TOonQ=s1600-w800",
     "lat": 35.2646009,
-    "lng": 129.0885944
+    "lng": 129.0885944,
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "나오리쇼쿠 부산대점",
@@ -260,7 +332,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZP0rQ0FCp8-Ol0DP6Ugmgo_BBunEo8W5hVcyvpC2swPh-fJBtJRAyas99gop6uQdr9cR6NqgFSU4Ge6GxrtvhYsFw1w2gUKxpCtjrdvwQ8e61d42fNi_oRKwuNMtcc7XUfXDQlqTWZ1Ty4kMxQ=s1600-w800",
     "lat": 35.2624194,
-    "lng": 129.0880929
+    "lng": 129.0880929,
+    "전화번호": "070-7772-4128",
+    "운영시간": [
+      "월요일: 오전 11:00 ~ 오후 9:00",
+      "화요일: 오전 11:00 ~ 오후 9:00",
+      "수요일: 오전 11:00 ~ 오후 9:00",
+      "목요일: 오전 11:00 ~ 오후 9:00",
+      "금요일: 오전 11:00 ~ 오후 9:00",
+      "토요일: 오전 11:00 ~ 오후 9:00",
+      "일요일: 오전 11:00 ~ 오후 9:00"
+    ]
   },
   {
     "이름": "소다미김밥",
@@ -280,7 +362,9 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZNjNPLRZhx5aKmvtPlpn4qszOq9nl2aYMJ9KvOAoWmmcqHjNRPwKboCh63T-STKd07HSp0R0PDP4ztFs7YwYLxH3Zsj78ZBlC_aF2IxEb8NyhzycSlZplnRyCIGPDHDiyZCnZIcZn8jyIIGAt7LZzeu_w=s1600-w800",
     "lat": 35.2646009,
-    "lng": 129.0885944
+    "lng": 129.0885944,
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "동대문엽기떡볶이 부산대점",
@@ -302,7 +386,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZMPKHsFhcf2mg7YWT6BKodPyll6MvwahhktqpwbRUCQUzZGaM6l_hQ81g5K_-5URykNXJn1G1ZiA0wIBUa8Ih-nShbLU-bbNTuCvaSpJB0y6pAYBR6OCe9dWXz3E3o8IEwE--DNVRHYLMIZwtVj2z5EQg=s1600-w800",
     "lat": 35.2646009,
-    "lng": 129.0885944
+    "lng": 129.0885944,
+    "전화번호": "051-515-8123",
+    "운영시간": [
+      "월요일: 오전 11:00 ~ 오후 10:00",
+      "화요일: 오전 11:00 ~ 오후 10:00",
+      "수요일: 오전 11:00 ~ 오후 10:00",
+      "목요일: 오전 11:00 ~ 오후 10:00",
+      "금요일: 오전 11:00 ~ 오후 10:00",
+      "토요일: 오전 11:00 ~ 오후 10:00",
+      "일요일: 오전 11:00 ~ 오후 10:00"
+    ]
   },
   {
     "이름": "탕화쿵푸마라탕 부산대점",
@@ -324,7 +418,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZPH_TAeU2DLHJPxBC6KszwPlTIT0DJWSKzfFg4TMBvf2bAtQ1HINjVBHrsE1lmmXuHyEPzlvWPUXQjWbnUnkFhLMI6YpRkxYK86t9_20ikFE8EvkH22EJ3pHRZ6b9jQNBKd0-n1x0dI9XqwkDB5N45ntQ=s1600-w800",
     "lat": 35.2624194,
-    "lng": 129.0880929
+    "lng": 129.0880929,
+    "전화번호": "051-515-8922",
+    "운영시간": [
+      "월요일: 오전 11:00 ~ 오후 9:00",
+      "화요일: 오전 11:00 ~ 오후 9:00",
+      "수요일: 오전 11:00 ~ 오후 9:00",
+      "목요일: 오전 11:00 ~ 오후 9:00",
+      "금요일: 오전 11:00 ~ 오후 9:00",
+      "토요일: 오전 11:00 ~ 오후 9:00",
+      "일요일: 오전 11:00 ~ 오후 9:00"
+    ]
   },
   {
     "이름": "온정돼지국밥",
@@ -346,7 +450,9 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZNcoOroK-9ny4YiCpWHYw4kx5B2ehDeehoWZVg3Oa5DCp9UHBWGK_cXG1Rp20_vMuF9degv4Y8NUax3KmsD9dLZ9vUITtOYPxv1VaE9hYHfvZRHIkAvn7_Vnha0qYRLxagEH_gZw51mwGxwvUHmMWfs=s1600-w800",
     "lat": 35.2279521,
-    "lng": 129.0836587
+    "lng": 129.0836587,
+    "전화번호": "010-4545-9414",
+    "운영시간": []
   },
   {
     "이름": "아리랑찜닭",
@@ -361,7 +467,17 @@
     "리뷰수": 511,
     "사진목록": [],
     "lat": 35.2311682,
-    "lng": 129.0877205
+    "lng": 129.0877205,
+    "전화번호": null,
+    "운영시간": [
+      "월요일: 오전 11:00 ~ 오전 12:00",
+      "화요일: 오전 11:00 ~ 오전 12:00",
+      "수요일: 오전 11:00 ~ 오전 12:00",
+      "목요일: 오전 11:00 ~ 오전 12:00",
+      "금요일: 오전 11:00 ~ 오전 12:00",
+      "토요일: 오후 12:00 ~ 오전 12:00",
+      "일요일: 오전 11:00 ~ 오전 12:00"
+    ]
   },
   {
     "이름": "로운샤브샤브 NC부산대점",
@@ -383,7 +499,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZP-16VZCn0uaqEiGIXPWQ83X_sJ97BA6V4mnaFex4G03nxeFO0AQYYyyiAFHCdMdvtM84i_2HtuWzaOsk-ia059AaiBnRA8adxePlDGgSrl4KLsQ2Qjqjz6jrCz9mI20bs7Ju4qAzaJ0Hjo3ToXr3b5Cw=s1600-w800",
     "lat": 35.230434,
-    "lng": 129.0839729
+    "lng": 129.0839729,
+    "전화번호": "050-71329-8187",
+    "운영시간": [
+      "월요일: 오전 11:00 ~ 오후 9:00",
+      "화요일: 오전 11:00 ~ 오후 9:00",
+      "수요일: 오전 11:00 ~ 오후 9:00",
+      "목요일: 오전 11:00 ~ 오후 9:00",
+      "금요일: 오전 11:00 ~ 오후 9:00",
+      "토요일: 오전 11:00 ~ 오후 9:00",
+      "일요일: 오전 11:00 ~ 오후 9:00"
+    ]
   },
   {
     "이름": "미미엔 부산점",
@@ -405,7 +531,9 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZO8IuL_ggH3BrGlJHy5s6-Hn7URIYUD8nV7F4xYMvmJ-pQBqtNtQn1aSi6aOYNwi7g8qTxAveh2wUoOplVVTk6BhudQSIQ9VMT-RKcVVtiMHHss-mXfIer9pJF48aW7rPg9QVXgeBLjJA8AtQ=s1600-w800",
     "lat": 35.2279521,
-    "lng": 129.0836587
+    "lng": 129.0836587,
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "교토밥상",
@@ -427,7 +555,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZPUJu0ACwQn5G3tzQlUUWqwTlWzb-VjC8NgB1nBXf409DS8HNwKiG-7-94eTogZ4zslyv6BajD47yWkicmMot1GYiHHYKRb5mtUekYzzdN2ZQuM9oUS4jwT1uS2WuiBURXWv2HewdYVz-7w2A=s1600-w800",
     "lat": 35.2624194,
-    "lng": 129.0880929
+    "lng": 129.0880929,
+    "전화번호": null,
+    "운영시간": [
+      "월요일: 오전 11:30 ~ 오후 9:30",
+      "화요일: 오전 11:30 ~ 오후 9:30",
+      "수요일: 오전 11:30 ~ 오후 9:30",
+      "목요일: 오전 11:30 ~ 오후 9:30",
+      "금요일: 오전 11:30 ~ 오후 9:30",
+      "토요일: 오전 11:30 ~ 오후 9:30",
+      "일요일: 오전 11:30 ~ 오후 9:30"
+    ]
   },
   {
     "이름": "신전떡볶이 부산대학점",
@@ -449,7 +587,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZNFDUfrGemQfYcEvm_jaUAdzg0IDRgVjKE2a27Ed4xCGrkmzl3ArATIdXJRGKu74zm3ZayfRKh3C4BeOn5wUkK8Ml3N1nyhEWgPcCK-mERC4R_au346bRKAnTLNDB_2a2nlSKbkVpZpx04rDA=s1600-w800",
     "lat": 35.2646009,
-    "lng": 129.0885944
+    "lng": 129.0885944,
+    "전화번호": "051-517-3451",
+    "운영시간": [
+      "월요일: 오전 11:00 ~ 오후 11:00",
+      "화요일: 오전 11:00 ~ 오후 11:00",
+      "수요일: 오전 11:00 ~ 오후 11:00",
+      "목요일: 오전 11:00 ~ 오후 11:00",
+      "금요일: 오전 11:00 ~ 오후 11:00",
+      "토요일: 오전 11:00 ~ 오후 11:00",
+      "일요일: 오전 11:00 ~ 오후 11:00"
+    ]
   },
   {
     "이름": "교촌치킨 부산대점",
@@ -471,7 +619,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZNgbZnF-IhEYx82WqSP-y4t6oihykbNcHo04KEUSIxsWnBmVjZzCCw0uZq4Qcrg_dgPLoGghmlU6hUW01FGXVxBvuD2Y8Ou1zsT-jdH07inlsZrMjoA40Ckj7M3vUILt4ISEFuwmNBWMY2_19o=s1600-w800",
     "lat": 35.2624194,
-    "lng": 129.0880929
+    "lng": 129.0880929,
+    "전화번호": "051-582-8588",
+    "운영시간": [
+      "월요일: 오후 12:00 ~ 오전 12:00",
+      "화요일: 오후 12:00 ~ 오전 12:00",
+      "수요일: 오후 12:00 ~ 오전 12:00",
+      "목요일: 오후 12:00 ~ 오전 12:00",
+      "금요일: 오후 12:00 ~ 오전 12:00",
+      "토요일: 오후 12:00 ~ 오전 12:00",
+      "일요일: 오후 12:00 ~ 오전 12:00"
+    ]
   },
   {
     "이름": "양양양꼬치 부산대점",
@@ -493,7 +651,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZNiUB4o4948hNfttxf34Rc-NjaRugTIFmhgvtpUX1Gji3vr13M7-_42Ms7IBJmGT-Rm_nwHANCw2SPniZH0qeqtRqihkgN_vpjW_rD5Qx8JETPJHq-D7jcxDypjz9o2gF6x3eqtmfWM_l3xx-M=s1600-w800",
     "lat": 35.2279521,
-    "lng": 129.0836587
+    "lng": 129.0836587,
+    "전화번호": "051-517-6008",
+    "운영시간": [
+      "월요일: 휴무일",
+      "화요일: 오후 5:00 ~ 오전 1:00",
+      "수요일: 오후 5:00 ~ 오전 1:00",
+      "목요일: 오후 4:00 ~ 오전 1:00",
+      "금요일: 오후 5:00 ~ 오전 1:00",
+      "토요일: 오후 5:00 ~ 오전 1:00",
+      "일요일: 오후 4:30 ~ 오전 12:00"
+    ]
   },
   {
     "이름": "돈부리타쿠미",
@@ -515,7 +683,9 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZMWXkTMrQMqy5ChIF4j-2Q0SsHuglztR6NRdvC7RqR4O0KqfVzDW-uAHZ8FZHjC3ljTe_AM0kY-p2jYt0O4_Jkm0S9VSPijlbxgDKGv6NPKZIBnt8JWw7qAiysX7Ab5CzXMilV49xV9yaQ9eo8=s1600-w800",
     "lat": 35.2624194,
-    "lng": 129.0880929
+    "lng": 129.0880929,
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "덮밥장사장 부산대점",
@@ -537,7 +707,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZP4UahTDVqXdrK6_peOnRL9GO_hx56_MrJIIWuCfdVJcCcmJ8mN4iMVgAyunzc-oe_Z2Gsq4f_e_6-k83gNn3W40N5ZqeLBDYxZx3erao5s4Pl82coAIhnkpwuITS7EjK9gYaGyxAfAzVQOaXo=s1600-w800",
     "lat": 35.2624194,
-    "lng": 129.0880929
+    "lng": 129.0880929,
+    "전화번호": "010-2248-1181",
+    "운영시간": [
+      "월요일: 오전 11:00 ~ 오후 3:00, 오후 4:30~9:00",
+      "화요일: 오전 11:00 ~ 오후 3:00, 오후 4:30~9:00",
+      "수요일: 오전 11:00 ~ 오후 3:00, 오후 4:30~9:00",
+      "목요일: 오전 11:00 ~ 오후 3:00, 오후 4:30~9:00",
+      "금요일: 오전 11:00 ~ 오후 3:00, 오후 4:30~9:00",
+      "토요일: 오전 11:00 ~ 오후 3:00, 오후 4:30~9:00",
+      "일요일: 오전 11:00 ~ 오후 3:00, 오후 4:30~9:00"
+    ]
   },
   {
     "이름": "부대막창",
@@ -552,7 +732,9 @@
     "리뷰수": 2,
     "사진목록": [],
     "lat": 35.233947,
-    "lng": 129.086621
+    "lng": 129.086621,
+    "전화번호": "051-583-5578",
+    "운영시간": []
   },
   {
     "이름": "따띠삼겹 부산대점",
@@ -570,7 +752,9 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZNhqTDXQdC1ApnPOLNkKbckn7k0_qtOvBJTccusF3CP3XcoM7cIyZXDRhrJ8is9wqCPeesrqTAPSMQVayt2-wiL1aCJ15qzt2nbkQi8ogVargRLFcqNTrH2R5qMtffbUNOnhEMl_n5WDBf8Ag=s1600-w800",
     "lat": 35.2624194,
-    "lng": 129.0880929
+    "lng": 129.0880929,
+    "전화번호": "051-583-1823",
+    "운영시간": []
   },
   {
     "이름": "박가부대 부산대점",
@@ -592,7 +776,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZMrx_nz4MmOKely33KqeTQp1PZur8j2R07bwMfK_ZKRLrv8Am2zZTupPxpjTAl-SjnyAA2GEVBHVGaI7cAKX1j574-CTgR-I-cvIkGSc9RSPISE1vo_Z5ui6kF-JowQsVmlq2gShjSVWY5u=s1600-w800",
     "lat": 35.2719063,
-    "lng": 129.0890313
+    "lng": 129.0890313,
+    "전화번호": "051-513-6030",
+    "운영시간": [
+      "월요일: 오전 11:00 ~ 오후 10:00",
+      "화요일: 오전 11:00 ~ 오후 10:00",
+      "수요일: 오전 11:00 ~ 오후 10:00",
+      "목요일: 오전 11:00 ~ 오후 10:00",
+      "금요일: 오전 11:00 ~ 오후 10:00",
+      "토요일: 오전 11:00 ~ 오후 10:00",
+      "일요일: 오전 11:00 ~ 오후 10:00"
+    ]
   },
   {
     "이름": "친구집부대찌개",
@@ -610,7 +804,9 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZOTLel9boup74TI10EimUoos83VqLt5P4CS-FnCNiwnrWdVsp3zILVSkcCrLRH_yMcS6gGQpDLVF8m3ptOlLxi3kMpEmEQi-kZI-4W_80HdL_ELTS4BB4ESHho3Ak2zz4xpACjsYnpNd6_HtA=s1600-w800",
     "lat": 35.2646009,
-    "lng": 129.0885944
+    "lng": 129.0885944,
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "고기랑한방울",
@@ -630,7 +826,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZPegSxUtsNeJfQiH_I_aZv-9bhHxKPoLZl5gtmmZZiXl282xZmIHnddXhL2-UlOtlmwTl6jSYpR8-SaR9W6q_GyG2I9AciViHuiD3G704OCX4mqlWQ-FEmk0Dz4shfdL_tsyiJeScwq-_jcsA=s1600-w800",
     "lat": 35.2624194,
-    "lng": 129.0880929
+    "lng": 129.0880929,
+    "전화번호": "051-516-8474",
+    "운영시간": [
+      "월요일: 오전 11:30 ~ 오후 10:00",
+      "화요일: 오전 11:30 ~ 오후 10:00",
+      "수요일: 오전 11:30 ~ 오후 10:00",
+      "목요일: 오전 11:30 ~ 오후 10:00",
+      "금요일: 오전 11:30 ~ 오후 10:00",
+      "토요일: 오전 11:30 ~ 오후 10:00",
+      "일요일: 오전 11:30 ~ 오후 10:00"
+    ]
   },
   {
     "이름": "조선 칼국수와통막걸리",
@@ -652,7 +858,9 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZOmcgCDHNgRSHzWWPskx0YhHAkz3kTF0IGxedcLr_Uq7Lh_E1NfC8XdPE_N1kxh88tuDzRporhWLXEzxY2j0RtVQgjTfdy0tYMRU2kIs_U5b-ivnltTvBt2n-K8KHuV-uh3MmdFudhfaFeDnsb8jHxA=s1600-w800",
     "lat": 35.233947,
-    "lng": 129.086621
+    "lng": 129.086621,
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "선진축산",
@@ -674,7 +882,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZM4fRoWpY77vMeDztwp9iKJGQtt0oCCf0iMhz-XJT79zAwLqbPJ84OC8ynf8e0tSr-XDhF1bY2l0ihFp0vFFXPb8OXyMWvqG4oxweYM7L6IIXyg-bO--96XwPLYay_ThJKwvRGT411fAHM=s1600-w800",
     "lat": 35.2279521,
-    "lng": 129.0836587
+    "lng": 129.0836587,
+    "전화번호": "051-518-3636",
+    "운영시간": [
+      "월요일: 오후 12:00 ~ 오전 1:00",
+      "화요일: 오후 12:00 ~ 오전 1:00",
+      "수요일: 오후 12:00 ~ 오전 1:00",
+      "목요일: 오후 12:00 ~ 오전 1:00",
+      "금요일: 오후 12:00 ~ 오전 1:00",
+      "토요일: 오후 12:00 ~ 오전 1:00",
+      "일요일: 오후 12:00 ~ 오전 1:00"
+    ]
   },
   {
     "이름": "정성을다한갈비찜 부산대점",
@@ -696,7 +914,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZM96rnubbEFSorjK8BvivdlX_Fkn96y2BXq_tdiQy-CV0mkmC6LlboApTTA89XDZaqJNZ1kdhpwcRavTKIgwQIMB-NHUere_lLvTSRydn5PVkcJxw_shZ0Pz2r8iTrtetFkTwmf0THRobGuIGgQdkWIHw=s1600-w800",
     "lat": 35.2354027,
-    "lng": 129.0838596
+    "lng": 129.0838596,
+    "전화번호": "010-9946-6781",
+    "운영시간": [
+      "월요일: 오전 9:00 ~ 오후 10:00",
+      "화요일: 오전 9:00 ~ 오후 10:00",
+      "수요일: 오전 9:00 ~ 오후 10:00",
+      "목요일: 오전 9:00 ~ 오후 10:00",
+      "금요일: 오전 9:00 ~ 오후 10:00",
+      "토요일: 오전 9:00 ~ 오후 10:00",
+      "일요일: 오전 8:00 ~ 오후 10:00"
+    ]
   },
   {
     "이름": "대박횟집",
@@ -718,7 +946,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZNbdzHHO7pZ1E_Nbu_P2X3mkYw201LkKmOLfd0KKfhjcTscqZ5s_qq1j-qVCU53J5s3cppgXjvK68o58Phhrxfuy6zqeycqecpErhBnmPRJc9PUMpU8Jqqo029YMESIhM0ZnUwvuTSs28QjklR97P5atg=s1600-w800",
     "lat": 35.2279521,
-    "lng": 129.0836587
+    "lng": 129.0836587,
+    "전화번호": "051-581-0679",
+    "운영시간": [
+      "월요일: 오후 6:00 ~ 오전 2:00",
+      "화요일: 오후 6:00 ~ 오전 2:00",
+      "수요일: 오후 6:00 ~ 오전 2:00",
+      "목요일: 오후 6:00 ~ 오전 2:00",
+      "금요일: 오후 5:30 ~ 오전 2:30",
+      "토요일: 오후 5:30 ~ 오전 2:30",
+      "일요일: 오후 5:30 ~ 오전 2:30"
+    ]
   },
   {
     "이름": "내가찜한닭 부산대점",
@@ -740,7 +978,9 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZN4hQt-4TudTyYpvnSxLYAPNvfOyf9HQgiyqG9HwUNDCzqTHETrgx_xWpPQuUcMcdVA-nL1inXMNmLe99F86azpHCE7yGgSlZs1UMbXAWNocGtM3-Ex1m_5j39UF4rgvuZ2ibp2VpfZ27C0ibbusX61Ew=s1600-w800",
     "lat": 35.2310287,
-    "lng": 129.0903932
+    "lng": 129.0903932,
+    "전화번호": "051-581-1238",
+    "운영시간": []
   },
   {
     "이름": "부산대 아리랑횟집",
@@ -762,7 +1002,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZNbdzHHO7pZ1E_Nbu_P2X3mkYw201LkKmOLfd0KKfhjcTscqZ5s_qq1j-qVCU53J5s3cppgXjvK68o58Phhrxfuy6zqeycqecpErhBnmPRJc9PUMpU8Jqqo029YMESIhM0ZnUwvuTSs28QjklR97P5atg=s1600-w800",
     "lat": 35.233947,
-    "lng": 129.086621
+    "lng": 129.086621,
+    "전화번호": "051-581-0679",
+    "운영시간": [
+      "월요일: 오후 6:00 ~ 오전 2:00",
+      "화요일: 오후 6:00 ~ 오전 2:00",
+      "수요일: 오후 6:00 ~ 오전 2:00",
+      "목요일: 오후 6:00 ~ 오전 2:00",
+      "금요일: 오후 5:30 ~ 오전 2:30",
+      "토요일: 오후 5:30 ~ 오전 2:30",
+      "일요일: 오후 5:30 ~ 오전 2:30"
+    ]
   },
   {
     "이름": "김해뒷고기 고가",
@@ -777,7 +1027,9 @@
     "리뷰수": 154,
     "사진목록": [],
     "lat": 35.2624194,
-    "lng": 129.0880929
+    "lng": 129.0880929,
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "동동국밥 부산대점",
@@ -799,7 +1051,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZNSONjOYB6uT2WZEoEnNXKCJDQvBvWRhw_pYas6gV2v-ua-AIrX1JJ0MMC5oLfIK5cEir1d889Iek5YNPQThywfa-Gn0QufAFvEGNOepMDrapKhvfWfQlbGaFDc6jyC0pRvHmKMDMsKSBI5lcoB3qrVXA=s1600-w800",
     "lat": 35.265852,
-    "lng": 129.0888809
+    "lng": 129.0888809,
+    "전화번호": "050-71382-6351",
+    "운영시간": [
+      "월요일: 오전 11:00 ~ 오후 10:00",
+      "화요일: 오전 11:00 ~ 오후 10:00",
+      "수요일: 오전 11:00 ~ 오후 10:00",
+      "목요일: 오전 11:00 ~ 오후 10:00",
+      "금요일: 오전 11:00 ~ 오후 10:00",
+      "토요일: 오전 11:00 ~ 오후 10:00",
+      "일요일: 오전 11:00 ~ 오후 10:00"
+    ]
   },
   {
     "이름": "고래섬 부산대점",
@@ -821,7 +1083,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZO5Se9vgYkpnY3TpPIr-ax51JXX_K7whn1D8NtjNi2j3sjPknSnVAk76vn6bSKwSab9QfzDLIZwfMmd3WjnCCfJQPXhRCIPPH7XkaVKOFXaBbhzMZb-3zYjt9jPY0P6jgP6fUlwQiQ8df0GJL5I1oPvbw=s1600-w800",
     "lat": 35.265852,
-    "lng": 129.0888809
+    "lng": 129.0888809,
+    "전화번호": "051-583-2050",
+    "운영시간": [
+      "월요일: 오전 11:00 ~ 오후 10:00",
+      "화요일: 오전 11:00 ~ 오후 10:00",
+      "수요일: 오전 11:00 ~ 오후 10:00",
+      "목요일: 오전 11:00 ~ 오후 10:00",
+      "금요일: 오전 11:00 ~ 오후 10:00",
+      "토요일: 오전 11:00 ~ 오후 10:00",
+      "일요일: 오전 11:00 ~ 오후 10:00"
+    ]
   },
   {
     "이름": "형제닭도리",
@@ -840,7 +1112,9 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZMioQn3H47j-gWMuHAcYQOegkBFEpF4ZJ7u0ObgZAjolO1F9h3IbpHkdGD6U1JUAekWIbzYa2mxV35XQrQPgkLSCTHnTfZbkR-wfX5lu66tbYp0JnrZwRmI1fMXC0lRqYz-3ne2T5d-mUJj=s1600-w800",
     "lat": 35.232927,
-    "lng": 129.0862543
+    "lng": 129.0862543,
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "미광삼겹",
@@ -855,7 +1129,9 @@
     "리뷰수": 153,
     "사진목록": [],
     "lat": 35.233947,
-    "lng": 129.086621
+    "lng": 129.086621,
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "치한당",
@@ -870,7 +1146,9 @@
     "리뷰수": 657,
     "사진목록": [],
     "lat": 35.233947,
-    "lng": 129.086621
+    "lng": 129.086621,
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "효원우곱",
@@ -892,7 +1170,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZOpPIWa0kqEk-vRfQ8YRawcX0WbGGOh8NFxVvSxvs1VduIns6SZiu7aGpaRlge5hyIYwGw8fvgwom7vrUh61wt3yUYuocYTRNw8SXrandk0Q17JXn8Wc5sl_oRS9DBT_Tb0wYQWW-eVF5bT0w=s1600-w800",
     "lat": 35.233947,
-    "lng": 129.086621
+    "lng": 129.086621,
+    "전화번호": "050-71378-7741",
+    "운영시간": [
+      "월요일: 오후 4:00 ~ 오전 12:00",
+      "화요일: 오후 4:00 ~ 오전 12:00",
+      "수요일: 오후 4:00 ~ 오전 12:00",
+      "목요일: 오후 4:00 ~ 오전 12:00",
+      "금요일: 오후 4:00 ~ 오전 12:00",
+      "토요일: 오후 4:00 ~ 오전 12:00",
+      "일요일: 오전 12:00 ~ 오후 12:00, 오후 4:00 ~ 오전 12:00"
+    ]
   },
   {
     "이름": "땡삼이닭도리",
@@ -914,7 +1202,9 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZPS16JmlouX4Nq5HY9E3KJAqEotU4QE3dv1k6jIjWVK1RbtC14SRE0PUOjHdvniyqIEWOq2FbnwRGa055Qh_B4rU8HCaYBn8MpKmW8CRb0H132GtQBMFYqSyp7RrersJ7Blfds9Ai4bLgN3aEGGBY_TgA=s1600-w800",
     "lat": 35.232927,
-    "lng": 129.0862543
+    "lng": 129.0862543,
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "짠지",
@@ -934,7 +1224,9 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZNCqihBPi-JE1mo9AocY4qk9r296xfjFnoJm3AiRYgEBKURYAuHSFY-D_Zildx-S6UvqJqHvRdtlLVYPR61mrN5mZtDQsTpDlncImRw2rSuOL090ku2_uP9FamM1JQRJgCsmhEVix9ajubRXMtF-c2JxA=s1600-w800",
     "lat": 35.2342136,
-    "lng": 129.0830414
+    "lng": 129.0830414,
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "연막창 부산대점",
@@ -949,7 +1241,17 @@
     "리뷰수": 1657,
     "사진목록": [],
     "lat": 35.233947,
-    "lng": 129.086621
+    "lng": 129.086621,
+    "전화번호": "051-513-8798",
+    "운영시간": [
+      "월요일: 오후 5:00 ~ 오전 1:00",
+      "화요일: 오후 5:00 ~ 오전 1:00",
+      "수요일: 오후 5:00 ~ 오전 1:00",
+      "목요일: 오후 5:00 ~ 오전 1:00",
+      "금요일: 오후 5:00 ~ 오전 1:00",
+      "토요일: 오후 5:00 ~ 오전 1:00",
+      "일요일: 오후 5:00 ~ 오전 1:00"
+    ]
   },
   {
     "이름": "백양숯불갈비",
@@ -964,7 +1266,9 @@
     "리뷰수": 82,
     "사진목록": [],
     "lat": 35.233947,
-    "lng": 129.086621
+    "lng": 129.086621,
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "불필요 부산대점",
@@ -986,7 +1290,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZOBkJjlpz8_P7vZ7vV3L0240Ysf0Otpef51nUgUXx-X6r-v8jxZrQyxkOabzUeGcSDptQ6M35QefP3iXmEixOr3r_1fKILhnRILf_93ILT_ZXOQq92bPR5E6Zi8bJfITNhnTN8f013s-jMT9UZ8wsDbDA=s1600-w556",
     "lat": 35.233947,
-    "lng": 129.086621
+    "lng": 129.086621,
+    "전화번호": "010-9434-3313",
+    "운영시간": [
+      "월요일: 오후 6:00 ~ 오전 2:00",
+      "화요일: 오후 6:00 ~ 오전 2:00",
+      "수요일: 오후 6:00 ~ 오전 2:00",
+      "목요일: 오후 6:00 ~ 오전 2:00",
+      "금요일: 오후 6:00 ~ 오전 2:00",
+      "토요일: 오후 6:00 ~ 오전 2:00",
+      "일요일: 오후 6:00 ~ 오전 2:00"
+    ]
   },
   {
     "이름": "대패왕",
@@ -1001,7 +1315,9 @@
     "리뷰수": 18,
     "사진목록": [],
     "lat": 35.232927,
-    "lng": 129.0862543
+    "lng": 129.0862543,
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "덮덮밥 부산대점",
@@ -1023,7 +1339,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZP4UahTDVqXdrK6_peOnRL9GO_hx56_MrJIIWuCfdVJcCcmJ8mN4iMVgAyunzc-oe_Z2Gsq4f_e_6-k83gNn3W40N5ZqeLBDYxZx3erao5s4Pl82coAIhnkpwuITS7EjK9gYaGyxAfAzVQOaXo=s1600-w800",
     "lat": 35.2324382,
-    "lng": 129.0849278
+    "lng": 129.0849278,
+    "전화번호": "010-2248-1181",
+    "운영시간": [
+      "월요일: 오전 11:00 ~ 오후 3:00, 오후 4:30~9:00",
+      "화요일: 오전 11:00 ~ 오후 3:00, 오후 4:30~9:00",
+      "수요일: 오전 11:00 ~ 오후 3:00, 오후 4:30~9:00",
+      "목요일: 오전 11:00 ~ 오후 3:00, 오후 4:30~9:00",
+      "금요일: 오전 11:00 ~ 오후 3:00, 오후 4:30~9:00",
+      "토요일: 오전 11:00 ~ 오후 3:00, 오후 4:30~9:00",
+      "일요일: 오전 11:00 ~ 오후 3:00, 오후 4:30~9:00"
+    ]
   },
   {
     "이름": "153구포국수 부산대점",
@@ -1045,7 +1371,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZNZltFOCeiIYIAwQIQbuuLGpcaOpSl0F3_flu53TvT1jlkJPDYzufUvwOo96LkyzOvNmBnheZlcYywRttrd2jNRUmyrDhA0r0UfrcOYuAIMfe6H1SUNTGjgXztLgrAJsh4fgTDCXPWTuKUDnQ=s1600-w800",
     "lat": 35.2315183,
-    "lng": 129.0846831
+    "lng": 129.0846831,
+    "전화번호": "051-518-9204",
+    "운영시간": [
+      "월요일: 오전 11:00 ~ 오후 8:00",
+      "화요일: 오전 11:00 ~ 오후 8:00",
+      "수요일: 오전 11:00 ~ 오후 8:00",
+      "목요일: 오전 11:00 ~ 오후 8:00",
+      "금요일: 오전 11:00 ~ 오후 8:00",
+      "토요일: 오전 11:00 ~ 오후 8:00",
+      "일요일: 오전 11:00 ~ 오후 8:00"
+    ]
   },
   {
     "이름": "고메밀면 부산대점",
@@ -1067,7 +1403,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZO4ZJQM7Gw5nlB1KoGpxLheap6wfheYFEaAtY26-bF7sGSIUo1gCFXgyhkbjKxSPCNdrvGfZreWuDaavjdxuoa438qeMLrUazygBWmA_prl7FB42n_sWwXAeg1vAByk_EnWd22gADNY0Dx4=s1600-w800",
     "lat": 35.2310287,
-    "lng": 129.0903932
+    "lng": 129.0903932,
+    "전화번호": "051-581-9392",
+    "운영시간": [
+      "월요일: 오전 11:00 ~ 오후 11:00",
+      "화요일: 오전 11:00 ~ 오후 11:00",
+      "수요일: 오전 11:00 ~ 오후 11:00",
+      "목요일: 오전 11:00 ~ 오후 11:00",
+      "금요일: 오전 11:00 ~ 오후 11:00",
+      "토요일: 오전 11:00 ~ 오후 11:00",
+      "일요일: 오전 11:00 ~ 오후 11:00"
+    ]
   },
   {
     "이름": "시골통돼지볶음 부산대점",
@@ -1089,7 +1435,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZPILDNBIG4NiWTlDUFaUgws6qozfesK7M-kCJJZfExOqySEr9RbV-7-cJH3Hpt0hv9mykP-S4TvAc2_7di01tDL5N_aSVV66WrzpIk7WOTflanwfKamRYvFtrGlLy-9SHCzfw8WaIgVKdhR7fw=s1600-w800",
     "lat": 35.233947,
-    "lng": 129.086621
+    "lng": 129.086621,
+    "전화번호": "051-515-7747",
+    "운영시간": [
+      "월요일: 오전 11:30 ~ 오후 10:00",
+      "화요일: 오전 11:30 ~ 오후 10:00",
+      "수요일: 오전 11:30 ~ 오후 10:00",
+      "목요일: 오전 11:30 ~ 오후 10:00",
+      "금요일: 오전 11:30 ~ 오후 10:00",
+      "토요일: 오전 11:30 ~ 오후 10:00",
+      "일요일: 오전 11:30 ~ 오후 10:00"
+    ]
   },
   {
     "이름": "상생라멘 부산대점",
@@ -1111,7 +1467,9 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZMkt-KJ12xPdfvHn16_wMOvSxfY8vpE_owwMuBKBKOSYnxitK1nF45X929a1B5l-Sgbn1iRS0GzVg3IGkkuMUtKU5uE4vF8_Gd04hGjGX2wts0IIOUzVXn6Gp0mCpL6Ei6sm1BzifHIUNXbXK1KpPtCig=s1600-w800",
     "lat": 35.2279521,
-    "lng": 129.0836587
+    "lng": 129.0836587,
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "라멘쿠우",
@@ -1133,7 +1491,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZPNqK68k4FjXTOVShd9-t62GJJe76OH_lReaqmEoryH50YgkPYHjdZEoI-B8IXg-KINeu1D1oJ6MzDd4oIhDXCHs5ZrLd15-M1tmwiX_G8UN0qp_hIqldIVRBCa1aELJZZb_i2UW4g_VDly5f2EktqU9Q=s1600-w800",
     "lat": 35.2233075,
-    "lng": 129.0814906
+    "lng": 129.0814906,
+    "전화번호": "010-2434-8730",
+    "운영시간": [
+      "월요일: 오전 11:30 ~ 오후 9:00",
+      "화요일: 오전 11:30 ~ 오후 9:00",
+      "수요일: 오전 11:30 ~ 오후 9:00",
+      "목요일: 오전 11:30 ~ 오후 9:00",
+      "금요일: 오전 11:30 ~ 오후 9:00",
+      "토요일: 오전 11:30 ~ 오후 9:00",
+      "일요일: 오전 11:30 ~ 오후 9:00"
+    ]
   },
   {
     "이름": "은화수식당 부산대점",
@@ -1155,7 +1523,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZN9YfNqoW2PEZ_G0PE-OdY5TqCeFP2VV-vv7Vb10wXMrhH3fsFhDWqUNWzt9t07NtM2XnBIdbB2vXNjNHLu3LNN22DwPzWigSuZnDWy6BsTIQZ5aCxHcFKDbO39mWaH8iB27vM4_2M4SVYzG7Y=s1600-w800",
     "lat": 35.2233075,
-    "lng": 129.0814906
+    "lng": 129.0814906,
+    "전화번호": "051-517-2690",
+    "운영시간": [
+      "월요일: 오전 11:30 ~ 오후 10:00",
+      "화요일: 오전 11:30 ~ 오후 10:00",
+      "수요일: 오전 11:30 ~ 오후 10:00",
+      "목요일: 오전 11:30 ~ 오후 10:00",
+      "금요일: 오전 11:30 ~ 오후 10:00",
+      "토요일: 오전 11:30 ~ 오후 10:00",
+      "일요일: 오전 11:30 ~ 오후 10:00"
+    ]
   },
   {
     "이름": "미가락",
@@ -1177,7 +1555,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZON-05jvmi4IP1K0S_rzYk3OQKV5uOeyx9yGEL5s0l8PoGgIdTxirfEUEhHC-BgDRe3g17iB_5VKVhqn_ghR-5CPmTJC_RY5vrjDYCc5e3lxcxEMsA3ywOOFRD3JmkFKqlAQwUhcgn8fwjnpwR3XT_2cA=s1600-w800",
     "lat": 35.2310287,
-    "lng": 129.0903932
+    "lng": 129.0903932,
+    "전화번호": null,
+    "운영시간": [
+      "월요일: 오전 11:30 ~ 오후 9:00",
+      "화요일: 오전 11:30 ~ 오후 9:00",
+      "수요일: 오전 11:30 ~ 오후 9:00",
+      "목요일: 오전 11:30 ~ 오후 9:00",
+      "금요일: 오전 11:30 ~ 오후 9:00",
+      "토요일: 오전 11:30 ~ 오후 9:00",
+      "일요일: 오전 11:30 ~ 오후 9:00"
+    ]
   },
   {
     "이름": "안다미로",
@@ -1199,7 +1587,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZNAcZHEOPXkP75DBXdgtkLgj-ViVRfFCw44QrLYsCJbqI4YoPDzlTCFqKeajJesZ8WKMLPGrllaW5XhW7LxP8AbpbwMNF3LlT5e8lE2te0yRgy-yniTh0WhtIsQPzTN5zeITx_CdFIm6yEv0Q=s1600-w800",
     "lat": 35.2354027,
-    "lng": 129.0838596
+    "lng": 129.0838596,
+    "전화번호": "051-581-1230",
+    "운영시간": [
+      "월요일: 오전 9:30 ~ 오후 7:00",
+      "화요일: 오전 9:30 ~ 오후 7:00",
+      "수요일: 오전 9:30 ~ 오후 7:00",
+      "목요일: 오전 9:30 ~ 오후 7:00",
+      "금요일: 오전 9:30 ~ 오후 7:00",
+      "토요일: 오전 9:30 ~ 오후 7:00",
+      "일요일: 오전 9:30 ~ 오후 7:00"
+    ]
   },
   {
     "이름": "야마벤또",
@@ -1221,7 +1619,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZPW9kiDnnTT_VgduefdOts4sTFC7Q_CCmanz7SviMvl4J0fIMPWLkUpYdppVYB4iiPGek7y3aAySqszxZwfc_E0_K9llssHJWWpaCdpEmWg8rAovPnDOh5Y-RATHscOpAkZcdqjiwYBKywauQ=s1600-w800",
     "lat": 35.2646009,
-    "lng": 129.0885944
+    "lng": 129.0885944,
+    "전화번호": null,
+    "운영시간": [
+      "월요일: 오전 11:00 ~ 오후 9:00",
+      "화요일: 오전 11:00 ~ 오후 9:00",
+      "수요일: 오전 11:00 ~ 오후 9:00",
+      "목요일: 오전 11:00 ~ 오후 9:00",
+      "금요일: 오전 11:00 ~ 오후 9:00",
+      "토요일: 오전 11:00 ~ 오후 9:00",
+      "일요일: 휴무일"
+    ]
   },
   {
     "이름": "스시미도리",
@@ -1240,7 +1648,9 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZPC7IPt5-hHhPd16sWcJZWdNSaIgwUkHcHI2-GhkM0fyczG9zvueLnDbzo_qCS3rbGFK8l489zHN1RQJ_RpyhDeEJICQDx1OBw2vlsRDqdtvOlVOw0Ne9AoQ2wGSZoPuYTClI9tNfOu8G1D4AtrQgPJ=s1600-w800",
     "lat": 35.232927,
-    "lng": 129.0862543
+    "lng": 129.0862543,
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "야마즈미우동",
@@ -1262,7 +1672,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZNk7gTpQF4Zzq-uXyWig6_5q6_ZILPBQCa53UILcfck6pUKJowqUuUW6j1ZO9znRpnOKJUJinLw7GsS39rWsDMUnEZFdaxsen3diNdhE6sQ-uLLCoRafXUbQ1VW5THBkQReK_0OGlgP5HbvMg=s1600-w800",
     "lat": 35.2279521,
-    "lng": 129.0836587
+    "lng": 129.0836587,
+    "전화번호": "051-944-3438",
+    "운영시간": [
+      "월요일: 휴무일",
+      "화요일: 오전 11:00 ~ 오후 3:00, 오후 5:00~8:00",
+      "수요일: 오전 11:00 ~ 오후 3:00, 오후 5:00~8:00",
+      "목요일: 오전 11:00 ~ 오후 3:00, 오후 5:00~8:00",
+      "금요일: 오전 11:00 ~ 오후 3:00, 오후 5:00~8:00",
+      "토요일: 오전 11:00 ~ 오후 3:00, 오후 5:00~8:00",
+      "일요일: 휴무일"
+    ]
   },
   {
     "이름": "정직유부 부산대점",
@@ -1281,7 +1701,9 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZMzKTYmniDwT5pUHR49Tj8QAFSicOhE-apC2XIFuuu4VtwJXLHj9hd31ZRNkDnbhh8YtJKCOAniVd6V-TiJg3bUC53k58ooXLKjtxdWdeYFRSxilAu1P8EtCW-4OpuUrMl98RQ7FEYPZqb-_ctpEoHUtQ=s1600-w800",
     "lat": 35.2646009,
-    "lng": 129.0885944
+    "lng": 129.0885944,
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "부산대 홋코리",
@@ -1299,7 +1721,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZNxAR_J6xtOQFQ8QHsqbvPSUEuP6n0eRpA94ICCPndSdVFRfvxHazadYo6zCstjktJW1nv4lEM7dG7lQrzTguw1qT62DjDwZ5jWbgVRx9yc47xNvDTqsLwNvgFHr7stU3cNv9eDFGgUa3zkDZXFZPFGkg=s1600-w800",
     "lat": 35.232927,
-    "lng": 129.0862543
+    "lng": 129.0862543,
+    "전화번호": "010-7607-9171",
+    "운영시간": [
+      "월요일: 오후 5:00 ~ 오전 2:00",
+      "화요일: 오후 5:00 ~ 오전 2:00",
+      "수요일: 오후 5:00 ~ 오전 2:00",
+      "목요일: 오후 5:00 ~ 오전 2:00",
+      "금요일: 오후 5:00 ~ 오전 2:00",
+      "토요일: 오후 5:00 ~ 오전 2:00",
+      "일요일: 오후 5:00 ~ 오전 2:00"
+    ]
   },
   {
     "이름": "야키도리 디귿",
@@ -1317,7 +1749,9 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZNzye8-SLT9InTlFOlfWVMcJXZXxwoGh13UiCxbaB-5okb6hHfCBuAIz6SsWVVZ5z5rOOatMyvR592Mb0uktHxxv6ADz7g5tQGgOUlD0mmLyJdQF7In-lJHHUbTcTo--gSYKWTGsAIWcdXo0Q=s1600-w800",
     "lat": 35.233947,
-    "lng": 129.086621
+    "lng": 129.086621,
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "겐로쿠우동 부산대점",
@@ -1339,7 +1773,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZNeURLDzpZOdig0jXv6OHavOXspxIJV4C-VU_RYDWfHa9j3h7AMAOm8VJRjOsrBi_oaBDddZgqRRPZqNjk3jncD4lWAVwBgmIdyO0LH0mmYQfwwoBp-mIaD1EcAXP1gZMriO-jMqYLlrH8qTw=s1600-w800",
     "lat": 35.2311682,
-    "lng": 129.0877205
+    "lng": 129.0877205,
+    "전화번호": null,
+    "운영시간": [
+      "월요일: 오전 11:30 ~ 오후 9:00",
+      "화요일: 오전 11:30 ~ 오후 9:00",
+      "수요일: 오전 11:30 ~ 오후 9:00",
+      "목요일: 오전 11:30 ~ 오후 9:00",
+      "금요일: 오전 11:30 ~ 오후 9:00",
+      "토요일: 오전 11:30 ~ 오후 9:00",
+      "일요일: 오전 11:30 ~ 오후 9:00"
+    ]
   },
   {
     "이름": "백소정 부산대점",
@@ -1361,7 +1805,9 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZOsBK1VBBLlI1xGB2mQyxhwPorwf0zS_sgcwObiTPRi15okQyWoYfMzDh27f9nSk-j9_kYXhShOfZI_f5eLuhnG8sbSgHaGA9-DolScfjhi4cuxrJz-mkvLLeiKtmma7K_Wfvb-hTUx-sk59A=s1600-w800",
     "lat": 35.2300006,
-    "lng": 129.0855699
+    "lng": 129.0855699,
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "라멘정 부산대학점",
@@ -1383,7 +1829,9 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZPjxN4Tf6qOn_792dFb7Pc7b52yTIVbrjgUSh4bmibePy94N9uF_h0UbaLT7msU7CYUhMPTMVfGBQ3WBaeuc5Y7LHpqewFThS7mVsgjqFrwRY0S7T9jrjorqr_DyMpCWgwevyT9CYUHs7EuJg=s1600-w800",
     "lat": 35.2300006,
-    "lng": 129.0855699
+    "lng": 129.0855699,
+    "전화번호": "051-517-9192",
+    "운영시간": []
   },
   {
     "이름": "미슐당 부산대점",
@@ -1405,7 +1853,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZMl1DGlefC67g8FE8qTSwXXsC1eUrCE4TX6fE1z4BVdwIyN3pk2jjNC84oeHya7VBMzYQZLbKFNdmPqiAyaIyujvruspE75G0_Qz7uKiqTHMMgFstxu0Ji09hSHA2MaBKC9OBQDMcaVUXpP84QNBV7M=s1600-w800",
     "lat": 35.230434,
-    "lng": 129.0839729
+    "lng": 129.0839729,
+    "전화번호": "010-7171-4311",
+    "운영시간": [
+      "월요일: 오전 11:30 ~ 오후 3:00, 오후 5:00~9:00",
+      "화요일: 오전 11:30 ~ 오후 3:00, 오후 5:00~9:00",
+      "수요일: 오전 11:30 ~ 오후 3:00, 오후 5:00~9:00",
+      "목요일: 오전 11:30 ~ 오후 3:00, 오후 5:00~9:00",
+      "금요일: 오전 11:30 ~ 오후 3:00, 오후 5:00~9:00",
+      "토요일: 오전 11:30 ~ 오후 3:00, 오후 5:00~9:00",
+      "일요일: 오전 11:30 ~ 오후 3:00, 오후 5:00~9:00"
+    ]
   },
   {
     "이름": "톤쇼우 부산대본점",
@@ -1427,7 +1885,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZPise0Qb2MGlF0XIN8gIG9vkUvTuNeSIS57CaDeUEL4ipRBiSlQvHIZsjCBKghYevZHf4X293goytt7SzvAFvu88kzg0-pwg2ZbieACsiULL1uyoiUUdQB_TtVNHanI-bW7o4vm8Xcu3gwC9GSbsxll4Q=s1600-w800",
     "lat": 35.2279521,
-    "lng": 129.0836587
+    "lng": 129.0836587,
+    "전화번호": "010-5685-5482",
+    "운영시간": [
+      "월요일: 오전 11:00 ~ 오후 9:00",
+      "화요일: 오전 11:00 ~ 오후 9:00",
+      "수요일: 오전 11:00 ~ 오후 9:00",
+      "목요일: 오전 11:00 ~ 오후 9:00",
+      "금요일: 오전 11:00 ~ 오후 9:00",
+      "토요일: 오전 11:00 ~ 오후 9:00",
+      "일요일: 오전 11:00 ~ 오후 9:00"
+    ]
   },
   {
     "이름": "구루메",
@@ -1449,7 +1917,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZO5E5FkYMOpA-gJ5w1dDGj6pJ691yqpnTriUF4BUpdI0uHC25ILyqJ7f96VaWo3Y2DrQACMJUZWFtmagJCPvxWFDyRL7hc5QDP4tfIm7QffatlGQRvV6TUzcUZ4L4yvkZDOYgr6TLSDJ3gMAId9pckH=s1600-w800",
     "lat": 35.230434,
-    "lng": 129.0839729
+    "lng": 129.0839729,
+    "전화번호": "051-512-0311",
+    "운영시간": [
+      "월요일: 오전 9:00 ~ 오후 6:00",
+      "화요일: 오전 9:00 ~ 오후 6:00",
+      "수요일: 오전 9:00 ~ 오후 6:00",
+      "목요일: 오전 9:00 ~ 오후 6:00",
+      "금요일: 오전 9:00 ~ 오후 6:00",
+      "토요일: 휴무일",
+      "일요일: 휴무일"
+    ]
   },
   {
     "이름": "나베야 부산대점",
@@ -1471,7 +1949,9 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZOvoWoWCyU2-0LdXvAWXSj1QIvu7KgTVWQFP7xTHbyYVmoyCdP--XZwljTr9KPWtmDOuTOiMeqwVpbYZhtavcqn864wqbc988aKiqqq3uD0LgPlm2cgbkEV-1ofuwx3pFbLzVM10d14WrEMwg=s1600-w800",
     "lat": 35.2233075,
-    "lng": 129.0814906
+    "lng": 129.0814906,
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "코타츠",
@@ -1493,7 +1973,9 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZPT9j10qFLinDON6uzZKPVxNloBp2eWvwnaVdC04UmXy741_BiAXszf3W7VH_sRYnguD64aUAzHMEIJLxe_3rX19s9Tn0Q7HWb_I5zLe8rrSe7ug2KEIJh3mCWMIm-hixtVIQ48csF3bSu2RHniLYjepA=s1600-w800",
     "lat": 35.2300006,
-    "lng": 129.0855699
+    "lng": 129.0855699,
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "백초밥",
@@ -1508,7 +1990,9 @@
     "리뷰수": 633,
     "사진목록": [],
     "lat": 35.2424761,
-    "lng": 129.0889306
+    "lng": 129.0889306,
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "마마도마 부산대점",
@@ -1530,7 +2014,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZO6HZKAjKQd35GG9-7k86M-_PvY2y-kSB6cnk6hJkPRi8Y3cawb-NQda1QydFh7_YtgzXQLBWvYHPZ5nyGeWdKWG2P9QABmJRkKGv_0IN-iz4x3xdjms8Wk7uuWbe7aZ60ugLaCDHU9CKCiaYEUAhNb=s1600-w800",
     "lat": 35.2302974,
-    "lng": 129.0851732
+    "lng": 129.0851732,
+    "전화번호": null,
+    "운영시간": [
+      "월요일: 오전 11:30 ~ 오후 10:00",
+      "화요일: 오전 11:30 ~ 오후 10:00",
+      "수요일: 오전 11:30 ~ 오후 10:00",
+      "목요일: 오전 11:30 ~ 오후 10:00",
+      "금요일: 오전 11:30 ~ 오후 10:00",
+      "토요일: 오전 11:30 ~ 오후 10:00",
+      "일요일: 오전 11:30 ~ 오후 10:00"
+    ]
   },
   {
     "이름": "우마이도 부산대점",
@@ -1552,7 +2046,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZPr-04cL9SPsU4XSiOP_HG0mOHtNWPov69oYx9XqwscdMa-6MDHdLeTm_cqBxo-eHX0ak9FtNiGL_f5UEv6MN0INOTBmbj0S2vyc9sW5PfJ8NsBLTyoFCIYG4bnGkq4LwqdAamlPqCLH1aNRQ=s1600-w800",
     "lat": 35.2646009,
-    "lng": 129.0885944
+    "lng": 129.0885944,
+    "전화번호": "051-514-8785",
+    "운영시간": [
+      "월요일: 오전 11:30 ~ 오후 3:00, 오후 5:00~9:00",
+      "화요일: 오전 11:30 ~ 오후 3:00, 오후 5:00~9:00",
+      "수요일: 오전 11:30 ~ 오후 3:00, 오후 5:00~9:00",
+      "목요일: 오전 11:30 ~ 오후 3:00, 오후 5:00~9:00",
+      "금요일: 오전 11:30 ~ 오후 3:00, 오후 5:00~9:00",
+      "토요일: 오전 11:30 ~ 오후 3:00, 오후 5:00~9:00",
+      "일요일: 휴무일"
+    ]
   },
   {
     "이름": "긴자료코 부산대점",
@@ -1574,7 +2078,9 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZOat7uXUWuGsqExuwo7CBU7tAnkFpRmNVR-mT45PFJA6JEmweWg5RClJWnjtR_exfr60fgPKVT_GW36ldQnvTqB9Zf9hoJmo6c18teUwpIyqZZ9N7qPjWwbLUsfHUc3u4ujuPE5ALZZ64_7I-crZl1fjw=s1600-w800",
     "lat": 35.2646009,
-    "lng": 129.0885944
+    "lng": 129.0885944,
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "규카츠정 부산대점",
@@ -1596,7 +2102,9 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZMqSoBi171NwCHRpO3aJe1oaoa5dCuSSJsqwXw-Rgtu0p5yhrVzA1qVgQxTVqlqSZePS4V8zvPrEt4xiI12t-K4G99ySaTPOaEK3DyxGkZqrhfci9MYPZDo948vyL8Stb4Z0sfrsUQRByZORxxeNrb8=s1600-w800",
     "lat": 35.2646009,
-    "lng": 129.0885944
+    "lng": 129.0885944,
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "코하루",
@@ -1618,7 +2126,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZOB5FOu1OiI-iaTuyLSZRHOj4cj10DA21W-UkM7QhY0O3_Sk3oZSfpDCl64SP3B8GLPU5UvGqbtLR5ZMQ0kqcYSkGBfEaVsEITsOu6OzVKyI_sSjPSZvU_wRGOkiMqQqClTML2z0f-yv0-1=s1600-w800",
     "lat": 35.233163,
-    "lng": 129.0876526
+    "lng": 129.0876526,
+    "전화번호": "051-516-4392",
+    "운영시간": [
+      "월요일: 오전 11:00 ~ 오후 10:00",
+      "화요일: 오전 11:00 ~ 오후 10:00",
+      "수요일: 오전 11:00 ~ 오후 10:00",
+      "목요일: 오전 11:00 ~ 오후 10:00",
+      "금요일: 오전 11:00 ~ 오후 10:00",
+      "토요일: 오전 11:00 ~ 오후 10:00",
+      "일요일: 오전 11:00 ~ 오후 10:00"
+    ]
   },
   {
     "이름": "파파존스 부산대점",
@@ -1640,7 +2158,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZNlBrSha1PDSDu7aTrQpOMfVRoZ-14EyYIL_s2C6e-nUjm2Y0lxsDlSKO2uFtf0Fr1oZdCwGmJA2TxcEP0kuad1x2o-NCuCVOFTLm05X0QNePwL3Nfvy0V9fXI7SfPvoWJkdpxZtvtrW2Y6=s1600-w800",
     "lat": 35.2311682,
-    "lng": 129.0877205
+    "lng": 129.0877205,
+    "전화번호": "051-512-8144",
+    "운영시간": [
+      "월요일: 오전 11:00 ~ 오후 10:00",
+      "화요일: 오전 11:00 ~ 오후 10:00",
+      "수요일: 오전 11:00 ~ 오후 10:00",
+      "목요일: 오전 11:00 ~ 오후 10:00",
+      "금요일: 오전 11:00 ~ 오후 10:00",
+      "토요일: 오전 11:00 ~ 오후 10:00",
+      "일요일: 오전 11:00 ~ 오후 10:00"
+    ]
   },
   {
     "이름": "몽포트",
@@ -1662,7 +2190,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZOnWhsl-XoD3lTwoMc_d4e2Nbnk3EAGX8DyHOVkZpnOqqFsqFPc4m2PtlDf6lOZBfMmxt1NPENkhzsZfwDP8HhwVl0XwKDWkoLKcizK7yPdOfy7iPIW1c4VccO30ur35r84H8aDjJ4kUg2PDh0=s1600-w800",
     "lat": 35.230434,
-    "lng": 129.0839729
+    "lng": 129.0839729,
+    "전화번호": "051-583-0981",
+    "운영시간": [
+      "월요일: 오전 11:30 ~ 오후 9:30",
+      "화요일: 오전 11:30 ~ 오후 9:30",
+      "수요일: 오전 11:30 ~ 오후 9:30",
+      "목요일: 오전 11:30 ~ 오후 9:30",
+      "금요일: 오전 11:30 ~ 오후 9:30",
+      "토요일: 오전 11:30 ~ 오후 9:30",
+      "일요일: 오전 11:30 ~ 오후 9:30"
+    ]
   },
   {
     "이름": "리틀프랑 본점",
@@ -1684,7 +2222,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZPJXr9_NFFcfNsbnv6gtzjWJr58dUBRXv4S1ozLacQvfTT1HIkK_KEZIu47l-zTifdQA89C_hLea5gKUCxWMZPtAlOF1XWHfhu7589Z2k279i1BGT55YxvDgcjyuAxZqijtumNMgobfvcy5IGo=s1600-w800",
     "lat": 35.2310287,
-    "lng": 129.0903932
+    "lng": 129.0903932,
+    "전화번호": "051-581-0056",
+    "운영시간": [
+      "월요일: 오전 11:00 ~ 오후 6:00",
+      "화요일: 오전 11:00 ~ 오후 6:00",
+      "수요일: 오전 11:00 ~ 오후 6:00",
+      "목요일: 오전 11:00 ~ 오후 6:00",
+      "금요일: 오전 11:00 ~ 오후 6:00",
+      "토요일: 오전 11:00 ~ 오후 6:00",
+      "일요일: 오전 11:00 ~ 오후 6:00"
+    ]
   },
   {
     "이름": "델라고 부산대점",
@@ -1706,7 +2254,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZMu1ycLVTY46ZUavkL_WW4cfOhG3oBpIGNN44QnP_faA_g8WQXAD2dxQsAue0MWetvhJtSc7fCihGaoHUv1ZMI1B7FhwauhsZ-Kl4DnK5IyT3SbCPGmMA8UH8XPR-D9xBBiW1wH7OC3GMul32s=s1600-w800",
     "lat": 35.2646009,
-    "lng": 129.0885944
+    "lng": 129.0885944,
+    "전화번호": "051-515-1504",
+    "운영시간": [
+      "월요일: 오전 11:00 ~ 오후 10:00",
+      "화요일: 오전 11:00 ~ 오후 10:00",
+      "수요일: 오전 11:00 ~ 오후 10:00",
+      "목요일: 오전 11:00 ~ 오후 10:00",
+      "금요일: 오전 11:00 ~ 오후 10:00",
+      "토요일: 오전 11:00 ~ 오후 10:00",
+      "일요일: 오전 11:00 ~ 오후 10:00"
+    ]
   },
   {
     "이름": "잇쇼우안스테이크 본점",
@@ -1728,7 +2286,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZNz4EhHFkbWdL2OULbdouNxir4fGP92zmhh7tZoZNotKKiW5XGnRRXng-KvUFyJa0z4HqPm0iDtk5TLKbtAqQClz0z38bRN9gbrRQRxmye_6dTyH_Sv9IVokGEDoYG0Mmr-GbrkiLbY8u3_h04=s1600-w800",
     "lat": 35.233947,
-    "lng": 129.086621
+    "lng": 129.086621,
+    "전화번호": "051-515-0019",
+    "운영시간": [
+      "월요일: 오전 11:30 ~ 오후 10:00",
+      "화요일: 오전 11:30 ~ 오후 10:00",
+      "수요일: 오전 11:30 ~ 오후 10:00",
+      "목요일: 오전 11:30 ~ 오후 10:00",
+      "금요일: 오전 11:30 ~ 오후 10:00",
+      "토요일: 오전 11:30 ~ 오후 10:00",
+      "일요일: 오전 11:30 ~ 오후 10:00"
+    ]
   },
   {
     "이름": "리멘시타",
@@ -1750,7 +2318,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZO_fCO7ngRd9BhCofe9XECo4zy34wRAH8jZMIg_SEBR3O16sSwELVas_ZuK38XqVntMY5X3OAVy9JjROlLmNBEKEE7Of29Z9lw4K6fa9NPt6mRzH_IV5jtQKoBgGTLYlC8iS1Us8KBWG3tkQQ=s1600-w800",
     "lat": 35.2624194,
-    "lng": 129.0880929
+    "lng": 129.0880929,
+    "전화번호": "051-513-1001",
+    "운영시간": [
+      "월요일: 오전 11:30 ~ 오후 9:30",
+      "화요일: 오전 11:30 ~ 오후 9:30",
+      "수요일: 오전 11:30 ~ 오후 9:30",
+      "목요일: 오전 11:30 ~ 오후 9:30",
+      "금요일: 오전 11:30 ~ 오후 10:00",
+      "토요일: 오전 11:30 ~ 오후 9:30",
+      "일요일: 휴무일"
+    ]
   },
   {
     "이름": "칠리앤버건디",
@@ -1772,7 +2350,9 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZN2ZHwDrIouKpQ_EKr4vbhICx5OtD8B6V3N14__8Ag4eAsZPvX36pX-sESr1UQajj0Oq9boVwOPJm-NmT9wYVLq3oKkcuFs7RB-_z4r76ujFcNAQNRr-l0sO4VpYiDY5VekPY2e8YyW76ufEw=s1600-w800",
     "lat": 35.233947,
-    "lng": 129.086621
+    "lng": 129.086621,
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "엘부리또",
@@ -1794,7 +2374,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZP_X8Zcm5qyeS7vLgTkFL2Xn3ufz7lcmXmy90aZLofPgmbLuSSaKOUfzP3-GDWJuLDthQBlQcrkobLVLu4cKm_ffoWWtrSTuTNKd-3o_3CPNaLFAteG62jnIjzmhFyxi0V_D4rXY61uaiiexao=s1600-w800",
     "lat": 35.2354027,
-    "lng": 129.0838596
+    "lng": 129.0838596,
+    "전화번호": "051-518-3306",
+    "운영시간": [
+      "월요일: 오전 11:00 ~ 오후 8:30",
+      "화요일: 오전 11:00 ~ 오후 8:30",
+      "수요일: 오전 11:00 ~ 오후 8:30",
+      "목요일: 오전 11:00 ~ 오후 8:30",
+      "금요일: 오전 11:00 ~ 오후 8:30",
+      "토요일: 오전 12:00 ~ 오후 5:30",
+      "일요일: 휴무일"
+    ]
   },
   {
     "이름": "해쉬",
@@ -1816,7 +2406,9 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZMsV8C2EruWJEhgjWPUwy-lTE8lP_MSnY9r1ij-rOzLCGP3g42i97Z5IazJtG-r4OHqpKeDVHJjoJ1e8JZZwQhvIux1vqlbSxkThmKPd1_L9a32rfLNoEMuXqQJhemWwQUKX5RlBRWE5tbdcw=s1600-w800",
     "lat": 35.2646009,
-    "lng": 129.0885944
+    "lng": 129.0885944,
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "피나치공 부산대점",
@@ -1834,7 +2426,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZMU4mOt1tSE9lxBcfPDaNO30Tix2wwW3xZ3hb3uRO-E7v4zkzNZTQpxeB3zx2fY8mAYULDnSMM9iozZEKFQ7OAaoYE1C6BIqyYUIbg7yUPRD5i3GPCDT06iI9p37B-wqiGYFcTCafmuy2HbLIo=s1600-w800",
     "lat": 35.265852,
-    "lng": 129.0888809
+    "lng": 129.0888809,
+    "전화번호": "051-583-0034",
+    "운영시간": [
+      "월요일: 오전 11:00 ~ 오후 10:30",
+      "화요일: 오전 11:00 ~ 오후 10:30",
+      "수요일: 오전 11:00 ~ 오후 10:30",
+      "목요일: 오전 11:00 ~ 오후 10:30",
+      "금요일: 오전 11:00 ~ 오후 10:30",
+      "토요일: 오전 11:00 ~ 오후 10:30",
+      "일요일: 오전 11:00 ~ 오후 10:30"
+    ]
   },
   {
     "이름": "코코브라운 부산대본점",
@@ -1856,7 +2458,9 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZMHehDSwfrEEP4q8Ll5Ob4RFznpFiHxbz0OFs9N1WIjZXiXB6cfrMzFj0x2re1KtrTJOgFSzndQDS_-EiN81FigPhKaB8Ta3YmBIubpZ2Lx_Z_tXRQwNhz-tiNS7WU3GTXFG65Kwug02IEmLQA=s1600-w800",
     "lat": 35.2233075,
-    "lng": 129.0814906
+    "lng": 129.0814906,
+    "전화번호": "051-582-0777",
+    "운영시간": []
   },
   {
     "이름": "컬러드",
@@ -1878,7 +2482,9 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZM5Hx4mPg5BrZjjXnfHVzIzXkjw6jx-ZnqCZIhSFCQjxQf5AaRT6NnzYv1TIakAU1d5FrAVEuexZo_u5gwTUaThKhVnbCLWyxVyorwtR3DYgLi7Ojx4eqW7dgcE2-935y8tZxwFo-V24GXi8Bk=s1600-w800",
     "lat": 35.230434,
-    "lng": 129.0839729
+    "lng": 129.0839729,
+    "전화번호": "051-518-3771",
+    "운영시간": []
   },
   {
     "이름": "에픽키친",
@@ -1900,7 +2506,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZPrsVEGIPCMSo9J9ZMurcKFVFCOu38keqD0ijf1fCfbg6twqLt6nTwGs3pHZX210npUS8cS6RFSjvZsQRBcow1phDe3gZkDBLw7aHrFUXPsgVpD4HIlT317MYgTS7-p6w8d_MQwHF6oytlHWw=s1600-w800",
     "lat": 35.2424761,
-    "lng": 129.0889306
+    "lng": 129.0889306,
+    "전화번호": "010-4389-3356",
+    "운영시간": [
+      "월요일: 휴무일",
+      "화요일: 휴무일",
+      "수요일: 오후 5:30~11:00",
+      "목요일: 오후 5:30~11:00",
+      "금요일: 오후 5:30~11:30",
+      "토요일: 오후 12:00~3:00, 오후 5:30~11:00",
+      "일요일: 오후 12:00~3:00, 오후 5:30~10:00"
+    ]
   },
   {
     "이름": "서양식당",
@@ -1922,7 +2538,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZPgQ2ui5S5iBGXbSC6uaQJ4az5C25CiCNmbsznuYiov6lv7RakwdGoheMrKJEH4tyS9417MHzidB-qr0j9srvMVOch2OAH5iGs43e3LdqZxeQBLoAbolcCMJZ5brnsRPWABU_AYNcXnwqv-NGkwWhEDUA=s1600-w800",
     "lat": 35.2301783,
-    "lng": 129.085155
+    "lng": 129.085155,
+    "전화번호": "051-518-0929",
+    "운영시간": [
+      "월요일: 오전 11:00 ~ 오후 9:30",
+      "화요일: 오전 11:00 ~ 오후 9:30",
+      "수요일: 오전 11:00 ~ 오후 9:30",
+      "목요일: 오전 11:00 ~ 오후 9:30",
+      "금요일: 오전 11:00 ~ 오후 9:30",
+      "토요일: 오전 11:00 ~ 오후 9:30",
+      "일요일: 오전 11:00 ~ 오후 9:30"
+    ]
   },
   {
     "이름": "올라",
@@ -1944,7 +2570,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZO8Z_EFfQMRcAgU9a_ZSpkV-Ab57oziBvO320xm7nQDg2Is3pBJJgFZQWLN2SwVYrp7Rn3qbb_U5NdFIId8M7UIkuBcyAn3eWU7ZyZcDaAcyLeAJ4wMUHL-Gc4Mt1JP96-gYMHJ6SaN8Cs-=s1600-w800",
     "lat": 35.2310287,
-    "lng": 129.0903932
+    "lng": 129.0903932,
+    "전화번호": null,
+    "운영시간": [
+      "월요일: 오전 11:30 ~ 오후 3:30, 오후 5:00~10:00",
+      "화요일: 오전 11:30 ~ 오후 3:30, 오후 5:00~10:00",
+      "수요일: 오전 11:30 ~ 오후 3:30, 오후 5:00~10:00",
+      "목요일: 오전 11:30 ~ 오후 3:30, 오후 5:00~10:00",
+      "금요일: 오전 11:30 ~ 오후 3:30, 오후 5:00~10:00",
+      "토요일: 오전 11:30 ~ 오후 3:30, 오후 5:00~10:00",
+      "일요일: 오전 11:30 ~ 오후 3:30, 오후 5:00~10:00"
+    ]
   },
   {
     "이름": "제멜리아",
@@ -1966,7 +2602,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZPhfq3e7-qZmah0FxSJg2Wy1jlew68VFaV4wvhaOLlKbwSzD_Ew7GbrGlkME8aDQSeEu64h2uaJix6bM_aDehvMdmPwmkrCXcenG-4HIhECgJIG8XeaKFqmYRnSkqpGOUhR1GednnoZdiBi7jA=s1600-w800",
     "lat": 35.2300006,
-    "lng": 129.0855699
+    "lng": 129.0855699,
+    "전화번호": "051-514-9822",
+    "운영시간": [
+      "월요일: 오전 11:00 ~ 오후 9:00",
+      "화요일: 오전 11:00 ~ 오후 9:00",
+      "수요일: 오전 11:00 ~ 오후 9:00",
+      "목요일: 오전 11:00 ~ 오후 9:00",
+      "금요일: 오전 11:00 ~ 오후 9:00",
+      "토요일: 오전 11:00 ~ 오후 9:00",
+      "일요일: 휴무일"
+    ]
   },
   {
     "이름": "마린파스타 부산대점",
@@ -1988,7 +2634,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZPkS8e6mEMVTXptbQYxmtX4azyfKz2U179q0BOhw7s9Bi2fMU8nzMRtiM4ZAGp8XXRnE6yZWBj32dWlBNEJUOlFg3dIIX_LtOWwWqC_5nj6BY0HFj0g7zTTzWKjoI5iJUhOJ8bNUazRhSIevQ=s1600-w800",
     "lat": 35.230434,
-    "lng": 129.0839729
+    "lng": 129.0839729,
+    "전화번호": "051-913-2399",
+    "운영시간": [
+      "월요일: 오전 11:30 ~ 오후 9:30",
+      "화요일: 오전 11:30 ~ 오후 9:30",
+      "수요일: 오전 11:30 ~ 오후 9:30",
+      "목요일: 오전 11:30 ~ 오후 9:30",
+      "금요일: 오전 11:30 ~ 오후 9:30",
+      "토요일: 오전 11:30 ~ 오후 9:30",
+      "일요일: 오전 11:30 ~ 오후 9:30"
+    ]
   },
   {
     "이름": "가득피자 금정점",
@@ -2007,7 +2663,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZMyqYfhzW7dM-74i3fBN7zG_J-S15HtCQOOb07JRb8XmPfmowLHtQ9zywHjBQjLEGELezmStGK2ka8l6tVxEs4cxs02dwak_c9etx0dZeXnFA8mk2jIQKQOCQLwjn3x9Yae50H2xbTSRWcDmXgty7vqpg=s1600-w800",
     "lat": 35.2311682,
-    "lng": 129.0877205
+    "lng": 129.0877205,
+    "전화번호": "051-955-5329",
+    "운영시간": [
+      "월요일: 오전 11:00 ~ 오전 1:50",
+      "화요일: 오전 11:00 ~ 오전 1:50",
+      "수요일: 오전 11:00 ~ 오전 1:50",
+      "목요일: 오전 11:00 ~ 오전 1:50",
+      "금요일: 오전 11:00 ~ 오전 1:50",
+      "토요일: 오전 11:00 ~ 오전 1:50",
+      "일요일: 오전 11:00 ~ 오전 1:50"
+    ]
   },
   {
     "이름": "노모어피자 부산대점",
@@ -2029,7 +2695,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZPGxy3PCo3cOmeBHUiY6c2dk6FjEdj4MRMqLFW4L3lGj8fPESMQgaXIj0sJujaUgAV-OjsbOjgQgT00sEMgqXDfZ8hzCSY9rQnfAPQXj_QOnRGFf-_SZTjT2e3Tpxg9jAMRwCoJF7gcMZ2pPngktCuR=s1600-w800",
     "lat": 35.2305396,
-    "lng": 129.0877497
+    "lng": 129.0877497,
+    "전화번호": null,
+    "운영시간": [
+      "월요일: 오전 11:00 ~ 오후 10:30",
+      "화요일: 오전 11:00 ~ 오후 10:30",
+      "수요일: 오전 11:00 ~ 오후 10:30",
+      "목요일: 오전 11:00 ~ 오후 10:30",
+      "금요일: 오전 11:00 ~ 오후 10:30",
+      "토요일: 오전 11:00 ~ 오후 10:30",
+      "일요일: 오전 11:00 ~ 오후 10:30"
+    ]
   },
   {
     "이름": "테라비 부산대점",
@@ -2044,7 +2720,9 @@
     "리뷰수": 3124,
     "사진목록": [],
     "lat": 35.2323,
-    "lng": 129.0876
+    "lng": 129.0876,
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "옐로우피자 부산대점",
@@ -2059,7 +2737,17 @@
     "리뷰수": 31,
     "사진목록": [],
     "lat": 35.2301783,
-    "lng": 129.085155
+    "lng": 129.085155,
+    "전화번호": null,
+    "운영시간": [
+      "월요일: 오후 1:30~10:00",
+      "화요일: 오후 1:30~10:00",
+      "수요일: 오후 1:30~10:00",
+      "목요일: 오후 1:30~10:00",
+      "금요일: 오후 1:30~10:00",
+      "토요일: 오후 1:30~10:00",
+      "일요일: 오후 1:30~10:00"
+    ]
   },
   {
     "이름": "호작",
@@ -2081,7 +2769,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZMBlPb7JHnx22Ec6hJ-fni0HYGexmU9vsXYGo0w-igEjOsinLZwn2QQvFMudSrLg_6IqxmAE-0UG50bjd02lTNzRQ_Navas8vmSZIfSrKVr8gCP4f3xvSjBoOtq3lGXHSoS1Rcd9RkaCdSwo68=s1600-w800",
     "lat": 35.2323,
-    "lng": 129.0876
+    "lng": 129.0876,
+    "전화번호": null,
+    "운영시간": [
+      "월요일: 휴무일",
+      "화요일: 오후 12:00~9:00",
+      "수요일: 오후 12:00~9:00",
+      "목요일: 오후 12:00~9:00",
+      "금요일: 오후 12:00~9:00",
+      "토요일: 오후 12:00~9:00",
+      "일요일: 오후 12:00~9:00"
+    ]
   },
   {
     "이름": "키노",
@@ -2103,7 +2801,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZPOL3gO5YeDMFN3N_s1H_IGeWIwzarn3oQ81JCkHZLYYBK05hLRO7zdVHSqWlFOTvpK69C8fOcxiMgKPluMHK8rz8dIySjgaUl-KsJiuYQ8WZOhN-rbPyxpKHmwLPC2V_OIMziTWb0mxCXl5g=s1600-w800",
     "lat": 35.2290283,
-    "lng": 129.0880344
+    "lng": 129.0880344,
+    "전화번호": "010-9141-9047",
+    "운영시간": [
+      "월요일: 휴무일",
+      "화요일: 오전 11:00 ~ 오후 10:00",
+      "수요일: 오전 11:00 ~ 오후 10:00",
+      "목요일: 오전 11:00 ~ 오후 10:00",
+      "금요일: 오전 11:00 ~ 오후 10:00",
+      "토요일: 오전 11:00 ~ 오후 10:00",
+      "일요일: 오전 11:00 ~ 오후 10:00"
+    ]
   },
   {
     "이름": "까르보네 부산대점",
@@ -2125,7 +2833,9 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZNqJ0HK0mir718JZ9fdFkqaW20gq-ZiuQVx6kitQP5kqclA22zvnJlGyAU7QUPC1Xji2xB0tTXEkQcfo9cvTcwLnm3jJoP42j3XivCN7lQsAIfFpEo7a0-dmU4EyQtlv2VJwXy9ApbD6QJv2LE=s1600-w800",
     "lat": 35.2362407,
-    "lng": 129.0885362
+    "lng": 129.0885362,
+    "전화번호": "051-515-9414",
+    "운영시간": []
   },
   {
     "이름": "프랭크버거 부산대점",
@@ -2145,7 +2855,9 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZMQQyB-rC9sBnOQFQ4wjbYhhGRllYtGxlixlI1E6ODC1egfGKh-GyVe31T60f5VNqwxRt-TZMbgVgAP-jRpT6NwboYnbMtlWJG5q7GxflwLC_tL1dDIi66V0Uq7b10ACtdH1oTHQ28bsE7J-g=s1600-w800",
     "lat": 35.2362407,
-    "lng": 129.0885362
+    "lng": 129.0885362,
+    "전화번호": "051-515-0057",
+    "운영시간": []
   },
   {
     "이름": "크레딧버거",
@@ -2167,7 +2879,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZPlqxHkknVSrTuupTgfCF-GqWbzbvFvwrfcyHsliG-hyeQeN0zWkVN5td8F02KMQwNbVPtf3CT3Q0yErSZFB06xJlD8nE76vm7Oc3iR5cp8KY6fS56J8Hqhm22A1FMQEqK5Qfi-7leQLoniSa8=s1600-w800",
     "lat": 35.2290664,
-    "lng": 129.0879957
+    "lng": 129.0879957,
+    "전화번호": "010-4225-1465",
+    "운영시간": [
+      "월요일: 오전 11:30 ~ 오후 8:00",
+      "화요일: 오전 11:30 ~ 오후 8:00",
+      "수요일: 오전 11:30 ~ 오후 8:00",
+      "목요일: 오전 11:30 ~ 오후 8:00",
+      "금요일: 오전 11:30 ~ 오후 8:00",
+      "토요일: 오전 11:30 ~ 오후 8:00",
+      "일요일: 오전 11:30 ~ 오후 8:00"
+    ]
   },
   {
     "이름": "애슐리퀸즈 NC부산대점",
@@ -2189,7 +2911,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZPLP2DhyFZCIkQ5E7n_TRdCikrhINyXZgajc5Qoq90FogybrZ32YD1gElpHnzmTsvHrNa-ruNYPDX34wVTtAdEXrXyUPYC-RVxo3sthOtUkNvaIdrtexrC1kcX2acGTSB8j7IjHnPBp9Ead=s1600-w766",
     "lat": 35.230434,
-    "lng": 129.0839729
+    "lng": 129.0839729,
+    "전화번호": "050-71406-7360",
+    "운영시간": [
+      "월요일: 오전 11:00 ~ 오후 3:00, 오후 5:00~9:00",
+      "화요일: 오전 11:00 ~ 오후 3:00, 오후 5:00~9:00",
+      "수요일: 오전 11:00 ~ 오후 3:00, 오후 5:00~9:00",
+      "목요일: 오전 11:00 ~ 오후 3:00, 오후 5:00~9:00",
+      "금요일: 오전 11:00 ~ 오후 3:00, 오후 5:00~9:00",
+      "토요일: 오전 11:00 ~ 오후 9:00",
+      "일요일: 오전 11:00 ~ 오후 9:00"
+    ]
   },
   {
     "이름": "부어치킨 부산대점",
@@ -2210,7 +2942,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZOrc3bX4awrKWK7KbEvdesOZ1asKM0WGV_77T3LBUuj8r0x9Re6asQGPb7zPtN--Sv-nHStVPVDyObA-MLm_MdMTvxYntyKbH6BOl-8-BHbXrwDm5dhP6XvbIMl3xhUo-KR6-dvjmcDIpZId3y4M5hf=s1600-w800",
     "lat": 35.2646009,
-    "lng": 129.0885944
+    "lng": 129.0885944,
+    "전화번호": null,
+    "운영시간": [
+      "월요일: 오전 11:00 ~ 오전 3:00",
+      "화요일: 오전 11:00 ~ 오전 3:00",
+      "수요일: 오전 11:00 ~ 오전 3:00",
+      "목요일: 오전 11:00 ~ 오전 3:00",
+      "금요일: 오전 11:00 ~ 오전 3:00",
+      "토요일: 오전 11:00 ~ 오전 3:00",
+      "일요일: 오전 11:00 ~ 오전 3:00"
+    ]
   },
   {
     "이름": "부들파이터 부산대점",
@@ -2232,7 +2974,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZPo-9sfJQmQCavPQ4LH7x8nk5yuTH884YXvcgFk2LEFKwns1_utfDKwT4hJQFvn1PzjZ6DMhagnNuKYQpda-DdiUKA7QNZcknXOfKX-IUWulj7WfF1v9TnQq5ibBk-hkaPeR8_r79Z8ZqT-=s1600-w800",
     "lat": 35.2646009,
-    "lng": 129.0885944
+    "lng": 129.0885944,
+    "전화번호": "051-518-2186",
+    "운영시간": [
+      "월요일: 오전 11:30 ~ 오후 3:00, 오후 5:00~9:00",
+      "화요일: 오전 11:30 ~ 오후 3:00, 오후 5:00~9:00",
+      "수요일: 오전 11:30 ~ 오후 3:00, 오후 5:00~9:00",
+      "목요일: 오전 11:30 ~ 오후 3:00, 오후 5:00~9:00",
+      "금요일: 오전 11:30 ~ 오후 3:00, 오후 5:00~9:00",
+      "토요일: 오전 11:30 ~ 오후 3:00, 오후 5:00~9:00",
+      "일요일: 오전 11:30 ~ 오후 3:00, 오후 5:00~9:00"
+    ]
   },
   {
     "이름": "아웃닭 부산대점",
@@ -2252,7 +3004,9 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZNwgt7Wd2-ZPBLaaFc0BsF7-pwmCZEJA1YJzE6yAXGBwsPsCoAUF1MDy9JGffmRLudi6Dd1ymrKFBXRdPwtRb0JbsAWAOht9yAfVXCNAsPgHp1C1ztGfci4J9lFINSNh66CWVKC9-ve6Jvu87osX5qk=s1600-w800",
     "lat": 35.233947,
-    "lng": 129.086621
+    "lng": 129.086621,
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "삼첩분식 부산대점",
@@ -2267,7 +3021,9 @@
     "리뷰수": 53,
     "사진목록": [],
     "lat": 35.2324382,
-    "lng": 129.0849278
+    "lng": 129.0849278,
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "똥다리불닭발",
@@ -2282,7 +3038,9 @@
     "리뷰수": 1,
     "사진목록": [],
     "lat": 35.2624194,
-    "lng": 129.0880929
+    "lng": 129.0880929,
+    "전화번호": "051-512-7994",
+    "운영시간": []
   },
   {
     "이름": "굽네치킨 부산장전점",
@@ -2300,7 +3058,9 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZPpRJPM5r29yFcu9cyH2G8-7AHlxzbPbudhRe5DOUsq_zoD3GlVoOQiaDnAEex4jcCB25IIU0L8LDP-3jq1ZpkFHtaW-Os924L4ITMLmKQMs2FmabE07FRzcDNY_RRUQylX-72ZyijWKRc6CoE=s1600-w800",
     "lat": 35.2424761,
-    "lng": 129.0889306
+    "lng": 129.0889306,
+    "전화번호": "051-512-9953",
+    "운영시간": []
   },
   {
     "이름": "부산대 우쭈쭈",
@@ -2322,7 +3082,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZNS8yt1uM5sEcJGD4fl2DI4Xs_48vWTqE3hpMWPxq3OMVmjyJAxnfnxVZ517Zeok6q2uJZfm-iJoZERykrq62ZJCR-tL-ftZM1xo54LiJeQy-GxyJZzJ2EwUD1AIWV7J0nJPt-i1WC-sa1FYR64Tg3wIw=s1600-w800",
     "lat": 35.2300006,
-    "lng": 129.0855699
+    "lng": 129.0855699,
+    "전화번호": "051-583-5133",
+    "운영시간": [
+      "월요일: 오전 11:00 ~ 오후 11:00",
+      "화요일: 오전 11:00 ~ 오후 11:00",
+      "수요일: 오전 11:00 ~ 오후 11:00",
+      "목요일: 오전 11:00 ~ 오후 11:00",
+      "금요일: 오전 11:00 ~ 오후 11:00",
+      "토요일: 오전 11:00 ~ 오후 11:00",
+      "일요일: 오전 11:00 ~ 오후 11:00"
+    ]
   },
   {
     "이름": "충만치킨 부산대점",
@@ -2344,7 +3114,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZPAAXRF_TjqgEQ_RjIZ-GbNyqu40NtVgZtEtrnoJ4byxTcciAKAReyP2u3C2A3H_xLFLFfozj_3wLzH5dWqORvnRf-9_oOxUCb-mMWGZlHcZGL1CrYWOVBormQ4nsQ5EqLGTOyIrtCOIR-Ltw=s1600-w800",
     "lat": 35.22959,
-    "lng": 129.087755
+    "lng": 129.087755,
+    "전화번호": "051-583-9990",
+    "운영시간": [
+      "월요일: 오전 11:45 ~ 오전 2:00",
+      "화요일: 오전 11:45 ~ 오전 2:00",
+      "수요일: 오전 11:45 ~ 오전 2:00",
+      "목요일: 오전 11:45 ~ 오전 2:00",
+      "금요일: 오전 11:45 ~ 오전 2:00",
+      "토요일: 오전 11:45 ~ 오전 2:00",
+      "일요일: 오전 11:45 ~ 오전 2:00"
+    ]
   },
   {
     "이름": "혼돈불고기돈까스 함박스테이크",
@@ -2366,7 +3146,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZM9LoQE2-tu2V5yz3No3Mq8d78oM2xPqO3tuG9vYlQ9ed0c_fxeDJmM7-VH10_i5cYGm6fCChgO91xDme8MxU1HF5hjkW2IBfdZ1o1syxxJFfC1LVAoSnL4GtKIKolVQjIB1jT6s5pvAvwr8g=s1600-w800",
     "lat": 35.2300006,
-    "lng": 129.0855699
+    "lng": 129.0855699,
+    "전화번호": "051-517-4500",
+    "운영시간": [
+      "월요일: 오전 11:30 ~ 오후 9:00",
+      "화요일: 오전 11:30 ~ 오후 9:00",
+      "수요일: 오전 11:30 ~ 오후 9:00",
+      "목요일: 오전 11:30 ~ 오후 9:00",
+      "금요일: 오전 11:30 ~ 오후 9:00",
+      "토요일: 오전 11:30 ~ 오후 9:00",
+      "일요일: 오전 11:30 ~ 오후 9:00"
+    ]
   },
   {
     "이름": "김미김밥",
@@ -2381,7 +3171,9 @@
     "리뷰수": 21,
     "사진목록": [],
     "lat": 35.2624194,
-    "lng": 129.0880929
+    "lng": 129.0880929,
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "부산대순저씨",
@@ -2396,7 +3188,9 @@
     "리뷰수": null,
     "사진목록": [],
     "lat": 35.2324776,
-    "lng": 129.0844689
+    "lng": 129.0844689,
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "부대쌀떡볶이",
@@ -2411,7 +3205,9 @@
     "리뷰수": 124,
     "사진목록": [],
     "lat": 35.2323,
-    "lng": 129.0876
+    "lng": 129.0876,
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "애플꼬마김밥 부산대점",
@@ -2430,7 +3226,9 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZOWpqVJGPFBk0WjtaqyAHJSw1p8U4mvtUxahbMXKZrPp3eaTvohKD_l5wAbtMsbY1MOCiyNXuF4o7YohCYGybrabjsjBaFra39FLOYagHJWacve7kL1SvGQBLSEpRyc_MhF-iK87H2i_rwX55OCMVMO=s1600-w800",
     "lat": 35.230434,
-    "lng": 129.0839729
+    "lng": 129.0839729,
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "두끼떡볶이 부산대점",
@@ -2452,7 +3250,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZMPKHsFhcf2mg7YWT6BKodPyll6MvwahhktqpwbRUCQUzZGaM6l_hQ81g5K_-5URykNXJn1G1ZiA0wIBUa8Ih-nShbLU-bbNTuCvaSpJB0y6pAYBR6OCe9dWXz3E3o8IEwE--DNVRHYLMIZwtVj2z5EQg=s1600-w800",
     "lat": 35.2424761,
-    "lng": 129.0889306
+    "lng": 129.0889306,
+    "전화번호": "051-515-8123",
+    "운영시간": [
+      "월요일: 오전 11:00 ~ 오후 10:00",
+      "화요일: 오전 11:00 ~ 오후 10:00",
+      "수요일: 오전 11:00 ~ 오후 10:00",
+      "목요일: 오전 11:00 ~ 오후 10:00",
+      "금요일: 오전 11:00 ~ 오후 10:00",
+      "토요일: 오전 11:00 ~ 오후 10:00",
+      "일요일: 오전 11:00 ~ 오후 10:00"
+    ]
   },
   {
     "이름": "싸다김밥 부산대점",
@@ -2474,7 +3282,9 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZOtj5CZ1S0SrcKB-Mp0xikwKCgNAtLp0s1eBhZ7qIR8CFRkkV4KVfbLCG8LEwXJn7-F-lT2gUPMf21_M56Mxo-YaqOD88Nsg7y85lkFmJ9Ze6hQF3z9gJ72McHkZjYja17MtMkV0i_3YYe_35KXC3w5iw=s1600-w800",
     "lat": 35.2305396,
-    "lng": 129.0877497
+    "lng": 129.0877497,
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "장호덕손만두 부산대점",
@@ -2493,7 +3303,9 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZNsXSaH16LwMIN-wceYvYQ2ULepMCH11c7UDNI5T70SRYTfyI1QmVHjX3_6nGksytiwXHSW_6ay3mJjeQgvALxGmD98FC40ArYzAz9cVVZYbU-egGay-4BsaUhSIFzstZxdYS70KEGNB6JRvNMcV6r32w=s1600-w800",
     "lat": 35.2301783,
-    "lng": 129.085155
+    "lng": 129.085155,
+    "전화번호": "051-583-0926",
+    "운영시간": []
   },
   {
     "이름": "디델리 부산대점",
@@ -2515,7 +3327,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZOkSfAMqqwTGnJraIFiivdI1CMe8HjvrPj2oyWKSrelM7Y9SlyBoXUnPIv-5gYHYT3GCe1OiRcLaZ_jaea3CQw893P1lmWBE3Ky5gRj0VZpHePpybCq2OYUbzgRd7Dkf79_3EZphw3bq2odtg=s1600-w800",
     "lat": 35.2305396,
-    "lng": 129.0877497
+    "lng": 129.0877497,
+    "전화번호": "051-583-1179",
+    "운영시간": [
+      "월요일: 오전 11:00 ~ 오후 10:00",
+      "화요일: 오전 11:00 ~ 오후 10:00",
+      "수요일: 오전 11:00 ~ 오후 10:00",
+      "목요일: 오전 11:00 ~ 오후 10:00",
+      "금요일: 오전 11:00 ~ 오후 10:00",
+      "토요일: 오전 11:00 ~ 오후 10:00",
+      "일요일: 오전 11:00 ~ 오후 10:00"
+    ]
   },
   {
     "이름": "온김밥",
@@ -2530,7 +3352,9 @@
     "리뷰수": 98,
     "사진목록": [],
     "lat": 35.235366,
-    "lng": 129.0868894
+    "lng": 129.0868894,
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "분잉",
@@ -2552,7 +3376,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZMAlK3qPlpoex7uXlPef20pgCi1nKksi6Zv_CE2_ESQLZbEnpNILL9Y3Cg3ZW-0Q7Tv3PYx_OI6sdHsyh47-UHzhuKaA7cPPMGzYOf9uGpXTOeay1Rz-06coFdtDnD9uu6wGA0ww36ENNbl0tLcU5D5Dg=s1600-w800",
     "lat": 35.2277925,
-    "lng": 129.0872894
+    "lng": 129.0872894,
+    "전화번호": "051-517-3355",
+    "운영시간": [
+      "월요일: 휴무일",
+      "화요일: 오전 8:00 ~ 오후 8:00",
+      "수요일: 오전 8:00 ~ 오후 8:00",
+      "목요일: 오전 8:00 ~ 오후 8:00",
+      "금요일: 오전 8:00 ~ 오후 8:00",
+      "토요일: 오전 8:00 ~ 오후 8:00",
+      "일요일: 오전 8:00 ~ 오후 8:00"
+    ]
   },
   {
     "이름": "달인아빠김밥떡볶이 부산대점",
@@ -2574,7 +3408,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZOkSfAMqqwTGnJraIFiivdI1CMe8HjvrPj2oyWKSrelM7Y9SlyBoXUnPIv-5gYHYT3GCe1OiRcLaZ_jaea3CQw893P1lmWBE3Ky5gRj0VZpHePpybCq2OYUbzgRd7Dkf79_3EZphw3bq2odtg=s1600-w800",
     "lat": 35.2305396,
-    "lng": 129.0877497
+    "lng": 129.0877497,
+    "전화번호": "051-583-1179",
+    "운영시간": [
+      "월요일: 오전 11:00 ~ 오후 10:00",
+      "화요일: 오전 11:00 ~ 오후 10:00",
+      "수요일: 오전 11:00 ~ 오후 10:00",
+      "목요일: 오전 11:00 ~ 오후 10:00",
+      "금요일: 오전 11:00 ~ 오후 10:00",
+      "토요일: 오전 11:00 ~ 오후 10:00",
+      "일요일: 오전 11:00 ~ 오후 10:00"
+    ]
   },
   {
     "이름": "빨봉분식 부산대점",
@@ -2596,7 +3440,9 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZPDfGebXxmmYfbu0R-5YxZEG-CuItBMA-0kHwMbxAfwz8qKC8huf_joPlHabruFIXEsp76GMsp0cPq3_iqFj3C3BTdRlyHKpGEIq7Jt47LuaKJsjYjKZdNJMLcv_FAOdnZL0JleMoRn9Vw3=s1600-w800",
     "lat": 35.22959,
-    "lng": 129.087755
+    "lng": 129.087755,
+    "전화번호": "051-512-5281",
+    "운영시간": []
   },
   {
     "이름": "빨봉분식 부산대역점",
@@ -2618,7 +3464,9 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZPDfGebXxmmYfbu0R-5YxZEG-CuItBMA-0kHwMbxAfwz8qKC8huf_joPlHabruFIXEsp76GMsp0cPq3_iqFj3C3BTdRlyHKpGEIq7Jt47LuaKJsjYjKZdNJMLcv_FAOdnZL0JleMoRn9Vw3=s1600-w800",
     "lat": 35.22959,
-    "lng": 129.087755
+    "lng": 129.087755,
+    "전화번호": "051-512-5281",
+    "운영시간": []
   },
   {
     "이름": "진경순부대꼬마김밥",
@@ -2640,7 +3488,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZMOy0Srs53pxCa6anQ_zohxgsPBWKVT-LeqypNTJ5UZ-8gWxtWz_B66-kOGCVflTnRvUou5Qac8yrHGCbNJuQE0RtOlQHu3AkxwzpiK436R5PQFbxK3yQV2qcn41mjQeZGygemiNQQkkJMU2iD_JDnG=s1600-w800",
     "lat": 35.2262232,
-    "lng": 129.0884944
+    "lng": 129.0884944,
+    "전화번호": "051-583-9330",
+    "운영시간": [
+      "월요일: 24시간 영업",
+      "화요일: 24시간 영업",
+      "수요일: 24시간 영업",
+      "목요일: 24시간 영업",
+      "금요일: 24시간 영업",
+      "토요일: 24시간 영업",
+      "일요일: 24시간 영업"
+    ]
   },
   {
     "이름": "복이네즉석떡볶이",
@@ -2662,7 +3520,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZMPKHsFhcf2mg7YWT6BKodPyll6MvwahhktqpwbRUCQUzZGaM6l_hQ81g5K_-5URykNXJn1G1ZiA0wIBUa8Ih-nShbLU-bbNTuCvaSpJB0y6pAYBR6OCe9dWXz3E3o8IEwE--DNVRHYLMIZwtVj2z5EQg=s1600-w800",
     "lat": 35.230053,
-    "lng": 129.0904065
+    "lng": 129.0904065,
+    "전화번호": "051-515-8123",
+    "운영시간": [
+      "월요일: 오전 11:00 ~ 오후 10:00",
+      "화요일: 오전 11:00 ~ 오후 10:00",
+      "수요일: 오전 11:00 ~ 오후 10:00",
+      "목요일: 오전 11:00 ~ 오후 10:00",
+      "금요일: 오전 11:00 ~ 오후 10:00",
+      "토요일: 오전 11:00 ~ 오후 10:00",
+      "일요일: 오전 11:00 ~ 오후 10:00"
+    ]
   },
   {
     "이름": "할매손충무김밥 부산대점",
@@ -2684,7 +3552,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZMRCOOJv_JZNK4LyAbQZmaal-jsZ3vNTOwuGyADOTOxYG1I-GEIbw-fFRhxL4ND_D8g26DYV1CN1oEkYq_Z2XxSuJASOaqcWsT5t1iPxk6To-o4Cg2tvZFCue8D1xPxar_v5eoFs4yyqJ7KzK7BDg4AIg=s1600-w800",
     "lat": 35.230053,
-    "lng": 129.0904065
+    "lng": 129.0904065,
+    "전화번호": "051-517-1116",
+    "운영시간": [
+      "월요일: 오전 10:00 ~ 오후 9:30",
+      "화요일: 오전 10:00 ~ 오후 9:30",
+      "수요일: 오전 10:00 ~ 오후 9:30",
+      "목요일: 오전 10:00 ~ 오후 9:30",
+      "금요일: 오전 10:00 ~ 오후 9:30",
+      "토요일: 오전 10:00 ~ 오후 9:30",
+      "일요일: 오전 10:00 ~ 오후 9:30"
+    ]
   },
   {
     "이름": "오뚜기분식",
@@ -2703,7 +3581,9 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZPzHA445Am5zP40HAWFYfg5GGdAdVz7gQ98GAaz7IVBszwxNWjd1wEIsbtgWggn8i-r8JwyLbhHOVfNkbiRB4GerYzu02qvf1gftJC72m2jk_HAFa_jtIGOR-W69EFtEjoafsVGXSMw6Rru=s1600-w800",
     "lat": 35.2369537,
-    "lng": 129.0831505
+    "lng": 129.0831505,
+    "전화번호": "051-513-5640",
+    "운영시간": []
   },
   {
     "이름": "북맛골우동집 부산대점",
@@ -2725,7 +3605,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZOiDhW8Ea1eQjMcjKwnmqxLVov7yNJtsswcDQS0OomkDAg8ya6gBjkM7i9JPEE6W3MXpLk_GkJAHhUfLU-SLh8dILHwHokuynWr_v1O0sa7qh82CeCZDkZ3AG_gUHSHMeEnYlJulpLNCNiIFyY=s1600-w800",
     "lat": 35.2369537,
-    "lng": 129.0831505
+    "lng": 129.0831505,
+    "전화번호": null,
+    "운영시간": [
+      "월요일: 오전 11:00 ~ 오후 8:00",
+      "화요일: 오전 11:00 ~ 오후 8:00",
+      "수요일: 오전 11:00 ~ 오후 8:00",
+      "목요일: 오전 11:00 ~ 오후 8:00",
+      "금요일: 오전 11:00 ~ 오후 8:00",
+      "토요일: 휴무일",
+      "일요일: 오후 5:00~8:00"
+    ]
   },
   {
     "이름": "마산분식",
@@ -2747,7 +3637,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZNgvT9_ZMknobhUBCAf-fvBj_J0Omzf8vzhnTit0pCqnaOyxa64RZb6djkz_I6GhM6ydmg-ba4sorCVU8x_Sf99aIXjJ0L2qn0z3SECWK3FOHeus3R09ac5kdNrgjAPoYk4LOXx7z8ikQAzgfS1yKRC=s1600-w800",
     "lat": 35.23844,
-    "lng": 129.0830311
+    "lng": 129.0830311,
+    "전화번호": null,
+    "운영시간": [
+      "월요일: 오전 11:00 ~ 오후 8:30",
+      "화요일: 오전 11:00 ~ 오후 8:30",
+      "수요일: 오전 11:00 ~ 오후 8:30",
+      "목요일: 오전 11:00 ~ 오후 8:30",
+      "금요일: 오전 11:00 ~ 오후 8:30",
+      "토요일: 오전 11:00 ~ 오후 8:30",
+      "일요일: 오전 11:00 ~ 오후 8:30"
+    ]
   },
   {
     "이름": "홍보석 숯불구이",
@@ -2769,7 +3669,9 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZNE5XhzuaN3X3weDhkVMVCmaHt0LZAbcAegL_0399r-d4-GC0gUfrIFkDpuhWJCab9ndaVYYiIavoSQfSbqdKHAyHQwhU_qMRAtUw_KK3NJhM5Zs9c8WDd9lN3oDaDUaTBkPnM6Li7sIMu78Ug9Lr1NvQ=s1600-w800",
     "lat": 35.2624194,
-    "lng": 129.0880929
+    "lng": 129.0880929,
+    "전화번호": "051-581-0950",
+    "운영시간": []
   },
   {
     "이름": "족발이다 부산대점",
@@ -2784,7 +3686,9 @@
     "리뷰수": 35,
     "사진목록": [],
     "lat": 35.2624194,
-    "lng": 129.0880929
+    "lng": 129.0880929,
+    "전화번호": "051-582-2925",
+    "운영시간": []
   },
   {
     "이름": "오늘김해뒷고기 부산대점",
@@ -2806,7 +3710,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZMZiuyP6voO6WR79dupRZoDYkgMlv-1YXZbZjnOQxfgFHskC0FzSStRPQLXsJ1eqbb6-Fer-bzeKlcnJo3TVHic65cp2zfdHE-359Bs_flh3rDXTQsPguqnydDSswKpNcr1KSYJ8X0MBVMX_0M=s1600-w800",
     "lat": 35.233947,
-    "lng": 129.086621
+    "lng": 129.086621,
+    "전화번호": null,
+    "운영시간": [
+      "월요일: 오전 11:30 ~ 오후 10:30",
+      "화요일: 오전 11:30 ~ 오후 10:30",
+      "수요일: 오전 11:30 ~ 오후 10:30",
+      "목요일: 오전 11:30 ~ 오후 10:30",
+      "금요일: 오전 11:30 ~ 오후 10:30",
+      "토요일: 오전 11:30 ~ 오후 10:30",
+      "일요일: 오전 11:30 ~ 오후 10:30"
+    ]
   },
   {
     "이름": "부소담 숯불폭립등갈비",
@@ -2828,7 +3742,9 @@
     ],
     "lat": 35.233947,
     "lng": 129.086621,
-    "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZN69p5aJ-Q7Afi8LqDqvrfD7Egl-BvllQGb4uZ5eNca03LsL-Ok80PhbGKBacc6mrou-HNHcj9hd-cgFShpgoEXmADD7cJFKfSLiFNiQdQxGfcozRCuW8gVAIXoVMK3ToDjEP4rcQ3Wq8aE_w=s1600-w800"
+    "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZN69p5aJ-Q7Afi8LqDqvrfD7Egl-BvllQGb4uZ5eNca03LsL-Ok80PhbGKBacc6mrou-HNHcj9hd-cgFShpgoEXmADD7cJFKfSLiFNiQdQxGfcozRCuW8gVAIXoVMK3ToDjEP4rcQ3Wq8aE_w=s1600-w800",
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "이도명가",
@@ -2843,7 +3759,9 @@
     "리뷰수": null,
     "사진목록": [],
     "lat": 35.2424761,
-    "lng": 129.0889306
+    "lng": 129.0889306,
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "짚신매운갈비찜 부산대점",
@@ -2863,7 +3781,9 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZPqwssRfLfrxJA18RXMgRROT_c2BKJGEVwMwvCTkF-gr81dLlb6-0CX25_FQCOaJmp4nxJw1q4It4-gSzA8428MHt0ICsf8yp2dJot5eXQk95iwgUns4wp88rpU60kcoU9Z0e9zb5MnGjwSVB0=s1600-w800",
     "lat": 35.2233075,
-    "lng": 129.0814906
+    "lng": 129.0814906,
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "수림로족발",
@@ -2884,7 +3804,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZPMJWNRYT_2X--MBkRT84NBz3JX082LSX04J_j6PyMez1zq4T3pmVp0tx2X7Hl2GS-D5YI-gyW6sE-vrp_3S5PHBq5mpjgFG0GOYFjX3kwtvCqOUGKJc4VYVpLeehk9mi0CKzv-mydrplApOgQ=s1600-w800",
     "lat": 35.23413,
-    "lng": 129.0854834
+    "lng": 129.0854834,
+    "전화번호": "051-518-7501",
+    "운영시간": [
+      "월요일: 휴무일",
+      "화요일: 오후 5:00~9:30",
+      "수요일: 오후 5:00~9:30",
+      "목요일: 오후 5:00~9:30",
+      "금요일: 오후 5:00~9:30",
+      "토요일: 오후 5:00~9:30",
+      "일요일: 오후 5:00~9:30"
+    ]
   },
   {
     "이름": "자마미등갈비 부산대점",
@@ -2906,7 +3836,9 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZNryboMPY2brr-jq9_LFqig6c7XZuMm_l6X9kOtlVKzQFfoG3uOeJ3mu23jZeihRCVlor0dgkveQlfOn2Xta9ADl3_EWPyBrTreDK6UzZjdUlVmsl84u_iieBqggBdUe9oSNQdJJXwqwYF09w=s1600-w800",
     "lat": 35.2300006,
-    "lng": 129.0855699
+    "lng": 129.0855699,
+    "전화번호": "051-583-3193",
+    "운영시간": []
   },
   {
     "이름": "가장맛있는족발 부산대점",
@@ -2928,7 +3860,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZMBwap3FPsviSZ0XxdZe0v85BTzdLbN86o0j07j9VNgGjHkWfrJuqrvs36ksbvksCNvdITbwQIseR5V6pUw9_n2hIq3ZV3BoGR0Ppwbv-oFUh-whu_S9XxArOG8VmVAbxv5QBZDRZWO96wtokY=s1600-w800",
     "lat": 35.2300006,
-    "lng": 129.0855699
+    "lng": 129.0855699,
+    "전화번호": "051-515-5849",
+    "운영시간": [
+      "월요일: 오후 3:00~11:00",
+      "화요일: 오후 3:00~11:00",
+      "수요일: 오후 3:00~11:00",
+      "목요일: 오전 11:30 ~ 오후 11:00",
+      "금요일: 오후 3:00~11:00",
+      "토요일: 오후 1:30~11:00",
+      "일요일: 오후 3:00~11:00"
+    ]
   },
   {
     "이름": "유가솜씨 부산대본점",
@@ -2950,7 +3892,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZPM1o9ShfCotLUUhyN72ur-02Qnoeg7ZjmzANRzgPMdWi09x0gplzAS0uFHor9wLCNkeRafgUtiGNrB6mH2ZZRVt2EiOdjiorvyQpsys-7X0ShQTXgKps_G902IZ0zD9if_RLHCKcqPxVvonQ=s1600-w800",
     "lat": 35.2624194,
-    "lng": 129.0880929
+    "lng": 129.0880929,
+    "전화번호": "051-514-7572",
+    "운영시간": [
+      "월요일: 오전 10:30 ~ 오전 12:00",
+      "화요일: 오전 10:30 ~ 오전 12:00",
+      "수요일: 오전 10:30 ~ 오전 12:00",
+      "목요일: 오전 10:30 ~ 오전 12:00",
+      "금요일: 오전 10:30 ~ 오전 12:00",
+      "토요일: 오전 10:30 ~ 오전 12:00",
+      "일요일: 오전 10:30 ~ 오전 12:00"
+    ]
   },
   {
     "이름": "정성육회 부산대점",
@@ -2972,7 +3924,9 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZP5_59AWbVxHCH5372sJrDW1OkWOxgeGE5yWVhBUq4lMcDnf3AA_-2JmwI-ZUmlUivzedr42w8nM-CXJFstCRbPOF93B32u9-K21CuV1U3NJT2wwsEPZ5poSKQqeENgOizYeCBNfuNmZrrFcg=s1600-w800",
     "lat": 35.233163,
-    "lng": 129.0876526
+    "lng": 129.0876526,
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "이시봉족발보쌈 금정점",
@@ -2994,7 +3948,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZPpMW8BqGZYTlqXuPpYN4chrHg-4r7GAwqeMqCE6JORobHD9RPb0iulXxCT4iEqZkTa6PpkwX0fQCBF16lX1njR0V5L2j6iEyQzZbsVGbO6yY8_twQjpd0g5PMx6URetvlJKJqggZ0NKparOQ=s1600-w800",
     "lat": 35.2624194,
-    "lng": 129.0880929
+    "lng": 129.0880929,
+    "전화번호": "051-518-1146",
+    "운영시간": [
+      "월요일: 오전 8:30 ~ 오후 11:00",
+      "화요일: 오전 8:30 ~ 오후 11:00",
+      "수요일: 오전 8:30 ~ 오후 11:00",
+      "목요일: 오전 8:30 ~ 오후 11:00",
+      "금요일: 오전 8:30 ~ 오후 11:00",
+      "토요일: 오전 8:30 ~ 오후 11:00",
+      "일요일: 오전 8:30 ~ 오후 11:00"
+    ]
   },
   {
     "이름": "크라운닭발 부산대본점",
@@ -3016,7 +3980,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZOE1-bDOdzbACAQv3lVMWbrM8NIWiCkHFF5j_JDIajmAb2iVsTpkkaxqyfKgyE0LYuS45pup_BUV9c4ZCm_48vTMCLH6ijyRxnp4QfOP6EBa0jSlGkvsTGzKwp7Y-kcj29JyoM0jpAfILqCvg=s1600-w800",
     "lat": 35.233163,
-    "lng": 129.0876526
+    "lng": 129.0876526,
+    "전화번호": "051-583-6539",
+    "운영시간": [
+      "월요일: 오후 5:00 ~ 오전 1:00",
+      "화요일: 오후 5:00 ~ 오전 1:00",
+      "수요일: 오후 5:00 ~ 오전 1:00",
+      "목요일: 오후 5:00 ~ 오전 1:00",
+      "금요일: 오후 5:00 ~ 오전 1:00",
+      "토요일: 오후 5:00 ~ 오전 1:00",
+      "일요일: 오후 5:00 ~ 오전 1:00"
+    ]
   },
   {
     "이름": "다우다미",
@@ -3035,7 +4009,9 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZNuCDBMnSzqDpKNYvkfiMIOqclylEz_f5yNSwOERAtcVWOyIhSI8nFBaYsFsh0B2rorWzHeauQFnngOYJsP5lomLl81lJVl1EW6YJZKVZtEKXZNRn1gOI2VeBDVyp4PAWd-7TBgMYUfZZbAXQ=s1600-w800",
     "lat": 35.233163,
-    "lng": 129.0876526
+    "lng": 129.0876526,
+    "전화번호": "051-512-0156",
+    "운영시간": []
   },
   {
     "이름": "칼집삼겹 부산대본점",
@@ -3057,7 +4033,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZMFns-XMGOGknUtsRxThRomttEMjDuZdtF5tr0n6XNZu4RNs39UYyCYLZBXhT0mu_Eg4qJNiOSiTMe3p4cnrq7GD5g_q1Rx_mkKvi818hAbCIS4r57Rr2gefTYN_dTfqlcTdmbGb_ZxbQBZEXk=s1600-w800",
     "lat": 35.2424761,
-    "lng": 129.0889306
+    "lng": 129.0889306,
+    "전화번호": "051-513-9392",
+    "운영시간": [
+      "월요일: 오후 4:00 ~ 오전 2:00",
+      "화요일: 오후 4:00 ~ 오전 2:00",
+      "수요일: 오후 4:00 ~ 오전 2:00",
+      "목요일: 오후 4:00 ~ 오전 2:00",
+      "금요일: 오후 4:00 ~ 오전 2:00",
+      "토요일: 오후 4:00 ~ 오전 2:00",
+      "일요일: 오후 4:00 ~ 오전 2:00"
+    ]
   },
   {
     "이름": "황소야 부산대점",
@@ -3079,7 +4065,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZMFkmbG9paKhHilchuEKvZ-R1uV6qBZ90-6_XwsSA21KJfiANJDnvGVaILXvCR3HrqWEieUEIWZ2TH1Y5ek45Tg3_XmMpzwkEGfFJaRlOxihf-OyxwR1_X2I-JGQsGnngRcmXTuz9YbJho4jg=s1600-w800",
     "lat": 35.2300006,
-    "lng": 129.0855699
+    "lng": 129.0855699,
+    "전화번호": "051-515-2152",
+    "운영시간": [
+      "월요일: 오후 4:00 ~ 오전 12:00",
+      "화요일: 오후 4:00 ~ 오전 12:00",
+      "수요일: 오후 4:00 ~ 오전 12:00",
+      "목요일: 오후 4:00 ~ 오전 12:00",
+      "금요일: 오후 4:00 ~ 오전 12:00",
+      "토요일: 오후 4:00 ~ 오전 12:00",
+      "일요일: 오후 4:00 ~ 오전 12:00"
+    ]
   },
   {
     "이름": "수암골쪽갈비마을 부산대점",
@@ -3094,7 +4090,9 @@
     "리뷰수": null,
     "사진목록": [],
     "lat": 35.2310287,
-    "lng": 129.0903932
+    "lng": 129.0903932,
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "유가네닭갈비 부산대점",
@@ -3114,7 +4112,9 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZMR3UwoFfvafBJgtF0SF5IkHy4jhPqA78rB6dnl9IKrDvp0hC5ctne6Vj9v3KzBMnXiHOm495iQKgN_n-TaYbZOPWpztErJx2JVBDRDhG2UPj70ZbKiiNYWU0J2rXr4VB9oVLhwji6KUEg=s1600-w800",
     "lat": 35.2301783,
-    "lng": 129.085155
+    "lng": 129.085155,
+    "전화번호": "051-514-7573",
+    "운영시간": []
   },
   {
     "이름": "더통큰집 본점",
@@ -3136,7 +4136,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZOOK2nRlej1hw_v5eS8i0u2_4pDCZKCHQupgMOzvFOlDi3BbKr_GUBhMxVioechLB8rpbs4snukS10BDNNtB3c99UQ6_tTLvolwhVS25i6dyxj9OcKEpNkQS0cX3Z7fqlNKPedG1xV1BA3qmw=s1600-w800",
     "lat": 35.22959,
-    "lng": 129.087755
+    "lng": 129.087755,
+    "전화번호": "051-512-2331",
+    "운영시간": [
+      "월요일: 오전 11:00 ~ 오후 10:00",
+      "화요일: 휴무일",
+      "수요일: 오전 11:00 ~ 오후 10:00",
+      "목요일: 오전 11:00 ~ 오후 10:00",
+      "금요일: 오전 11:00 ~ 오후 10:00",
+      "토요일: 오전 11:00 ~ 오후 10:00",
+      "일요일: 오전 11:00 ~ 오후 10:00"
+    ]
   },
   {
     "이름": "카오산태국쌀국수 부산대점",
@@ -3158,7 +4168,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZOxM2YIO3vFbIuWWnAgtltNzygwgh9VNVKYp-RQYNT9KoPcLpghbTv2yIXfPWOGwsqZwVeoVCMGlSK-xAfQJjh-2Rgk5K16p-8CKRP01BOt96FfdUmZYqpX3YwRojjDr3WS63kUgt1dl_fAA3w=s1600-w800",
     "lat": 35.230434,
-    "lng": 129.0839729
+    "lng": 129.0839729,
+    "전화번호": "051-516-5233",
+    "운영시간": [
+      "월요일: 오전 10:00 ~ 오후 10:00",
+      "화요일: 오전 10:00 ~ 오후 10:00",
+      "수요일: 오전 10:00 ~ 오후 10:00",
+      "목요일: 오전 10:00 ~ 오후 10:00",
+      "금요일: 오전 10:00 ~ 오후 10:00",
+      "토요일: 오전 10:00 ~ 오후 10:00",
+      "일요일: 오전 10:00 ~ 오후 10:00"
+    ]
   },
   {
     "이름": "전통쑥밀면&족발&국밥",
@@ -3180,7 +4200,9 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZMQtms4M4vgaTut1YlVyVxg7mPSkJoLlBaGMjOZ38nG2aJJpm1vVTgCgS2h3Uyo8JUO4KY2H3a05YTUtTk1dmdRtN-spSeS6PGO7aYHaQcv36uc8FEN6AjrZr_j6bhSog7fTzvsQaC_ooKmCJEV7wf50w=s1600-w800",
     "lat": 35.2310287,
-    "lng": 129.0903932
+    "lng": 129.0903932,
+    "전화번호": "051-515-9337",
+    "운영시간": []
   },
   {
     "이름": "족발신선생 부산대점",
@@ -3202,7 +4224,9 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZM_P9rpnu0lBxgFxJudwyDf6cSUfkX_DPlCdKrvr8bMNn7Vex3DbYTaU-c347dpkBp_n5L5fM9fSKcb2yD_gR7IGWEF6RAAnY6KnvSmPEEFAISeuxWjAkVssAc30sS6sH9s1Qfn6BSzI8XHug=s1600-w800",
     "lat": 35.2313223,
-    "lng": 129.0858287
+    "lng": 129.0858287,
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "명주네보쌈",
@@ -3224,7 +4248,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZN68V4W4iEDEWiPXP-n9KT6UHbLSpSlpJiQSk2vVz9h1cw4JEgwaveMuGeTbtq7KWrwEyPep_m9Vz5o8xhScqlcvdkpHqfbvhPWk8LbUiDTLrK1l1rSS9Ht9dEDjNmjHugskOGbsWlMt_j3Nw=s1600-w800",
     "lat": 35.235366,
-    "lng": 129.0868894
+    "lng": 129.0868894,
+    "전화번호": "051-512-2093",
+    "운영시간": [
+      "월요일: 오후 12:00~9:00",
+      "화요일: 오후 12:00~9:00",
+      "수요일: 오후 12:00~9:00",
+      "목요일: 오전 11:00 ~ 오후 9:00",
+      "금요일: 오후 12:00~9:00",
+      "토요일: 오후 12:00~9:00",
+      "일요일: 오후 12:00~9:00"
+    ]
   },
   {
     "이름": "우연그고깃집",
@@ -3246,7 +4280,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZPg9X4J1-UnytZy84d3Noe6hnNZ7zENxSua8BySYnTw-ZLxY1zwalD7jUcZFuhQ5jgqeXsz42i0nERwAw7h8pbWhfUZNij432cdP7veG_7JSz-860uDVAqPwb4D-AcjTT8OvuwhONkRvz8fYw=s1600-w800",
     "lat": 35.2323,
-    "lng": 129.0876
+    "lng": 129.0876,
+    "전화번호": null,
+    "운영시간": [
+      "월요일: 오후 4:30 ~ 오전 2:00",
+      "화요일: 오후 4:30 ~ 오전 2:00",
+      "수요일: 오후 4:30 ~ 오전 2:00",
+      "목요일: 오후 4:30 ~ 오전 2:00",
+      "금요일: 오후 4:30 ~ 오전 2:00",
+      "토요일: 오후 4:30 ~ 오전 2:00",
+      "일요일: 오후 4:30 ~ 오전 2:00"
+    ]
   },
   {
     "이름": "시민족발보쌈 금정구점",
@@ -3267,7 +4311,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZPMJWNRYT_2X--MBkRT84NBz3JX082LSX04J_j6PyMez1zq4T3pmVp0tx2X7Hl2GS-D5YI-gyW6sE-vrp_3S5PHBq5mpjgFG0GOYFjX3kwtvCqOUGKJc4VYVpLeehk9mi0CKzv-mydrplApOgQ=s1600-w800",
     "lat": 35.23845,
-    "lng": 129.0856159
+    "lng": 129.0856159,
+    "전화번호": "051-518-7501",
+    "운영시간": [
+      "월요일: 휴무일",
+      "화요일: 오후 5:00~9:30",
+      "수요일: 오후 5:00~9:30",
+      "목요일: 오후 5:00~9:30",
+      "금요일: 오후 5:00~9:30",
+      "토요일: 오후 5:00~9:30",
+      "일요일: 오후 5:00~9:30"
+    ]
   },
   {
     "이름": "칠자족발 장전점",
@@ -3288,7 +4342,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZPMJWNRYT_2X--MBkRT84NBz3JX082LSX04J_j6PyMez1zq4T3pmVp0tx2X7Hl2GS-D5YI-gyW6sE-vrp_3S5PHBq5mpjgFG0GOYFjX3kwtvCqOUGKJc4VYVpLeehk9mi0CKzv-mydrplApOgQ=s1600-w800",
     "lat": 35.2389704,
-    "lng": 129.0869355
+    "lng": 129.0869355,
+    "전화번호": "051-518-7501",
+    "운영시간": [
+      "월요일: 휴무일",
+      "화요일: 오후 5:00~9:30",
+      "수요일: 오후 5:00~9:30",
+      "목요일: 오후 5:00~9:30",
+      "금요일: 오후 5:00~9:30",
+      "토요일: 오후 5:00~9:30",
+      "일요일: 오후 5:00~9:30"
+    ]
   },
   {
     "이름": "쿠카이야",
@@ -3310,7 +4374,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZOGn5-n9KDhLN-XumbsNqmuvAfKrv2zrozwRQOcMOWtA5OkyAMY09VAS9UpajvRRLHWJuT-OuuCJ9WICpUYzZTrAwYcLRGz2kN7Kd_YjQdpvljJJW6UmnuJKW-W-XKWCA55-_9nThRqBhLGPQ=s1600-w800",
     "lat": 35.230434,
-    "lng": 129.0839729
+    "lng": 129.0839729,
+    "전화번호": "051-581-3004",
+    "운영시간": [
+      "월요일: 오전 11:30 ~ 오후 3:00, 오후 5:00~8:00",
+      "화요일: 오전 11:30 ~ 오후 3:00, 오후 5:00~8:00",
+      "수요일: 오전 11:30 ~ 오후 3:00, 오후 5:00~8:00",
+      "목요일: 오전 11:30 ~ 오후 3:00, 오후 5:00~8:00",
+      "금요일: 휴무일",
+      "토요일: 오전 11:30 ~ 오후 3:00, 오후 5:00~8:00",
+      "일요일: 오전 11:30 ~ 오후 3:00, 오후 5:00~8:00"
+    ]
   },
   {
     "이름": "카츠안 부산대점",
@@ -3332,7 +4406,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZMzsfEChHIzaTe4DX_a0T339FKEwdjheyUgv2QGg5KmVwy4y_iIIsDUzKzhJCIUVxLtgtpsqEdZj-4hZU6QffA7uhryjf15Mrl1EXl4PZiOUYOLWJYisfLFgBeQEBJX5sH00RM4CY7YYv4=s1600-w800",
     "lat": 35.2301783,
-    "lng": 129.085155
+    "lng": 129.085155,
+    "전화번호": "051-517-5133",
+    "운영시간": [
+      "월요일: 오전 11:00 ~ 오후 9:00",
+      "화요일: 오전 11:00 ~ 오후 9:00",
+      "수요일: 오전 11:00 ~ 오후 9:00",
+      "목요일: 오전 11:00 ~ 오후 9:00",
+      "금요일: 오전 11:00 ~ 오후 9:00",
+      "토요일: 오전 11:00 ~ 오후 9:00",
+      "일요일: 오전 11:00 ~ 오후 9:00"
+    ]
   },
   {
     "이름": "토흐(TOH)",
@@ -3354,7 +4438,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZMinB3FQaAAiv-8MV7GhgRGmwNiv-kVWqU1voBglu7XdL-OWSWkgs_6JY4HB2bLq4fM1KEMdc6Yc5NioludKd0jRAZJ0li0IU0_LAcjHaZoYP_UPpdpEuIaAHwJ_9cLFJ01Hx75Fw96twwWnw=s1600-w800",
     "lat": 35.2279521,
-    "lng": 129.0836587
+    "lng": 129.0836587,
+    "전화번호": "051-583-0120",
+    "운영시간": [
+      "월요일: 오전 11:00 ~ 오후 8:30",
+      "화요일: 오전 11:00 ~ 오후 8:30",
+      "수요일: 오전 11:00 ~ 오후 8:30",
+      "목요일: 오전 11:00 ~ 오후 8:30",
+      "금요일: 휴무일",
+      "토요일: 오전 11:00 ~ 오후 8:30",
+      "일요일: 오전 11:00 ~ 오후 8:30"
+    ]
   },
   {
     "이름": "쑝쑝돈까스 부산대점",
@@ -3375,7 +4469,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZPItu3hSTxzROtevgpqD0l20tuUIXJYHNQGC5r-VoIMQs8i7sZjlgPIwzhSOQYGIBwjQeyMVp2S3xgGK2RGMnZ7f9thIM1hjDzaaPZy2IgwmwtcW3lFVAEuYocPe7dyA6Zy1iSzyXItqx2rOg=s1600-w800",
     "lat": 35.2300006,
-    "lng": 129.0855699
+    "lng": 129.0855699,
+    "전화번호": "051-515-5351",
+    "운영시간": [
+      "월요일: 오전 11:00 ~ 오후 9:00",
+      "화요일: 오전 11:00 ~ 오후 9:00",
+      "수요일: 오전 11:00 ~ 오후 9:00",
+      "목요일: 오전 11:00 ~ 오후 9:00",
+      "금요일: 오전 11:00 ~ 오후 9:00",
+      "토요일: 오전 11:00 ~ 오후 9:00",
+      "일요일: 오전 11:00 ~ 오후 9:00"
+    ]
   },
   {
     "이름": "하루엔소쿠 부산대점",
@@ -3393,7 +4497,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZOmjq9BdOZqb7wOmV5kssdDSphPS2DmHYL2DL2-P7qnnc5F2bFpiq8r5zWDli6VrtGIwOvsE_pG_9_u_l5_Nx1ycPrqPTs_nzY1ZOex7tDUqB01qzB29UAQ2OkjGHcYn5uSSWggpv0qBj61FdUT4C7f=s1600-w800",
     "lat": 35.2301783,
-    "lng": 129.085155
+    "lng": 129.085155,
+    "전화번호": "050-71485-8924",
+    "운영시간": [
+      "월요일: 오전 10:30 ~ 오후 9:00",
+      "화요일: 오전 10:30 ~ 오후 9:00",
+      "수요일: 오전 10:30 ~ 오후 9:00",
+      "목요일: 오전 10:30 ~ 오후 9:00",
+      "금요일: 오전 10:30 ~ 오후 9:00",
+      "토요일: 오전 10:30 ~ 오후 9:00",
+      "일요일: 오전 10:30 ~ 오후 9:00"
+    ]
   },
   {
     "이름": "돈까스겸",
@@ -3415,7 +4529,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZO8JntKTO7to6uvv0xHCdJCzcBKYWzAc25lzaSphMkmMNNbmcSRQ8yCeItmACzv-pZJ7AhdSL_TcbdZzlCrwZt6awEJtBOd_xUnqj2-_DtH2ppS4esFX0ka2pg15ZdJ0XHGzdaU1bR7TqT5IKGwZxoI=s1600-w800",
     "lat": 35.230434,
-    "lng": 129.0839729
+    "lng": 129.0839729,
+    "전화번호": "051-513-5633",
+    "운영시간": [
+      "월요일: 오전 11:00 ~ 오후 3:00, 오후 5:00~8:30",
+      "화요일: 오전 11:00 ~ 오후 3:00, 오후 5:00~8:30",
+      "수요일: 오전 11:00 ~ 오후 3:00, 오후 5:00~8:30",
+      "목요일: 오전 11:00 ~ 오후 3:00, 오후 5:00~8:30",
+      "금요일: 오전 11:00 ~ 오후 3:00, 오후 5:00~8:30",
+      "토요일: 오전 11:00 ~ 오후 8:30",
+      "일요일: 휴무일"
+    ]
   },
   {
     "이름": "돈돈카츠 부산대점",
@@ -3437,7 +4561,9 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZO8JntKTO7to6uvv0xHCdJCzcBKYWzAc25lzaSphMkmMNNbmcSRQ8yCeItmACzv-pZJ7AhdSL_TcbdZzlCrwZt6awEJtBOd_xUnqj2-_DtH2ppS4esFX0ka2pg15ZdJ0XHGzdaU1bR7TqT5IKGwZxoI=s1600-w800",
     "lat": 35.233163,
-    "lng": 129.0876526
+    "lng": 129.0876526,
+    "전화번호": "051-583-0565",
+    "운영시간": []
   },
   {
     "이름": "톤쇼우",
@@ -3459,7 +4585,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZPise0Qb2MGlF0XIN8gIG9vkUvTuNeSIS57CaDeUEL4ipRBiSlQvHIZsjCBKghYevZHf4X293goytt7SzvAFvu88kzg0-pwg2ZbieACsiULL1uyoiUUdQB_TtVNHanI-bW7o4vm8Xcu3gwC9GSbsxll4Q=s1600-w800",
     "lat": 35.2279521,
-    "lng": 129.0836587
+    "lng": 129.0836587,
+    "전화번호": "010-5685-5482",
+    "운영시간": [
+      "월요일: 오전 11:00 ~ 오후 9:00",
+      "화요일: 오전 11:00 ~ 오후 9:00",
+      "수요일: 오전 11:00 ~ 오후 9:00",
+      "목요일: 오전 11:00 ~ 오후 9:00",
+      "금요일: 오전 11:00 ~ 오후 9:00",
+      "토요일: 오전 11:00 ~ 오후 9:00",
+      "일요일: 오전 11:00 ~ 오후 9:00"
+    ]
   },
   {
     "이름": "스시마이우 부산대점",
@@ -3481,7 +4617,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZMU4GSGN5adwZhYB9nFTN7F1AsWYzZk-Sa3-3USrxZHJHCTpflxscKRbWDTQkPXv2b8yg4z5nrtD2cLsLitV4lK-1Nbw8twjVm4xuXIbA1p5DI6laAx5v4F1d7fnbXgYJTQkdXawwdobZwPeQ=s1600-w800",
     "lat": 35.2323,
-    "lng": 129.0876
+    "lng": 129.0876,
+    "전화번호": "051-582-3339",
+    "운영시간": [
+      "월요일: 오전 11:00 ~ 오후 10:00",
+      "화요일: 오전 11:00 ~ 오후 10:00",
+      "수요일: 오전 11:00 ~ 오후 10:00",
+      "목요일: 오전 11:00 ~ 오후 10:00",
+      "금요일: 오전 11:00 ~ 오후 10:00",
+      "토요일: 오전 11:00 ~ 오후 10:00",
+      "일요일: 오전 11:00 ~ 오후 10:00"
+    ]
   },
   {
     "이름": "포포포 부산대본점",
@@ -3503,7 +4649,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZPGR2D1Cv63NA70dwerhUTGV-B17Ouj1iMQrLX1QEE-jbXzJVDyAjUxDSuKr2LxKqUoLAGZLRu_ieL2OSynltkc2TE0YTHlPLbtm6C0qbQBHFlhBzSBdj_Oaz54zYHilw8pEoM_ngg7_Za5rJCdgVIwTQ=s1600-w800",
     "lat": 35.2279521,
-    "lng": 129.0836587
+    "lng": 129.0836587,
+    "전화번호": "051-582-1566",
+    "운영시간": [
+      "월요일: 오전 11:30 ~ 오후 9:00",
+      "화요일: 오전 11:30 ~ 오후 9:00",
+      "수요일: 오전 11:30 ~ 오후 9:00",
+      "목요일: 오전 11:30 ~ 오후 9:00",
+      "금요일: 오전 11:30 ~ 오후 9:00",
+      "토요일: 오전 11:30 ~ 오후 9:00",
+      "일요일: 오전 11:30 ~ 오후 9:00"
+    ]
   },
   {
     "이름": "지대루참숯왕소금구이",
@@ -3525,7 +4681,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZO9p6JwmMiPufqGTZ9TDdg5jJAtGUygCkSn-ySxYX0f8kFqt3kzVRd8abRi87_32TmWR0HUrfcaTdt0lVN0ZHnFQsnXPUzE8sLfTRuQq2P1nerWESZubQCur-yGXv6GCRDfobXsCPLQ2K4dg30JT2MQkw=s1600-w800",
     "lat": 35.2323,
-    "lng": 129.0876
+    "lng": 129.0876,
+    "전화번호": "051-583-3005",
+    "운영시간": [
+      "월요일: 오후 4:00 ~ 오전 2:00",
+      "화요일: 오후 4:00 ~ 오전 2:00",
+      "수요일: 오후 4:00 ~ 오전 2:00",
+      "목요일: 오후 4:00 ~ 오전 2:00",
+      "금요일: 오후 4:00 ~ 오전 2:00",
+      "토요일: 오후 4:00 ~ 오전 2:00",
+      "일요일: 오후 4:00 ~ 오전 2:00"
+    ]
   },
   {
     "이름": "맛나감자탕 부산대점",
@@ -3547,7 +4713,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZNWe_gIqN1U75A30-3gy4FQL4qKGGupZRvo4-1fngCgQrPtfNDgIfvOPzEyaywcYQRHg7rJ9ySkwfPVmXZbhdMaCRhoyJAzzwJJBc29Wjn1yff09Z4LS5IzSRgy5uEh0PClE3wkYGfyzFTKww=s1600-w800",
     "lat": 35.2323,
-    "lng": 129.0876
+    "lng": 129.0876,
+    "전화번호": "051-512-8289",
+    "운영시간": [
+      "월요일: 오전 11:00 ~ 오후 10:00",
+      "화요일: 오전 11:00 ~ 오후 10:00",
+      "수요일: 오전 11:00 ~ 오후 10:00",
+      "목요일: 오전 11:00 ~ 오후 10:00",
+      "금요일: 오전 11:00 ~ 오후 10:00",
+      "토요일: 오전 11:00 ~ 오후 10:00",
+      "일요일: 오전 11:00 ~ 오후 10:00"
+    ]
   },
   {
     "이름": "샤브20 부산금정점",
@@ -3569,7 +4745,9 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZOgTWh7cMHzcYSJet_LXRgZGinYcY0qDzI0DOxOH_hr6SSJ9JN2sI6CgBB0LzYpEdaxGaYcs_b8gswiTZA4eea7rA7nUDKVUpacc6yBE7h5F7FEx0exqrBL8rwA-LcS9ratzHAOP6RHZCqQczWvdqnIZg=s1600-w800",
     "lat": 35.2323,
-    "lng": 129.0876
+    "lng": 129.0876,
+    "전화번호": "051-515-4920",
+    "운영시간": []
   },
   {
     "이름": "등촌샤브칼국수 부산대점",
@@ -3591,7 +4769,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZPxoVWBqAvysN4xBaS3bpeu2yjp3OzPqShyyT_Ccu9w7bqJNpSGcUVl61Tb4Iis8KHF3-A4yDBX0XLT3Slv5x8GJTG_x1Ai82xjFgEWUSFLYvzSgcIqrlSj_4JNMjpTolJmkvXwEPUnSBZa=s1600-w800",
     "lat": 35.2323,
-    "lng": 129.0876
+    "lng": 129.0876,
+    "전화번호": "010-5234-8876",
+    "운영시간": [
+      "월요일: 오전 11:00 ~ 오후 9:00",
+      "화요일: 오전 11:00 ~ 오후 9:00",
+      "수요일: 오전 11:00 ~ 오후 9:00",
+      "목요일: 오전 11:00 ~ 오후 9:00",
+      "금요일: 오전 11:00 ~ 오후 9:00",
+      "토요일: 오전 11:00 ~ 오후 9:00",
+      "일요일: 오전 11:00 ~ 오후 9:00"
+    ]
   },
   {
     "이름": "수수하지만굉장해 부산대점",
@@ -3613,7 +4801,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZMm0E9Ht5zhXXAZRDQnwGhII1sdlCxUZL-1rV7WO2zSFPFI-O67me9kewRw0jwFg-tp44LzjEDnqfLWQpwJ954UJgpp3bk_MFB9vNkY4pP-r5nmhz21_CA6QROSOF4aSGSi_nVFrOgd-KhdP0o=s1600-w800",
     "lat": 35.2323,
-    "lng": 129.0876
+    "lng": 129.0876,
+    "전화번호": "050-71351-8725",
+    "운영시간": [
+      "월요일: 오전 11:30 ~ 오후 2:30, 오후 5:00~8:30",
+      "화요일: 오전 11:30 ~ 오후 2:30, 오후 5:00~8:30",
+      "수요일: 오전 11:30 ~ 오후 2:30, 오후 5:00~8:30",
+      "목요일: 오전 11:30 ~ 오후 2:30, 오후 5:00~8:30",
+      "금요일: 오전 11:30 ~ 오후 2:30, 오후 5:00~8:30",
+      "토요일: 오전 11:30 ~ 오후 2:30, 오후 5:00~8:30",
+      "일요일: 오전 11:30 ~ 오후 2:30, 오후 5:00~8:30"
+    ]
   },
   {
     "이름": "수림식당 본점",
@@ -3635,7 +4833,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZOVYVNwqdgTLckI2-TcjUEbs-AIOyyNrSOAmX0B8kX39ORM9elIG-52ZKYujgEySPlsti-Q5_axz4psUTODiZdvHVibRLxYLzvUJW1OznSoD2gz6ne9ITPlsGTRd0r3DyQkNhkk3yptVJuEitk=s1600-w800",
     "lat": 35.2494029,
-    "lng": 129.0849863
+    "lng": 129.0849863,
+    "전화번호": null,
+    "운영시간": [
+      "월요일: 오전 11:00 ~ 오후 8:00",
+      "화요일: 오전 11:00 ~ 오후 8:00",
+      "수요일: 오전 11:00 ~ 오후 8:00",
+      "목요일: 오전 11:00 ~ 오후 8:00",
+      "금요일: 오전 11:00 ~ 오후 8:00",
+      "토요일: 오전 11:00 ~ 오후 8:00",
+      "일요일: 오전 11:00 ~ 오후 8:00"
+    ]
   },
   {
     "이름": "짬뽕상회 부산대점",
@@ -3657,7 +4865,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZPtzHCb8koT6k2d3Px2WGfrpYpYphxRZps_YKyJZ9jvo7QHrKNO4Fg3mIgQH-7G_cmwiMGjt0ihr1AEcd18KFkvrvbxTbZS_Or7XmUnTgutyla-lVfB75UCDTbpNG21tywzni7nISP2JmTb-rc=s1600-w800",
     "lat": 35.2323,
-    "lng": 129.0876
+    "lng": 129.0876,
+    "전화번호": "051-513-3287",
+    "운영시간": [
+      "월요일: 오전 11:00 ~ 오후 11:00",
+      "화요일: 오전 11:00 ~ 오후 11:00",
+      "수요일: 오전 11:00 ~ 오후 11:00",
+      "목요일: 오전 11:00 ~ 오후 11:00",
+      "금요일: 오전 11:00 ~ 오후 11:00",
+      "토요일: 오전 11:00 ~ 오후 11:00",
+      "일요일: 오전 11:00 ~ 오후 11:00"
+    ]
   },
   {
     "이름": "그집짬뽕0927 부산대점",
@@ -3679,7 +4897,9 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZM1yCf6NRlfL435lUlwWo27HPnzn68h9U4XICVp9yLiWQR_l-Pk-34fF1SYBLFM2Xhrw9GyGw2dbcP6O_j7f4YWEyqeP0rqM2rUExdqZjvCnHhytOSTrN-rJxkIJHFy3PuowmXxON1oPyTImRkXLiW38w=s1600-w800",
     "lat": 35.2323,
-    "lng": 129.0876
+    "lng": 129.0876,
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "장호가양꼬치 부산대점",
@@ -3701,7 +4921,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZMCkJWhEukEoW_s4IF73lvicH903urG90A3RDDZ78Acjnam47BOVUvLY8T9IPfCYG2RPX_ZT1ZdaMYFPafnCv7sloUVxcDhgn8Sdy3HiE_oUmpAKHjD_47o0MEMpNKoohEBr6VJYvCjjLu1-g=s1600-w800",
     "lat": 35.2323,
-    "lng": 129.0876
+    "lng": 129.0876,
+    "전화번호": null,
+    "운영시간": [
+      "월요일: 오후 5:00 ~ 오전 1:00",
+      "화요일: 오후 5:00 ~ 오전 1:00",
+      "수요일: 오후 4:30 ~ 오전 1:00",
+      "목요일: 오후 4:30 ~ 오전 1:00",
+      "금요일: 오후 4:30 ~ 오전 1:00",
+      "토요일: 오후 4:30 ~ 오전 1:00",
+      "일요일: 오후 5:00 ~ 오전 12:30"
+    ]
   },
   {
     "이름": "신짜글이닭발 부산대점",
@@ -3723,7 +4953,9 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZP88Lq1nX0tsGV5C95CSZWJF_z3WsiU5oHEhh2jEel7QbQsxRGnSsLGP_P1reV4q4G-3ZrtEHgmnzhfOoINHVuwg48wrXuwrje4m-iF53bRA_jt76zypXS1ib2EHVQ-ecBn13w2UvWyAoHrO0xZ4PyIIQ=s1600-w602",
     "lat": 35.2290664,
-    "lng": 129.0879957
+    "lng": 129.0879957,
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "뉴숯불통닭 본점",
@@ -3745,7 +4977,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZNb_O5MvOiq8zihW4VsqAuNsaPwWD5TCwvTmKOXKjMICYg12TFT8OG_g5a1uVBL1IB2xAmeHXuNwdPljaQrPYWIusa2fqpZxeZHi-kKCTXHkGd3H2yARU6bVhV5BuVK1UkGtsSSm5qMiSTTbVO8Z3uEjA=s1600-w800",
     "lat": 35.2379396,
-    "lng": 129.0807447
+    "lng": 129.0807447,
+    "전화번호": "051-514-3885",
+    "운영시간": [
+      "월요일: 오후 4:00 ~ 오전 12:00",
+      "화요일: 오후 4:00 ~ 오전 12:00",
+      "수요일: 오후 4:00 ~ 오전 12:00",
+      "목요일: 오후 4:00 ~ 오전 12:00",
+      "금요일: 오후 4:00 ~ 오전 12:00",
+      "토요일: 오후 4:00 ~ 오전 12:00",
+      "일요일: 휴무일"
+    ]
   },
   {
     "이름": "애슐리퀸즈 NC 부산대점",
@@ -3767,7 +5009,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZPLP2DhyFZCIkQ5E7n_TRdCikrhINyXZgajc5Qoq90FogybrZ32YD1gElpHnzmTsvHrNa-ruNYPDX34wVTtAdEXrXyUPYC-RVxo3sthOtUkNvaIdrtexrC1kcX2acGTSB8j7IjHnPBp9Ead=s1600-w766",
     "lat": 35.2323,
-    "lng": 129.0876
+    "lng": 129.0876,
+    "전화번호": "050-71406-7360",
+    "운영시간": [
+      "월요일: 오전 11:00 ~ 오후 3:00, 오후 5:00~9:00",
+      "화요일: 오전 11:00 ~ 오후 3:00, 오후 5:00~9:00",
+      "수요일: 오전 11:00 ~ 오후 3:00, 오후 5:00~9:00",
+      "목요일: 오전 11:00 ~ 오후 3:00, 오후 5:00~9:00",
+      "금요일: 오전 11:00 ~ 오후 3:00, 오후 5:00~9:00",
+      "토요일: 오전 11:00 ~ 오후 9:00",
+      "일요일: 오전 11:00 ~ 오후 9:00"
+    ]
   },
   {
     "이름": "진경순 부대꼬마김밥 부산대본점",
@@ -3789,7 +5041,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZMOy0Srs53pxCa6anQ_zohxgsPBWKVT-LeqypNTJ5UZ-8gWxtWz_B66-kOGCVflTnRvUou5Qac8yrHGCbNJuQE0RtOlQHu3AkxwzpiK436R5PQFbxK3yQV2qcn41mjQeZGygemiNQQkkJMU2iD_JDnG=s1600-w800",
     "lat": 35.2262232,
-    "lng": 129.0884944
+    "lng": 129.0884944,
+    "전화번호": "051-583-9330",
+    "운영시간": [
+      "월요일: 24시간 영업",
+      "화요일: 24시간 영업",
+      "수요일: 24시간 영업",
+      "목요일: 24시간 영업",
+      "금요일: 24시간 영업",
+      "토요일: 24시간 영업",
+      "일요일: 24시간 영업"
+    ]
   },
   {
     "이름": "삼굽살 부산대점",
@@ -3811,7 +5073,17 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZOp_ae1FblrgP22bfcnM8Zr5M-iZTvMNEwVpHwWNXs4w9vHDeFPLo9HM_ATxzouUIZfBlDgnsYGzwiLBr_1mmuw4fNTe7rMm9HzO4nPiIL8u-3R-y6glacqJv-IXoRlZgPMzjyCJ4G2nIJWGg=s1600-w800",
     "lat": 35.2323,
-    "lng": 129.0876
+    "lng": 129.0876,
+    "전화번호": "050-71354-5103",
+    "운영시간": [
+      "월요일: 오후 3:00 ~ 오전 12:00",
+      "화요일: 오후 3:00 ~ 오전 12:00",
+      "수요일: 오후 3:00 ~ 오전 12:00",
+      "목요일: 오후 3:00 ~ 오전 12:00",
+      "금요일: 오후 3:00 ~ 오전 12:00",
+      "토요일: 오후 3:00 ~ 오전 12:00",
+      "일요일: 오전 12:00 ~ 오후 12:00, 오후 3:00 ~ 오전 12:00"
+    ]
   },
   {
     "이름": "부산대 매일꽃돈",
@@ -3833,7 +5105,9 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZPR0lBmbYVXNtt9eJ9NDQSf8iTAvvKjDOJN-87CgsgnPC3SGo4qMeWuyUrwdYpJjKBpRk9zsRlha4-l2FAAQ8OrQ_iLP_T7yNOp6J3-sR57KuLSsTMu5jG7undPCUjW4uxbwmS8UcV2tlWZ32H_RJ5t1w=s1600-w800",
     "lat": 35.2323,
-    "lng": 129.0876
+    "lng": 129.0876,
+    "전화번호": "051-516-1611",
+    "운영시간": []
   },
   {
     "이름": "전통쑥밀면 부산 본점",
@@ -3855,7 +5129,9 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZMQtms4M4vgaTut1YlVyVxg7mPSkJoLlBaGMjOZ38nG2aJJpm1vVTgCgS2h3Uyo8JUO4KY2H3a05YTUtTk1dmdRtN-spSeS6PGO7aYHaQcv36uc8FEN6AjrZr_j6bhSog7fTzvsQaC_ooKmCJEV7wf50w=s1600-w800",
     "lat": 35.2323,
-    "lng": 129.0876
+    "lng": 129.0876,
+    "전화번호": "051-515-9337",
+    "운영시간": []
   },
   {
     "이름": "카오카무",
@@ -3877,6 +5153,8 @@
     ],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZNx98xQrifRQny-HVYNWpm61hkq-o13UcljPJsMroLF-NqLfuFLof7nc_ogdJ3lFlYkde7I7A-tfiNyZe-kNuJc1OT51j7IvzAyQOihkjJyM4XOOthfkVfFjd9FPvdboXXieXdjra6kVgvPdWiHOBBCAg=s1600-w800",
     "lat": 35.2323,
-    "lng": 129.0876
+    "lng": 129.0876,
+    "전화번호": null,
+    "운영시간": []
   }
 ]

@@ -11,10 +11,10 @@
     "lng": 129.0845794,
     "별점": 0.0,
     "리뷰수": 197,
-    "전화번호": null,
-    "운영시간": [],
     "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=https%3A%2F%2Fpostfiles.pstatic.net%2FMjAyNjAyMjBfMTg3%2FMDAxNzcxNTUyNzE2NTY1.erNuYmxcVx-rQbEFuneK23P315E-IfkFw-x4dTwZdsMg.80Pu6DcE6hB02h4uKsvhSbxDlAR_FpgMwkzmmurQH0Yg.JPEG%2FSE-917BBD5F-0E04-4022-ACEB-8F00402EF019.jpg%3Ftype%3Dw966",
-    "사진목록": []
+    "사진목록": [],
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "고더커피 부산대정문점",
@@ -28,13 +28,13 @@
     "lng": 129.0845215,
     "별점": 1,
     "리뷰수": 1,
-    "전화번호": null,
-    "운영시간": [],
     "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=https%3A%2F%2Fpostfiles.pstatic.net%2FMjAyNTA4MjdfMTc3%2FMDAxNzU2MjY0NTk2NzU4.4hsOAVUYP2m8qozuesXPTT8DfEm0bYaHnPcMAI4maxIg.VnSvIgayJwE-6s_YO57Gb64PbMAA9dpi8qV0RY9dXl4g.JPEG%2FKakaoTalk_20250821_180114582_02.jpg%3Ftype%3Dw773",
     "사진목록": [
       "https://lh3.googleusercontent.com/place-photos/AJRVUZPiFCPonOfELWCOKNFQ9jT8UJ51xHwml6wHpDfdRWEbBjaQWvK72TIgNmWlyM3GOR7EFd_5xx_OuNOCjaPDlk822rRG4ud0kYJen0eN05CoqvRJYvmo1FrbeaWGhxCjgxqJ6sgn252u_emw_OHF9_ii=s1600-w800",
       "https://lh3.googleusercontent.com/place-photos/AJRVUZNMII_drORT-4By7Zi6LZOoPTTHS_AtQpKq0Zrx9pHK3rQFawvzCSjVyoUIKUBKAmUz9RXfIv-s9yg_3AYd7yfOD9ndXxTDJ3wDTkjhJeziZsx_k0ew6hU9da2eoYHxRZd2W_D1Pj8eEfzYJL5dfJTi=s1600-w800"
-    ]
+    ],
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "마스커피랩",
@@ -133,8 +133,6 @@
     "lng": 129.0846557,
     "별점": 4.8,
     "리뷰수": 9,
-    "전화번호": null,
-    "운영시간": [],
     "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flocal%2FkakaomapPhoto%2Freview%2F5dac81c74b6d1082adb51bc8c02a458d02c73f51%3Foriginal",
     "사진목록": [
       "https://lh3.googleusercontent.com/place-photos/AJRVUZMXoqNDGHFlCyzNZgVhxrftCdMKEREmef8-VsEJRk16OqZnEfzO8rcrH9x5tSiDgLn_t5SCddFOOblh2Uk10JmNYgFlqXvlXa_xcytWaqM-8rc2t214JQLtVLB9YjrN6cBqHyyobFgbuCozHg=s1600-w800",
@@ -142,7 +140,9 @@
       "https://lh3.googleusercontent.com/place-photos/AJRVUZOzndqai0e5jafyvs5jxOjbh03Kv--9r3A0n1A_J0Hi4tSBzaaUVDQ-yL2gKQk-MVzvRdo_tKXign01FfJ-b0lgalB69BHGXiFvuRdOGxC1zFzouQnz3w_bbFiEhSlVXeCvl02ZqErPqIXLs2liBzmYvw=s1600-w800",
       "https://lh3.googleusercontent.com/place-photos/AJRVUZO4_hOwUU3VlUKdkkw-AN7IYH6komRFpnUGcMEjJcSrNQ1IkFCOS93TrdPeP5xf3puMZlgT6JxdvdIJ-o95JBxSp8vHxLutmQcS5e_rV8UBZBqtkdlGETZDARzE8erBbUeIq9uHS8LMP5ogsrU=s1600-w800",
       "https://lh3.googleusercontent.com/place-photos/AJRVUZPwGRsjyVSFRCEsISRG8883rvlWnOkQlJPS61Hgdp7prPs9ObcnLL_FlhD-CMm7Wf8l_hvBQOvb6RQeuASB2w42rZQT9oxubQ_9dW_9osyxUIpUVEwC2XxOLkcpomCBlXF-TpgkhgU4aYvKWmo=s1600-w800"
-    ]
+    ],
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "어벤더치커피 부산대정문점",
@@ -274,14 +274,14 @@
     "lng": 129.0849031,
     "별점": 4.7,
     "리뷰수": 3,
-    "전화번호": null,
-    "운영시간": [],
     "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flocal%2FkakaomapPhoto%2Freview%2F7787d049d0d1bd0579ad1242106bbd710406e4b1%3Foriginal",
     "사진목록": [
       "https://lh3.googleusercontent.com/place-photos/AJRVUZPsYF9rBpjthyb6ZGY3kdk-H3ADgWGUjpGwzlPWQx9j4Py0ifpT9C9mgSR-38xbWpt6lNaPsTAhxxpdtnSb0Gnb7Z-w6S1in6LA-mM0iD-yYur2SMd4OkABP-UDj2p-HVzlL27m0tW5jOJY-Z47kh0A=s1600-w800",
       "https://lh3.googleusercontent.com/place-photos/AJRVUZNB2xZOGwAAZTaNejfreV658xvgxRZMCmWmlopk06ZFM3X1DoOyQ0s0lNEDla7hLcN8SIoxk9ouesU-Y793pRcWwXeQ4VpwZa6uAYIlC01ggi3KDh151lHw-WdrPHMihRH78EqO-O_YeBQrT7H_iYithQ=s1600-w800",
       "https://lh3.googleusercontent.com/place-photos/AJRVUZNWp5egpJPKM3gJqrQsV1In6UKhJwjyMjXyyrWxQQ-ZCcx_yd0Mh9M1Dh7Z9USpRZAUP1Hw-0X0Ebdj7i0UxB2TArJwkbFjMPsz0pStK9wcVm0AAiMvTu5FQLIaSzi8G4K9ohGd7YHkzKRLce82IJ6M_A=s1600-w800"
-    ]
+    ],
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "모모니예",
@@ -312,8 +312,6 @@
     "lng": 129.085203,
     "별점": 4.5,
     "리뷰수": 23,
-    "전화번호": null,
-    "운영시간": [],
     "사진": "http://staticmap.kakao.com/staticmap/og?type=place&srs=wgs84&size=400x200&service=placeweb&m=129.08392734076753%2C35.232306268273675",
     "사진목록": [
       "https://lh3.googleusercontent.com/place-photos/AJRVUZNXh8JAIHiDDr0_eQn08ImB-iWSjx-PbEQARr8OXjvCC-WOAXoda3WdWDgivgUaiDt7UIPg6UbgrjjPtGdllB2KNY70C5-pS5P720DvGdpPfejbUl43LZihd1FVcxeIdlEyrpqaRCPtayVCyhA=s1600-w800",
@@ -321,6 +319,16 @@
       "https://lh3.googleusercontent.com/place-photos/AJRVUZOxmL7VSYOLF6CNFpgiyaEs4Iwi0c3cVFXdtzCt8dM5XAVax3Lx8Uj2bJiKVCzqwSJcAcDm9VGRKIm7OA-LBhVQmH2Ord1S-NqmoIN2sy9bi6rqtbfjtWLKOVbhPaBGm0EEXZO2hieBjG33BA=s1600-w800",
       "https://lh3.googleusercontent.com/place-photos/AJRVUZOLKxUAPrz3u-V-qCVOgiy1d_lriUopsX35o4ydFmHFXeb8ejvQdlKDvrNi01pcx50x71NfoVYqb1PQA_D6rXiTymlJfjS_m2wNqot3e67PiJ4VgL1LzGpxyTMKJSWoY9UCwRNtskGtUlX5=s1600-w800",
       "https://lh3.googleusercontent.com/place-photos/AJRVUZOias-37Hr6oiB_jmjOx2i7Uqq6_AARJtzlTWwlIKktrVLV8zuUzJMDmMZCMDYAcsoI7LGDiLoOokNH1sKyNiJ27n3UzM7k6g0BCO1w1lsWaMaQPuhybLpsYqI2eLoJvBofkLv7WSEdQA2j3g=s1600-w800"
+    ],
+    "전화번호": null,
+    "운영시간": [
+      "월요일: 오전 9:00 ~ 오후 6:00",
+      "화요일: 오전 9:00 ~ 오후 6:00",
+      "수요일: 오전 9:00 ~ 오후 6:00",
+      "목요일: 오전 9:00 ~ 오후 6:00",
+      "금요일: 오전 9:00 ~ 오후 6:00",
+      "토요일: 휴무일",
+      "일요일: 휴무일"
     ]
   },
   {
@@ -335,12 +343,12 @@
     "lng": 129.0847341,
     "별점": 4,
     "리뷰수": 1,
-    "전화번호": null,
-    "운영시간": [],
     "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=https%3A%2F%2Fpostfiles.pstatic.net%2FMjAyNjAxMDlfMTE0%2FMDAxNzY3OTU2NDA3NTIy.aWBewrZsEwl76A4hTorFspxmjjLXKYhXOU0zmhhzVqog.jWVSqBtwsj8dFRV5N9ScmdvZXHQFFITyiLoWQD7DZicg.JPEG%2FSE-1b0f0383-9b99-494b-8208-8fcf54c37511.jpg%3Ftype%3Dw773",
     "사진목록": [
       "https://lh3.googleusercontent.com/place-photos/AJRVUZPRqYsuoyVLh0024vAsoxy9Gu-SZmfo21qV0X4OU0loVsYKpdA1e4n4GRiQ5aVyu5gxjH0Y9YiG23MQBSARa5KgqM8YnpezB1LR3yLRuBqyO1WsuP4Pp28KdwzGbvgezS6YdtaV1Wxj91NzAg=s1600-w800"
-    ]
+    ],
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "더다락",
@@ -409,10 +417,10 @@
     "lng": 129.0855406,
     "별점": 0.0,
     "리뷰수": 222,
-    "전화번호": null,
-    "운영시간": [],
     "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=http%3A%2F%2Ft1.kakaocdn.net%2Fmystore%2F3EAA9FE60B7E439085AC4E56847ABA32",
-    "사진목록": []
+    "사진목록": [],
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "더카페 부산대NC백화점(지하1층)",
@@ -457,10 +465,10 @@
     "lng": 129.0856158,
     "별점": 4.8,
     "리뷰수": 23,
-    "전화번호": null,
-    "운영시간": [],
     "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flocal%2FkakaomapPhoto%2Freview%2F8ee3d9a7ef37e94ba12e10785042c5e8ede7ad68%3Foriginal",
-    "사진목록": []
+    "사진목록": [],
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "콘드168",
@@ -474,10 +482,10 @@
     "lng": 129.085453,
     "별점": 5,
     "리뷰수": 1,
-    "전화번호": null,
-    "운영시간": [],
     "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=http%3A%2F%2Ft1.kakaocdn.net%2Fmystore%2F1B300DCD1E924959A1644FF72A80FC6A",
-    "사진목록": []
+    "사진목록": [],
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "월남덕커피",
@@ -491,10 +499,18 @@
     "lng": 129.0839897,
     "별점": 0.0,
     "리뷰수": 94,
-    "전화번호": null,
-    "운영시간": [],
     "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=http%3A%2F%2Ft1.kakaocdn.net%2Fmystore%2FAEEC499ED7764CD1A9A230C33B617A7F",
-    "사진목록": []
+    "사진목록": [],
+    "전화번호": "050-71422-7083",
+    "운영시간": [
+      "월요일: 오전 11:00 ~ 오후 10:00",
+      "화요일: 오전 11:00 ~ 오후 10:00",
+      "수요일: 오전 11:00 ~ 오후 10:00",
+      "목요일: 오전 11:00 ~ 오후 10:00",
+      "금요일: 오전 11:00 ~ 오후 10:00",
+      "토요일: 오전 11:00 ~ 오후 10:00",
+      "일요일: 오전 11:00 ~ 오후 10:00"
+    ]
   },
   {
     "이름": "노스커피 문창점",
@@ -587,10 +603,10 @@
     "lng": 129.0843641,
     "별점": null,
     "리뷰수": null,
-    "전화번호": null,
-    "운영시간": [],
     "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=https%3A%2F%2Fpostfiles.pstatic.net%2FMjAyNTEyMDhfNiAg%2FMDAxNzY1MTY1NDI2MjM0.zdd5pdKgI4sHSfcTTGmW8tScXh2_VSVXWZOUrUb0-ZUg.EKZwzvGFt60fsWCHpcgpwLBjbJ90g-0jcEaCpYBwf_Yg.JPEG%2F900%25EF%25BC%25BF20250930%25EF%25BC%25BF094750.jpg%3Ftype%3Dw966",
-    "사진목록": []
+    "사진목록": [],
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "전람회의그림",
@@ -647,10 +663,10 @@
     "lng": 129.0345809,
     "별점": null,
     "리뷰수": null,
-    "전화번호": null,
-    "운영시간": [],
     "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flocal%2FkakaomapPhoto%2Freview%2F663442c15f97f6171fe272e29d17046274f6e8e6%3Foriginal",
-    "사진목록": []
+    "사진목록": [],
+    "전화번호": "050-35260-5170",
+    "운영시간": []
   },
   {
     "이름": "그릭오 부산대점",
@@ -819,8 +835,6 @@
     "lng": 129.0846661,
     "별점": 5,
     "리뷰수": 3,
-    "전화번호": null,
-    "운영시간": [],
     "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=http%3A%2F%2Ft1.kakaocdn.net%2Fmystore%2FED4FE16625EB4B4D8DB1A4D1059106E0",
     "사진목록": [
       "https://lh3.googleusercontent.com/place-photos/AJRVUZOsfbh0ioQSri-KHR4xvOKzljM3gV8v_nr5qMSmLzcMLrSQXAlSetIp49OE_4vpCROG7U-MHtCD1bA0u0pJ78uZWaX_C2Mdp1wibkvCFP8sb1VTDl19XBB5yhZtg69uXDLQUrtypI89-rk9mj8=s1600-w800",
@@ -828,7 +842,9 @@
       "https://lh3.googleusercontent.com/place-photos/AJRVUZMHb_7omYgvybb-z-8le9KWwT7ClRmAqzngM3r2349a8GAXZ7xLC1mt1gBcvifxUObHTjtuXKGH0I5OKC0MJEhb49bXWfLjBmQeiS93Z7_UjZhBu1mvJaHJ1jwJGDEtMc-_9DuG26OXxWjd5Ps=s1600-w800",
       "https://lh3.googleusercontent.com/place-photos/AJRVUZMjNJDPaRMeSyFmRlupYnmMZhbaDrbEJnaeX3knJcR1HAK8TflLXbTpYk-wx6FaS3b8quFWgmJUZ69Bdtmd3udhh-7bN0X-qvu6PZIVvhHvVDkhBB8KjIv6EBcyS2Y1EQvI75gC6OpNBKU-aTsX5bRktA=s1600-w800",
       "https://lh3.googleusercontent.com/place-photos/AJRVUZOesBlS-l5xqs6rivuVWZF8oS63cc6ECdsTlDxUfKjH-Evt96sZrYA3rHwSlklQ3drpywkuEOUoD40hwJfWCETWwlqbU38-HJ3EPZaLQoDJxGncCYeWuJRBrtzk2hwaqjATLrcmnE3QUd8A=s1600-w800"
-    ]
+    ],
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "번아웃커피 문창점",
@@ -991,8 +1007,6 @@
     "lng": 129.0863968,
     "별점": 5,
     "리뷰수": 5,
-    "전화번호": null,
-    "운영시간": [],
     "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flocal%2FkakaomapPhoto%2Freview%2F8167affe8eac37cf9353cde5366ab1f54277a828%3Foriginal",
     "사진목록": [
       "https://lh3.googleusercontent.com/place-photos/AJRVUZPn8bZypbwE08QJ0_nFWr84qTkbY0rqXUX0pSIcDzaiziLM2xq-m7qv7L_u5ff_Jz0ESWeq4U6gtwXAy8d_5Gltb1trDysUe-tiwxePLFnJo4r7uiOU8s5CdULHMj1V5UKDcwVVYxnZvYnOhw=s1600-w800",
@@ -1000,7 +1014,9 @@
       "https://lh3.googleusercontent.com/place-photos/AJRVUZMvK6HibP7OXNUkb_qFz_eDDYO0aA9qvRUX6wxHLep0PmA5DqTITF9QHZq-Cd9ql0mFupgWnOLSY92V7KGZcJYmBEJMz2h9BA-HUSvL_Lu8vniOQtUZcvbw_ZDvBkDNIVABGIaGpdOTycUo2AY=s1600-w800",
       "https://lh3.googleusercontent.com/place-photos/AJRVUZNJsbhcm52stlRHo6SS8kEZbYWRaNslr-7KGabHzU8xcsl7vALNvhBz5xwT1DoVat-qADrBrmHaSlBl6_-eHY08vVz1BtJun6LysR_MY6uw-KfsIGPTt9yTsfQD4KmzMG9MZJoHia-waq79mM4=s1600-w800",
       "https://lh3.googleusercontent.com/place-photos/AJRVUZPTgWlALk8uld-MDvdNV1E8InngTq8Js1eFiYgt-mLyHEsXWBTm5hkKcNQSzsB8qzqFa-6KIYHlThDSqpyN34azMMJEPMjTZ2Z96TNDjZlHU4NVy8-i42ivYv0FRX8kjuaj_8kx3wnbwHnNdV26zhalIQ=s1600-w800"
-    ]
+    ],
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "카페미엔느",
@@ -1045,8 +1061,6 @@
     "lng": 129.0885984,
     "별점": null,
     "리뷰수": null,
-    "전화번호": null,
-    "운영시간": [],
     "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=https%3A%2F%2Fpostfiles.pstatic.net%2FMjAyNTA3MjBfMjYz%2FMDAxNzUzMDEzMDMyNTk0.n3D3Z3ZzpDPuJTjTNyTa9eW0OTBhcWybH-6RJM1R0eog.9DlWTIkWarJsucXrban4jXy4KwU2sWPPkluVXD6tsi4g.JPEG%2FIMG%25EF%25BC%25BF8498.jpg%3Ftype%3Dw773",
     "사진목록": [
       "https://lh3.googleusercontent.com/place-photos/AJRVUZNscyYYIP6brVd60Hgf_uYlZqHaQGUeDHE38UL8kASH3nL9bLCakPExmc9r4d7gfgqycGlGVK3epQcwRhaXuEoFM4Ssh5xt7Sul-ZOcoEBhjtvmvjIGeWeGnFWjVcSGlyV7yfnFJSjiW87BdDY=s1600-w800",
@@ -1054,7 +1068,9 @@
       "https://lh3.googleusercontent.com/place-photos/AJRVUZPCKk9Mm_-aNs7oYqVDOshEI8T2faCTyhXLBa69kHDFU4BiP-ac2Ht93EG98eTfrzRgGNg5xS5GmTEqJc28J41cPMUhsH4mlrGVKmrixs9ftoq4ytzaVV-nGS5clce8rt_j3VMEVHr-YIzLDxY=s1600-w800",
       "https://lh3.googleusercontent.com/place-photos/AJRVUZNrkxXXyAafaWAe13SPd5sE26ivAiovJUx3lGPSFQvuqIKE5imlNG0jfeF-jVZOh5KCocJW3ZAOl0l5Oz4JlujnKHQ5F0-srJRmzxtRFmDbCBEfgpMeVTTCKLCuOcnaddxDuFlX-fWP66WQX0gCkIzZ=s1600-w800",
       "https://lh3.googleusercontent.com/place-photos/AJRVUZNbZ71SjWekU1Two8xKKRqG4lyt-P1FP_qkEMWgRaYgHdii8S5yKAO63Vm9ySa-Px0VZF2VZ5sN1D2jsCSzyUPjTCaSS8rcYj3G2ne4RNDUekyeVo8fWMHxgaQ1z9Pcjp80yThgw1NGesmi8Q=s1600-w800"
-    ]
+    ],
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "오가닉커피스튜디오",
@@ -1347,10 +1363,10 @@
     "lng": 129.087483,
     "별점": 0.0,
     "리뷰수": 3124,
-    "전화번호": null,
-    "운영시간": [],
     "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flocal%2FkakaomapPhoto%2Freview%2F25bbb2c979f893bf980236e0da5ee01fbb970904%3Foriginal",
-    "사진목록": []
+    "사진목록": [],
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "블루그로토",
@@ -1364,8 +1380,6 @@
     "lng": 129.0880838,
     "별점": 4.5,
     "리뷰수": 32,
-    "전화번호": null,
-    "운영시간": [],
     "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flocal%2FkakaomapPhoto%2Freview%2Fe16d3cc31cd27eafda62e2f332821d2b8678c7bd%3Foriginal",
     "사진목록": [
       "https://lh3.googleusercontent.com/place-photos/AJRVUZPiA5pUk3pvpNTsngI4zh4_y2F4e95RIjm6qMBxWW5EPk3c8F0713-1M8vfSuwkpzv4pDSAhifRzBGDjqJb92nC2-t8pHCIEjKXIBRWZThzdi9ItlsZthpbJFd5Xb0WPoFuZCGbTEQ4QzpeEYs=s1600-w800",
@@ -1373,7 +1387,9 @@
       "https://lh3.googleusercontent.com/place-photos/AJRVUZN-mzdkjSJyihHkW3Ot7y4PSZkUiBH4vxKPbMN-jiXAF1YtqCPxk_kHU60wh9ERk8ZWHfxAFWDeojv_og7XRD4j1L5YyYBEgcjhzRebi8nFRqPReaEMedOfYGOm6CiSa6afNNz4EVJpcf9OK44=s1600-w800",
       "https://lh3.googleusercontent.com/place-photos/AJRVUZMHFf5D2qmlz-_eECB5ChxUe-sKhsXVoGTRjBhhxl487zVeJnQcHLiDQG-qOzxZfaWvcbSi0zKd84_52P7XgRg6trjwsazJgJFpLPk6GaPbrACXlBxMBobDrIbZiEkrZt9Q1dGVJIpLxHAH=s1600-w800",
       "https://lh3.googleusercontent.com/place-photos/AJRVUZMp86vwKbTD4FpfYK4gD9HDJenQf_FHgszO2paondGmGgZIOwa3D6Fy4IVOjqfM_r1DKWgCGyw6R6_33-0xCaYoLtBmqBEnAjicaEVWXXIQCxL8McmaM7qT2b-ElTReCT0VVd2-mYZGRB7o5AA=s1600-w800"
-    ]
+    ],
+    "전화번호": null,
+    "운영시간": []
   },
   {
     "이름": "파리바게뜨 부산대역점",
@@ -1387,8 +1403,6 @@
     "lng": 129.0900245,
     "별점": 3.6,
     "리뷰수": 8,
-    "전화번호": null,
-    "운영시간": [],
     "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F9938EC465AD577E91E",
     "사진목록": [
       "https://lh3.googleusercontent.com/place-photos/AJRVUZO9d9mbAJYotVtrPDF_VXchNbKZrGSE84sFLkYOaGFaluLRJ4MhEZ0LH8cvBo9z5T2fup4ogqYEuQKWZlBJ-5R2-Bfyw5958iB5_0uVCFIdZBLFWgIUybgke1DwRC04CTCkUfmMnGrnwBN9pg=s1600-w800",
@@ -1396,6 +1410,16 @@
       "https://lh3.googleusercontent.com/place-photos/AJRVUZNEVYSAeCcBwY8G4DbP7hHH4MWzjYBDcegq9RkkEDzS4DH2PaAyOxCRw76yxH8I78iyTILIjRjJ45ZyZn8HG1pPfGJBOJ1u3aODh3_m_Q9332j1aig0id8ilo9-nxmvXt-rGoid9XlOvCPO3w=s1600-w800",
       "https://lh3.googleusercontent.com/place-photos/AJRVUZM4B5uDN-czom_DXiXBX_gBcJT527THbOhdfqZ0I4Tp86TcalW1AIbaszz-VBMfhqAdc66GxW-fp8GSCxJCD84jQ6HKF3O8AxPGtJJD0M4rxZX6BRJtLYFMNbV1H0NkHnvE6Yut6FU4mwHl=s1600-w800",
       "https://lh3.googleusercontent.com/place-photos/AJRVUZPQHazVSk_TZNt4ZqsL3NPksQFxPxdkdpNIqOZHh04C4r_orAyQiIxlXmrT0r0N6trfacrXTnOHqVQpiEi69gENEYe68n0V9k3C38dBSOZm8QY4S-3RMLGK8v-_GAwNhuEpGa8ZRkbLrDahgHo=s1600-w800"
+    ],
+    "전화번호": "051-583-8203",
+    "운영시간": [
+      "월요일: 오전 8:30 ~ 오후 10:00",
+      "화요일: 오전 8:30 ~ 오후 10:00",
+      "수요일: 오전 8:30 ~ 오후 10:00",
+      "목요일: 오전 8:30 ~ 오후 10:00",
+      "금요일: 오전 8:30 ~ 오후 10:00",
+      "토요일: 오전 8:30 ~ 오후 10:00",
+      "일요일: 오전 8:30 ~ 오후 10:00"
     ]
   },
   {
@@ -1441,8 +1465,6 @@
     "lng": 129.0897931,
     "별점": null,
     "리뷰수": null,
-    "전화번호": null,
-    "운영시간": [],
     "사진": "https://lh3.googleusercontent.com/place-photos/AJRVUZPqj-yZT0AsDYEAfb77hte3Ym14vkSzS2zzvHqaGLis4oK_oB2bOmbwVSyigRHYnpLYzlZw9YsgsSbc4qSXwkcq3mkRMbMSinfU_vJ34KabviWa64tIbHX94-odM0gTEGSpbrgd77fF9S8sPQ5v2-rxdg=s1600-w800",
     "사진목록": [
       "https://lh3.googleusercontent.com/place-photos/AJRVUZPqj-yZT0AsDYEAfb77hte3Ym14vkSzS2zzvHqaGLis4oK_oB2bOmbwVSyigRHYnpLYzlZw9YsgsSbc4qSXwkcq3mkRMbMSinfU_vJ34KabviWa64tIbHX94-odM0gTEGSpbrgd77fF9S8sPQ5v2-rxdg=s1600-w800",
@@ -1450,6 +1472,16 @@
       "https://lh3.googleusercontent.com/place-photos/AJRVUZMmZjzHquh-THJp38AvNJuGUl7ejvGB8BMd3nwxuX2K_8OQtvSJ9OKyHp7jcYE9nZP90FtcG-wIAnbESKZzo6XZrDBoMvHrV68kBIqTkP_PCMEQSp5qxIodpPlTc87NKDQc8NiGVk8QQU1VszrBic3QAw=s1600-w800",
       "https://lh3.googleusercontent.com/place-photos/AJRVUZNz1BK5eNcSqRbj9Pl-39hBUAbw-yjf4N2ZFqGdWiFC_rIldq1QELD8sXJlwme1rodgs0IZVnWjd8YReOhnWAEQ8dcp7ZcUK_WClBdAKQ98Fr_rxtaCAq-rZ0nB37ZrMd7ZUNRg4FKu7mxLLLk_rbqzhw=s1600-w800",
       "https://lh3.googleusercontent.com/place-photos/AJRVUZMU6UYFjQp0RTywY6e3PtQ-nJZ__sB5YyVBPcDJ0vQFSjiJNQ83GmB3BQgdo5QeyswvisTy_WQsD6UBQl057COvjsxBZGmXFEzeURBG4dR9NtmysyLPYSQbrAjoezQKm5VNLtpZOy1ZUX_l-Zk3qK3YZA=s1600-w800"
+    ],
+    "전화번호": "051-201-2771",
+    "운영시간": [
+      "월요일: 오전 10:30 ~ 오후 10:00",
+      "화요일: 오전 10:30 ~ 오후 10:00",
+      "수요일: 오전 10:30 ~ 오후 10:00",
+      "목요일: 오전 10:30 ~ 오후 10:00",
+      "금요일: 오전 10:30 ~ 오후 10:00",
+      "토요일: 오전 10:30 ~ 오후 10:00",
+      "일요일: 오전 10:30 ~ 오후 10:00"
     ]
   },
   {
