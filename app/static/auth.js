@@ -8,6 +8,8 @@ function getUser() {
 function logout() {
   localStorage.removeItem('jwt');
   localStorage.removeItem('user');
+  localStorage.removeItem('bookmarks');
+  localStorage.removeItem('visited');
   location.href = '/login';
 }
 
@@ -41,7 +43,7 @@ document.addEventListener('click', e => {
   if (menu && !e.target.closest('#authArea')) menu.style.display = 'none';
 });
 
-// 서버 북마크 동기화 (로그인 상태일 때) — 로컬 + 서버 합치기
+// 서버 → 로컬 덮어쓰기 (계정별 독립)
 async function syncBookmarks() {
   const token = getToken();
   if (!token) return;
@@ -51,12 +53,7 @@ async function syncBookmarks() {
     });
     if (res.ok) {
       const serverBookmarks = await res.json();
-      const local = JSON.parse(localStorage.getItem('bookmarks') || '[]');
-      const merged = [...new Set([...local, ...serverBookmarks])];
-      localStorage.setItem('bookmarks', JSON.stringify(merged));
-      if (merged.length !== serverBookmarks.length) {
-        await pushBookmarks(merged);
-      }
+      localStorage.setItem('bookmarks', JSON.stringify(serverBookmarks));
     }
   } catch {}
 }
@@ -67,16 +64,12 @@ async function pushBookmarks(bookmarks) {
   try {
     await fetch('/api/auth/bookmarks', {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${token}`,
-      },
+      headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
       body: JSON.stringify({ bookmarks }),
     });
   } catch {}
 }
 
-// 가본 곳 서버 동기화
 async function syncVisited() {
   const token = getToken();
   if (!token) return;
@@ -86,12 +79,7 @@ async function syncVisited() {
     });
     if (res.ok) {
       const serverVisited = await res.json();
-      const local = JSON.parse(localStorage.getItem('visited') || '[]');
-      const merged = [...new Set([...local, ...serverVisited])];
-      localStorage.setItem('visited', JSON.stringify(merged));
-      if (merged.length !== serverVisited.length) {
-        await pushVisited(merged);
-      }
+      localStorage.setItem('visited', JSON.stringify(serverVisited));
     }
   } catch {}
 }
@@ -102,10 +90,7 @@ async function pushVisited(visited) {
   try {
     await fetch('/api/auth/visited', {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${token}`,
-      },
+      headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
       body: JSON.stringify({ visited }),
     });
   } catch {}

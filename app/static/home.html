@@ -737,27 +737,14 @@
         localStorage.setItem('user', ku);
         history.replaceState({}, '', '/');
 
-        const headers = { 'Content-Type': 'application/json', 'Authorization': `Bearer ${kt}` };
-
-        // 1) 서버에서 저장된 목록 가져오기
+        // 서버 데이터로 덮어쓰기 (계정별 독립)
+        const headers = { 'Authorization': `Bearer ${kt}` };
         const [serverBM, serverVI] = await Promise.all([
           fetch('/api/auth/bookmarks', { headers }).then(r => r.ok ? r.json() : []),
           fetch('/api/auth/visited',   { headers }).then(r => r.ok ? r.json() : []),
         ]);
-
-        // 2) 로컬과 병합 (서버 우선)
-        const localBM = JSON.parse(localStorage.getItem('bookmarks') || '[]');
-        const localVI = JSON.parse(localStorage.getItem('visited')   || '[]');
-        const mergedBM = [...new Set([...serverBM, ...localBM])];
-        const mergedVI = [...new Set([...serverVI, ...localVI])];
-        localStorage.setItem('bookmarks', JSON.stringify(mergedBM));
-        localStorage.setItem('visited',   JSON.stringify(mergedVI));
-
-        // 3) 병합 결과 서버에 업로드
-        await Promise.all([
-          fetch('/api/auth/bookmarks', { method: 'POST', headers, body: JSON.stringify({ bookmarks: mergedBM }) }),
-          fetch('/api/auth/visited',   { method: 'POST', headers, body: JSON.stringify({ visited: mergedVI }) }),
-        ]);
+        localStorage.setItem('bookmarks', JSON.stringify(serverBM));
+        localStorage.setItem('visited',   JSON.stringify(serverVI));
       } catch {}
     }
 
