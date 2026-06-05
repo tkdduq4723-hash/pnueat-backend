@@ -29,27 +29,21 @@ def get_main_category(category: str) -> str:
     c = category.replace(" ", "")
     if "치킨" in c:
         return "치킨"
-    if "패스트푸드" in c or "햄버거" in c:
+    if "패스트푸드" in c or "햄버거" in c or "피자" in c or "버거" in c:
         return "패스트푸드"
-    if "돈가스" in c or "회" in c or "초밥" in c or "일식" in c:
-        return "돈까스·회"
-    if "베트남" in c or "아시아" in c or "인도" in c or "태국" in c:
-        return "아시안"
-    if "족발" in c or "보쌈" in c:
-        return "족발·보쌈"
-    if "피자" in c:
-        return "피자"
-    if "찜" in c or "탕" in c or "순대" in c or "국밥" in c:
-        return "찜·탕"
+    if "돈가스" in c or "돈까스" in c or "초밥" in c or "일식" in c or "회" in c:
+        return "일식"
+    if "베트남" in c or "아시아" in c or "아시안" in c or "인도" in c or "태국" in c:
+        return "아시아"
+    if "고기" in c or "구이" in c or "삼겹" in c or "갈비" in c or "불고기" in c or "주물럭" in c or "족발" in c or "보쌈" in c:
+        return "고기"
+    if "찜" in c or "탕" in c or "순대" in c or "국밥" in c or "한식" in c or "백반" in c or "솥밥" in c:
+        return "한식"
     if "중식" in c or "중국" in c:
         return "중식"
     if "분식" in c:
         return "분식"
-    if "한식" in c:
-        return "한식"
-    if "고기" in c or "구이" in c or "삼겹" in c:
-        return "고기"
-    if "양식" in c or "스테이크" in c or "파스타" in c:
+    if "양식" in c or "스테이크" in c or "파스타" in c or "이탈리안" in c:
         return "양식"
     return "기타"
 

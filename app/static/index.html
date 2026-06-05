@@ -46,7 +46,14 @@
       background: white; border-radius: 10px;
       padding: 14px 16px; margin-bottom: 10px;
       box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+      display: flex; gap: 12px; align-items: flex-start;
     }
+    .card-thumb {
+      width: 72px; height: 72px; border-radius: 8px;
+      object-fit: cover; flex-shrink: 0;
+      background: #f0f0f0;
+    }
+    .card-body { flex: 1; min-width: 0; }
     .card-name { font-size: 16px; font-weight: bold; margin-bottom: 4px; }
     .card-meta { font-size: 12px; color: #888; margin-top: 4px; }
     .badge {
@@ -153,13 +160,16 @@
     document.getElementById('countText').textContent = `총 ${items.length}개`;
     document.getElementById('list').innerHTML = items.map(item => `
       <div class="card">
-        <div class="card-name">${item['이름']}</div>
-        <div class="card-meta">
-          <span class="badge">${item['대분류'] || item['카테고리']}</span>
-          ${item['거리(m)'] !== '-' ? `<span style="color:#888">${item['거리(m)']}m</span> · ` : ''}${item['도보시간'] !== '-' ? `<span class="walk">🚶 ${item['도보시간']} (직선거리 기준)</span>` : ''}
-          <span style="margin-left:6px">${item['출처']}</span>
+        ${item['사진'] ? `<img class="card-thumb" src="${item['사진']}" alt="${item['이름']}" loading="lazy" onerror="this.style.display='none'">` : ''}
+        <div class="card-body">
+          <div class="card-name">${item['이름']}</div>
+          <div class="card-meta">
+            <span class="badge">${item['대분류'] || item['카테고리']}</span>
+            ${item['거리(m)'] !== '-' ? `<span style="color:#888">${item['거리(m)']}m</span> · ` : ''}${item['도보시간'] !== '-' ? `<span class="walk">🚶 ${item['도보시간']} (직선거리 기준)</span>` : ''}
+            <span style="margin-left:6px">${item['출처']}</span>
+          </div>
+          <div class="card-meta" style="margin-top:6px">📍 ${item['주소'] || '-'}</div>
         </div>
-        <div class="card-meta" style="margin-top:6px">📍 ${item['주소'] || '-'}</div>
       </div>
     `).join('');
   }

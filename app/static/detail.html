@@ -35,7 +35,23 @@
       justify-content: center;
       position: relative;
       font-size: 72px;
+      overflow: hidden;
     }
+    .hero-photo {
+      position: absolute;
+      inset: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+      z-index: 0;
+    }
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.35);
+      z-index: 1;
+    }
+    .hero-back, .hero-save { z-index: 3; }
+    #heroEmoji { z-index: 2; position: relative; }
     .hero-back {
       position: absolute;
       top: 16px; left: 16px;
@@ -61,7 +77,7 @@
     }
 
     /* 스크롤 영역 */
-    .scroll-body { flex: 1; overflow-y: auto; min-height: 0; }
+    .scroll-body { flex: 1; overflow-y: auto; min-height: 0; transform: translateZ(0); }
 
     /* 기본 정보 */
     .info-section {
@@ -225,6 +241,40 @@
     .save-option:active { background: #f8f8f8; }
     .save-option.active { border-color: #111; background: #f5f5f5; font-weight: 700; }
     .save-option.cancel { color: #aaa; border-color: #f0f0f0; margin-top: 4px; }
+
+    /* 길찾기 모달 */
+    .nav-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.4);
+      z-index: 200;
+      justify-content: center;
+      align-items: flex-end;
+    }
+    .nav-overlay.open { display: flex; }
+    .nav-sheet {
+      width: 390px;
+      background: #fff;
+      border-radius: 16px 16px 0 0;
+      padding: 20px 20px 32px;
+      animation: slideUp 0.22s ease;
+    }
+    .nav-option {
+      width: 100%; height: 52px;
+      border: 1.5px solid #eee;
+      border-radius: 12px;
+      background: #fff;
+      font-size: 14px; color: #222;
+      cursor: pointer;
+      display: flex; align-items: center; gap: 12px;
+      padding: 0 18px;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+    .nav-option:active { background: #f8f8f8; }
+    .nav-option.cancel { color: #aaa; border-color: #f0f0f0; margin-top: 4px; font-weight: 400; }
+    .nav-icon-img { width: 22px; height: 22px; border-radius: 6px; object-fit: contain; }
   </style>
 </head>
 <body>
@@ -233,7 +283,7 @@
     <div class="hero" id="hero">
       <button class="hero-back" onclick="history.back()">←</button>
       <div id="heroEmoji">🍽</div>
-      <button class="hero-save" id="heroSaveBtn" onclick="openSaveModal()">🤍</button>
+      <button class="hero-save" id="heroSaveBtn" onclick="toggleBookmark()">🤍</button>
     </div>
 
     <div class="scroll-body">
@@ -262,10 +312,16 @@
         </div>
       </div>
 
+      <div class="section">
+        <div class="section-title">☕ 가까운 카페</div>
+        <div class="similar-scroll" id="nearbyCafeScroll">
+          <div style="font-size:13px;color:#aaa">불러오는 중...</div>
+        </div>
+      </div>
+
     </div>
 
     <div class="bottom-cta">
-      <button class="cta-secondary" onclick="openSaveModal()">🔖 저장</button>
       <button class="cta-secondary" onclick="shareItem()">📤 공유</button>
       <button class="cta-primary" onclick="navigate()">길찾기</button>
     </div>
@@ -273,6 +329,24 @@
   </div>
 
   <div class="toast" id="toast"></div>
+
+  <!-- 길찾기 모달 -->
+  <div class="nav-overlay" id="navOverlay" onclick="closeNavModal()">
+    <div class="nav-sheet" onclick="event.stopPropagation()">
+      <div class="sheet-handle"></div>
+      <div class="sheet-title">지도 앱 선택</div>
+      <button class="nav-option" onclick="openKakaoMap()">
+        <span style="font-size:20px">🟡</span> 카카오맵으로 길찾기
+      </button>
+      <button class="nav-option" onclick="openNaverMap()">
+        <span style="font-size:20px">🟢</span> 네이버맵으로 길찾기
+      </button>
+      <button class="nav-option" onclick="openGoogleMap()">
+        <span style="font-size:20px">🔵</span> 구글맵으로 길찾기
+      </button>
+      <button class="nav-option cancel" onclick="closeNavModal()">닫기</button>
+    </div>
+  </div>
 
   <!-- 저장 모달 -->
   <div class="save-overlay" id="saveOverlay" onclick="closeSaveModal()">
@@ -315,6 +389,7 @@
       if (!item) { history.back(); return; }
       renderDetail();
       loadSimilar();
+      loadNearbyCafes();
       loadMap();
     }
 
@@ -323,10 +398,31 @@
       const cat = item['대분류'] || item['카테고리'] || '';
       const emoji = cat === '카페·디저트' || item._type === 'cafe' ? '☕' : (CAT_EMOJI[cat] || '🍽');
       const colors = (HERO_COLORS[cat] || '374151,6b7280').split(',');
+      const hero = document.getElementById('hero');
 
-      document.getElementById('hero').style.background =
-        `linear-gradient(135deg, #${colors[0]}, #${colors[1]})`;
-      document.getElementById('heroEmoji').textContent = emoji;
+      // 기존 사진/오버레이 제거
+      hero.querySelectorAll('.hero-photo, .hero-overlay').forEach(el => el.remove());
+
+      if (item['사진']) {
+        const img = document.createElement('img');
+        img.className = 'hero-photo';
+        img.src = item['사진'];
+        img.onerror = () => {
+          img.remove();
+          hero.querySelector('.hero-overlay')?.remove();
+          hero.style.background = `linear-gradient(135deg, #${colors[0]}, #${colors[1]})`;
+        };
+        const overlay = document.createElement('div');
+        overlay.className = 'hero-overlay';
+        hero.insertBefore(overlay, hero.firstChild);
+        hero.insertBefore(img, hero.firstChild);
+        hero.style.background = '';
+        document.getElementById('heroEmoji').style.display = 'none';
+      } else {
+        hero.style.background = `linear-gradient(135deg, #${colors[0]}, #${colors[1]})`;
+        document.getElementById('heroEmoji').style.display = '';
+        document.getElementById('heroEmoji').textContent = emoji;
+      }
       document.getElementById('restName').textContent = item['이름'];
       document.getElementById('catBadge').textContent = cat + (item['카테고리'] && item['카테고리'] !== cat ? ' · ' + item['카테고리'] : '');
 
@@ -359,17 +455,26 @@
     }
 
     function updateSaveIcon() {
-      document.getElementById('heroSaveBtn').textContent = (isBookmarked() || isVisited()) ? '🔖' : '🤍';
+      document.getElementById('heroSaveBtn').textContent = isBookmarked() ? '🔖' : '🤍';
     }
 
-    /* ── 저장 모달 ── */
-    function openSaveModal() {
-      document.getElementById('optSaved').classList.toggle('active', isBookmarked());
-      document.getElementById('optVisited').classList.toggle('active', isVisited());
-      document.getElementById('saveOverlay').classList.add('open');
-    }
-    function closeSaveModal() {
-      document.getElementById('saveOverlay').classList.remove('open');
+    /* ── 하트 직접 북마크 토글 ── */
+    function toggleBookmark() {
+      if (!item) return;
+      const name = item['이름'];
+      const current = JSON.parse(localStorage.getItem('bookmarks') || '[]');
+      const idx = current.indexOf(name);
+      if (idx === -1) {
+        current.push(name);
+        showToast('저장한 곳에 추가됐어요 🔖');
+      } else {
+        current.splice(idx, 1);
+        showToast('저장한 곳에서 삭제됐어요');
+      }
+      bookmarks = current;
+      localStorage.setItem('bookmarks', JSON.stringify(current));
+      pushBookmarks(current);
+      updateSaveIcon();
     }
 
     function showToast(msg) {
@@ -397,6 +502,7 @@
         else { current.splice(i, 1); showToast('가본 곳에서 삭제됐어요'); }
         visited = current;
         localStorage.setItem('visited', JSON.stringify(current));
+        pushVisited(current);
       }
       updateSaveIcon();
       closeSaveModal();
@@ -404,11 +510,36 @@
 
     /* ── 길찾기 ── */
     function navigate() {
-      const lat = item.lat, lng = item.lng;
-      if (lat && Math.abs(lat - PNU.lat) > 0.0002) {
-        window.open(`https://www.google.com/maps/dir/?api=1&origin=${PNU.lat},${PNU.lng}&destination=${lat},${lng}&travelmode=walking`);
+      document.getElementById('navOverlay').classList.add('open');
+    }
+    function closeNavModal() {
+      document.getElementById('navOverlay').classList.remove('open');
+    }
+    function openKakaoMap() {
+      closeNavModal();
+      const lat = item.lat, lng = item.lng, name = item['이름'];
+      if (lat && lng) {
+        window.open(`https://map.kakao.com/link/to/${encodeURIComponent(name)},${lat},${lng}`);
       } else {
-        window.open(`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(item['이름'] + ' 부산 금정구')}`);
+        window.open(`https://map.kakao.com/?q=${encodeURIComponent(name + ' 부산대')}`);
+      }
+    }
+    function openNaverMap() {
+      closeNavModal();
+      const lat = item.lat, lng = item.lng, name = item['이름'];
+      if (lat && lng) {
+        window.open(`https://map.naver.com/v5/search/${encodeURIComponent(name)}`);
+      } else {
+        window.open(`https://map.naver.com/v5/search/${encodeURIComponent(name + ' 부산대')}`);
+      }
+    }
+    function openGoogleMap() {
+      closeNavModal();
+      const lat = item.lat, lng = item.lng, name = item['이름'];
+      if (lat && lng) {
+        window.open(`https://www.google.com/maps/search/?api=1&query=${lat},${lng}`);
+      } else {
+        window.open(`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(name + ' 부산 금정구')}`);
       }
     }
 
@@ -448,10 +579,14 @@
         document.getElementById('similarScroll').innerHTML = similar.map(s => {
           const em = CAT_EMOJI[s['대분류']] || (s._type === 'cafe' ? '☕' : '🍽');
           const colors = (HERO_COLORS[s['대분류']] || '374151,6b7280').split(',');
-          const dist = s['거리(m)'] !== '-' ? s['도보시간'] : '';
+          const dist = s['거리(m)'] && s['거리(m)'] !== '-' ? s['도보시간'] : '';
+          const thumbContent = s['사진']
+            ? `<img src="${s['사진']}" style="width:100%;height:100%;object-fit:cover;border-radius:8px" onerror="this.style.display='none'">`
+            : em;
+          const thumbBg = s['사진'] ? '#f4f4f4' : `linear-gradient(135deg,#${colors[0]},#${colors[1]})`;
           return `
             <div class="similar-card" onclick="openSimilar(${JSON.stringify(s).replace(/"/g,'&quot;')})">
-              <div class="similar-thumb" style="background:linear-gradient(135deg,#${colors[0]},#${colors[1]})">${em}</div>
+              <div class="similar-thumb" style="background:${thumbBg}">${thumbContent}</div>
               <div class="similar-name">${s['이름']}</div>
               <div class="similar-dist">${dist}</div>
             </div>`;
@@ -462,6 +597,44 @@
     function openSimilar(s) {
       sessionStorage.setItem('detailItem', JSON.stringify(s));
       location.reload();
+    }
+
+    /* ── 가까운 카페 ── */
+    async function loadNearbyCafes() {
+      try {
+        const cafes = await fetch('/api/cafe').then(r => r.json());
+        let sorted;
+        if (item.lat && item.lng) {
+          sorted = cafes
+            .filter(c => c.lat && c.lng)
+            .map(c => ({ ...c, _d: Math.hypot(c.lat - item.lat, c.lng - item.lng) }))
+            .sort((a, b) => a._d - b._d)
+            .slice(0, 6);
+        } else {
+          const rDist = parseInt(item['거리(m)']) || 500;
+          sorted = [...cafes]
+            .sort((a, b) => Math.abs((parseInt(a['거리(m)'])||999) - rDist) - Math.abs((parseInt(b['거리(m)'])||999) - rDist))
+            .slice(0, 6);
+        }
+
+        if (!sorted.length) {
+          document.getElementById('nearbyCafeScroll').innerHTML = '<div style="font-size:13px;color:#aaa">주변 카페 정보 없음</div>';
+          return;
+        }
+
+        document.getElementById('nearbyCafeScroll').innerHTML = sorted.map(c => {
+          const dist = c['거리(m)'] && c['거리(m)'] !== '-' ? c['도보시간'] : '';
+          const imgHtml = c['사진']
+            ? `<img src="${c['사진']}" style="width:100%;height:100%;object-fit:cover;border-radius:8px" onerror="this.outerHTML='☕'">`
+            : '☕';
+          return `
+            <div class="similar-card" onclick="openSimilar(${JSON.stringify({...c,_type:'cafe'}).replace(/"/g,'&quot;')})">
+              <div class="similar-thumb" style="background:#fff3e0;font-size:28px">${imgHtml}</div>
+              <div class="similar-name">${c['이름']}</div>
+              <div class="similar-dist">${dist}</div>
+            </div>`;
+        }).join('');
+      } catch {}
     }
 
     /* ── 지도 ── */
@@ -505,7 +678,7 @@
 
       L.marker([item.lat, item.lng], { icon: redDot })
         .bindPopup(`<b style="font-size:12px">${item['이름']}</b>`)
-        .addTo(map).openPopup();
+        .addTo(map);
 
       L.marker([PNU.lat, PNU.lng], { icon: blackDot })
         .bindPopup('<span style="font-size:11px">부산대 정문</span>')
@@ -515,8 +688,9 @@
     }
 
     loadItem();
-    syncBookmarks().then(() => {
+    Promise.all([syncBookmarks(), syncVisited()]).then(() => {
       bookmarks = JSON.parse(localStorage.getItem('bookmarks') || '[]');
+      visited = JSON.parse(localStorage.getItem('visited') || '[]');
       updateSaveIcon();
     });
   </script>

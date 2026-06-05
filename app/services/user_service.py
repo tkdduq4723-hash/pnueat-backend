@@ -20,10 +20,12 @@ def _save(data: dict):
 def upsert_user(email: str, name: str, picture: str) -> dict:
     users = _load()
     if email not in users:
-        users[email] = {"email": email, "name": name, "picture": picture, "bookmarks": []}
+        users[email] = {"email": email, "name": name, "picture": picture, "bookmarks": [], "visited": []}
     else:
         users[email]["name"] = name
         users[email]["picture"] = picture
+        if "visited" not in users[email]:
+            users[email]["visited"] = []
     _save(users)
     return users[email]
 
@@ -34,7 +36,7 @@ def get_user(email: str) -> dict | None:
 
 def get_bookmarks(email: str) -> list:
     user = get_user(email)
-    return user["bookmarks"] if user else []
+    return user.get("bookmarks", []) if user else []
 
 
 def set_bookmarks(email: str, bookmarks: list) -> list:
@@ -43,3 +45,16 @@ def set_bookmarks(email: str, bookmarks: list) -> list:
         users[email]["bookmarks"] = bookmarks
         _save(users)
     return bookmarks
+
+
+def get_visited(email: str) -> list:
+    user = get_user(email)
+    return user.get("visited", []) if user else []
+
+
+def set_visited(email: str, visited: list) -> list:
+    users = _load()
+    if email in users:
+        users[email]["visited"] = visited
+        _save(users)
+    return visited

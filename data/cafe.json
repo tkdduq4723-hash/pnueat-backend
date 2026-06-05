@@ -12,7 +12,8 @@
     "별점": null,
     "리뷰수": null,
     "전화번호": null,
-    "운영시간": []
+    "운영시간": [],
+    "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=https%3A%2F%2Fpostfiles.pstatic.net%2FMjAyNjAyMjBfMTg3%2FMDAxNzcxNTUyNzE2NTY1.erNuYmxcVx-rQbEFuneK23P315E-IfkFw-x4dTwZdsMg.80Pu6DcE6hB02h4uKsvhSbxDlAR_FpgMwkzmmurQH0Yg.JPEG%2FSE-917BBD5F-0E04-4022-ACEB-8F00402EF019.jpg%3Ftype%3Dw966"
   },
   {
     "이름": "고더커피 부산대정문점",
@@ -27,7 +28,8 @@
     "별점": 1,
     "리뷰수": 1,
     "전화번호": null,
-    "운영시간": []
+    "운영시간": [],
+    "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=https%3A%2F%2Fpostfiles.pstatic.net%2FMjAyNTA4MjdfMTc3%2FMDAxNzU2MjY0NTk2NzU4.4hsOAVUYP2m8qozuesXPTT8DfEm0bYaHnPcMAI4maxIg.VnSvIgayJwE-6s_YO57Gb64PbMAA9dpi8qV0RY9dXl4g.JPEG%2FKakaoTalk_20250821_180114582_02.jpg%3Ftype%3Dw773"
   },
   {
     "이름": "마스커피랩",
@@ -50,7 +52,8 @@
       "금요일: 오후 12:00~9:00",
       "토요일: 오후 12:00~9:00",
       "일요일: 휴무일"
-    ]
+    ],
+    "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flocal%2FkakaomapPhoto%2Freview%2Ff1c2f85df04425ac34dd9ba65479e0f27152efb2%3Foriginal"
   },
   {
     "이름": "스타벅스 부산대정문점",
@@ -73,7 +76,8 @@
       "금요일: 오전 8:00 ~ 오후 9:00",
       "토요일: 오전 8:00 ~ 오후 9:00",
       "일요일: 오전 8:00 ~ 오후 9:00"
-    ]
+    ],
+    "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flocal%2FkakaomapPhoto%2Freview%2Fc49e94fd9be0fd314b237f5bfc54fcefcdc585ec%3Foriginal"
   },
   {
     "이름": "카페그라운드",
@@ -88,7 +92,8 @@
     "별점": 4.7,
     "리뷰수": 3,
     "전화번호": "070-7543-8812",
-    "운영시간": []
+    "운영시간": [],
+    "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flocal%2FkakaomapPhoto%2Freview%2Ffbc9f659721480b6b34aa50e9946ca56aaa9ac68%3Foriginal"
   },
   {
     "이름": "카페열한시",
@@ -103,7 +108,8 @@
     "별점": 4.8,
     "리뷰수": 9,
     "전화번호": null,
-    "운영시간": []
+    "운영시간": [],
+    "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flocal%2FkakaomapPhoto%2Freview%2F5dac81c74b6d1082adb51bc8c02a458d02c73f51%3Foriginal"
   },
   {
     "이름": "어벤더치커피 부산대정문점",
@@ -126,7 +132,8 @@
       "금요일: 오전 10:30 ~ 오후 9:30",
       "토요일: 오전 10:30 ~ 오후 9:30",
       "일요일: 오전 10:30 ~ 오후 9:30"
-    ]
+    ],
+    "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=http%3A%2F%2Ft1.kakaocdn.net%2Ffiy_reboot%2Fplace%2F87AAE31C23834C9D959BFBC59F0E1E0D"
   },
   {
     "이름": "더카페 NC부산대점",
@@ -149,7 +156,8 @@
       "금요일: 오전 10:30 ~ 오후 10:00",
       "토요일: 오전 10:30 ~ 오후 10:00",
       "일요일: 오전 10:30 ~ 오후 10:00"
-    ]
+    ],
+    "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flocal%2FkakaomapPhoto%2Freview%2F27e6c67213c301e53c0d0b7c53630181fe7ea649%3Foriginal"
   },
   {
     "이름": "유일무이카페",
@@ -172,7 +180,8 @@
       "금요일: 오전 10:00 ~ 오전 12:00",
       "토요일: 오전 10:00 ~ 오전 12:00",
       "일요일: 오전 10:00 ~ 오전 12:00"
-    ]
+    ],
+    "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=http%3A%2F%2Ft1.kakaocdn.net%2Fmystore%2F037C32FE8A74469FA7D888F46A1431F5"
   },
   {
     "이름": "텐퍼센트커피 부산대공대점",
@@ -195,7 +204,8 @@
       "금요일: 오전 8:30 ~ 오후 8:00",
       "토요일: 오전 8:30 ~ 오후 8:00",
       "일요일: 휴무일"
-    ]
+    ],
+    "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fplace%2F61A149322763497F98049BC480525250"
   },
   {
     "이름": "자스민커피 3호점",
@@ -210,7 +220,8 @@
     "별점": 4.7,
     "리뷰수": 3,
     "전화번호": null,
-    "운영시간": []
+    "운영시간": [],
+    "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flocal%2FkakaomapPhoto%2Freview%2F7787d049d0d1bd0579ad1242106bbd710406e4b1%3Foriginal"
   },
   {
     "이름": "모모니예",
@@ -225,7 +236,8 @@
     "별점": 4.5,
     "리뷰수": 2,
     "전화번호": "051-868-3179",
-    "운영시간": []
+    "운영시간": [],
+    "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=https%3A%2F%2Fpostfiles.pstatic.net%2FMjAyNTA5MTBfNTcg%2FMDAxNzU3NDk0MjQ1MzYy.ZElEzkBHrGf9yqz6f6-kv5RZvai3uL5Uh2543x7AfcUg.4BwJLsEsyRWCLIp9xDuDBtzj8cts860Js_FkQuOhBogg.JPEG%2FIMG_0541.jpg%3Ftype%3Dw773"
   },
   {
     "이름": "해리스카페 부산대본점",
@@ -240,7 +252,8 @@
     "별점": 4.5,
     "리뷰수": 23,
     "전화번호": null,
-    "운영시간": []
+    "운영시간": [],
+    "사진": "http://staticmap.kakao.com/staticmap/og?type=place&srs=wgs84&size=400x200&service=placeweb&m=129.08392734076753%2C35.232306268273675"
   },
   {
     "이름": "청솔로9 부산대점",
@@ -255,7 +268,8 @@
     "별점": 4,
     "리뷰수": 1,
     "전화번호": null,
-    "운영시간": []
+    "운영시간": [],
+    "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=https%3A%2F%2Fpostfiles.pstatic.net%2FMjAyNjAxMDlfMTE0%2FMDAxNzY3OTU2NDA3NTIy.aWBewrZsEwl76A4hTorFspxmjjLXKYhXOU0zmhhzVqog.jWVSqBtwsj8dFRV5N9ScmdvZXHQFFITyiLoWQD7DZicg.JPEG%2FSE-1b0f0383-9b99-494b-8208-8fcf54c37511.jpg%3Ftype%3Dw773"
   },
   {
     "이름": "더다락",
@@ -278,7 +292,8 @@
       "금요일: 오전 11:00 ~ 오후 2:00",
       "토요일: 오전 11:00 ~ 오후 9:00",
       "일요일: 휴무일"
-    ]
+    ],
+    "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=https%3A%2F%2Fpostfiles.pstatic.net%2FMjAyNjAzMTlfMjQ1%2FMDAxNzczODkyMzgzNTkx.pga1zWyjxlIN2brwV8--pkcaxq3g4bd4l7anU4YN62Ag.qqPtPr_0zaWe1hGZM0cNFGK83eHS8xuDCMX1J9WYngAg.JPEG%2F900%25EF%25BC%25BF20260319%25EF%25BC%25BF122735.jpg%3Ftype%3Dw966"
   },
   {
     "이름": "공차 부산대정문점",
@@ -301,7 +316,8 @@
       "금요일: 오전 7:00 ~ 오후 11:00",
       "토요일: 오전 7:00 ~ 오후 11:00",
       "일요일: 오전 7:00 ~ 오후 11:00"
-    ]
+    ],
+    "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=https%3A%2F%2Fpostfiles.pstatic.net%2FMjAyNTA5MTZfMjIw%2FMDAxNzU3OTkzNTMxMjI4.KP2JFYC4lHXuAIuFsWg-jNlpMH9-FgdCtHg1u-sSkr0g.nm70obfmiCsl9T66Fb4nhr0MyLh1GCa8fS4Jrk7hUk4g.JPEG%2F1757993504352.jpg%3Ftype%3Dw773"
   },
   {
     "이름": "모아밀",
@@ -316,7 +332,8 @@
     "별점": null,
     "리뷰수": null,
     "전화번호": null,
-    "운영시간": []
+    "운영시간": [],
+    "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=http%3A%2F%2Ft1.kakaocdn.net%2Fmystore%2F3EAA9FE60B7E439085AC4E56847ABA32"
   },
   {
     "이름": "더카페 부산대NC백화점(지하1층)",
@@ -339,7 +356,8 @@
       "금요일: 오전 10:30 ~ 오후 10:00",
       "토요일: 오전 10:30 ~ 오후 10:00",
       "일요일: 오전 10:30 ~ 오후 10:00"
-    ]
+    ],
+    "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flocal%2FkakaomapPhoto%2Freview%2Fea1cc9636382ebd6cabe6f1ea486d96d1bd48ec6%3Foriginal"
   },
   {
     "이름": "P270",
@@ -354,7 +372,8 @@
     "별점": null,
     "리뷰수": null,
     "전화번호": null,
-    "운영시간": []
+    "운영시간": [],
+    "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flocal%2FkakaomapPhoto%2Freview%2F8ee3d9a7ef37e94ba12e10785042c5e8ede7ad68%3Foriginal"
   },
   {
     "이름": "콘드168",
@@ -369,7 +388,8 @@
     "별점": 5,
     "리뷰수": 1,
     "전화번호": null,
-    "운영시간": []
+    "운영시간": [],
+    "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=http%3A%2F%2Ft1.kakaocdn.net%2Fmystore%2F1B300DCD1E924959A1644FF72A80FC6A"
   },
   {
     "이름": "월남덕커피",
@@ -384,7 +404,8 @@
     "별점": null,
     "리뷰수": null,
     "전화번호": null,
-    "운영시간": []
+    "운영시간": [],
+    "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=http%3A%2F%2Ft1.kakaocdn.net%2Fmystore%2FAEEC499ED7764CD1A9A230C33B617A7F"
   },
   {
     "이름": "노스커피 문창점",
@@ -407,7 +428,8 @@
       "금요일: 오전 8:00 ~ 오후 11:00",
       "토요일: 오전 8:00 ~ 오후 11:00",
       "일요일: 오전 8:00 ~ 오후 11:00"
-    ]
+    ],
+    "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flocal%2FkakaomapPhoto%2Freview%2Fe469c102b46636c960296c8f23e684ddb455699f%3Foriginal"
   },
   {
     "이름": "노스커피 북문",
@@ -430,7 +452,8 @@
       "금요일: 오전 8:00 ~ 오후 11:00",
       "토요일: 오전 8:00 ~ 오후 11:00",
       "일요일: 오전 8:00 ~ 오후 11:00"
-    ]
+    ],
+    "사진": "http://staticmap.kakao.com/staticmap/og?type=place&srs=wgs84&size=400x200&service=placeweb&m=129.08486003430943%2C35.23321658012788"
   },
   {
     "이름": "카페16온스 부산대정문점",
@@ -445,7 +468,8 @@
     "별점": null,
     "리뷰수": null,
     "전화번호": "050-71319-8473",
-    "운영시간": []
+    "운영시간": [],
+    "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=https%3A%2F%2Fpostfiles.pstatic.net%2FMjAyNTA5MjFfMTY5%2FMDAxNzU4NDYxMzU1MzEx.qS_FhfIeLP7A3_CO6n3JbSU-Nijz7Xw2bj1DzS9dCoQg.uFha_sjSvBMZFSVuVPS5X4_68VGDv9HR7bJzkpmS5HEg.JPEG%2Foutput%25EF%25BC%25BF1367607433.jpg%3Ftype%3Dw966"
   },
   {
     "이름": "코트커피",
@@ -460,7 +484,8 @@
     "별점": null,
     "리뷰수": null,
     "전화번호": null,
-    "운영시간": []
+    "운영시간": [],
+    "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=https%3A%2F%2Fpostfiles.pstatic.net%2FMjAyNTEyMDhfNiAg%2FMDAxNzY1MTY1NDI2MjM0.zdd5pdKgI4sHSfcTTGmW8tScXh2_VSVXWZOUrUb0-ZUg.EKZwzvGFt60fsWCHpcgpwLBjbJ90g-0jcEaCpYBwf_Yg.JPEG%2F900%25EF%25BC%25BF20250930%25EF%25BC%25BF094750.jpg%3Ftype%3Dw966"
   },
   {
     "이름": "전람회의그림",
@@ -475,7 +500,8 @@
     "별점": 4.2,
     "리뷰수": 40,
     "전화번호": "051-517-4775",
-    "운영시간": []
+    "운영시간": [],
+    "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flocal%2FkakaomapPhoto%2Freview%2F4fee06fd3a7a4d742b19214a9018417f4bb6509b%3Foriginal"
   },
   {
     "이름": "자스민커피 부산대정문2호점",
@@ -490,7 +516,8 @@
     "별점": 5,
     "리뷰수": 2,
     "전화번호": "050-35260-5170",
-    "운영시간": []
+    "운영시간": [],
+    "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=https%3A%2F%2Fpostfiles.pstatic.net%2FMjAyNTA4MTRfMTQ4%2FMDAxNzU1MTU0MjI5NTUx.X5jVXgpqo6GTIn3vMHIRIjzt6fs9Rxy85nmrIBwlkcwg.7aSDGk-JuwZXv0lrPb3ELIA6dKgJP4C2tvNvXnNpTnEg.JPEG%2FKakaoTalk_20250814_154120875_06.jpg%3Ftype%3Dw580"
   },
   {
     "이름": "챔스빈",
@@ -505,7 +532,8 @@
     "별점": null,
     "리뷰수": null,
     "전화번호": null,
-    "운영시간": []
+    "운영시간": [],
+    "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flocal%2FkakaomapPhoto%2Freview%2F663442c15f97f6171fe272e29d17046274f6e8e6%3Foriginal"
   },
   {
     "이름": "그릭오 부산대점",
@@ -528,7 +556,8 @@
       "금요일: 오전 10:00 ~ 오후 10:00",
       "토요일: 오전 10:00 ~ 오후 10:00",
       "일요일: 오전 10:00 ~ 오후 9:00"
-    ]
+    ],
+    "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=https%3A%2F%2Fpostfiles.pstatic.net%2FMjAyNTA0MTdfMTM1%2FMDAxNzQ0ODg0Mjc1MzI3.GbrocDVUd6UHR3D5eHFSpIpeAHGgu0frWUIkiLJPsyUg.l1B4JaMAzh5VicsZsVNbbeY5yfvh8mBiAN934s9_kS8g.JPEG%2FIMG_3187.jpg%3Ftype%3Dw466"
   },
   {
     "이름": "투썸플레이스 부산대정문점",
@@ -551,7 +580,8 @@
       "금요일: 오전 10:00 ~ 오전 12:00",
       "토요일: 오전 10:00 ~ 오전 12:00",
       "일요일: 오전 10:00 ~ 오전 12:00"
-    ]
+    ],
+    "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=http%3A%2F%2Ft1.kakaocdn.net%2Fmystore%2FFF9D4C7A6FF4459C9BB59954B9A0E4F9"
   },
   {
     "이름": "번아웃커피 부산대점",
@@ -574,7 +604,8 @@
       "금요일: 오전 9:00 ~ 오후 11:00",
       "토요일: 오전 9:00 ~ 오후 11:00",
       "일요일: 오전 9:00 ~ 오후 11:00"
-    ]
+    ],
+    "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flocal%2FkakaomapPhoto%2Freview%2F7ccb92406694fed5213eb67877d27387c8b04fe1%3Foriginal"
   },
   {
     "이름": "설빙 부산대점",
@@ -597,7 +628,8 @@
       "금요일: 오전 11:30 ~ 오후 10:30",
       "토요일: 오전 11:30 ~ 오후 10:30",
       "일요일: 오전 11:30 ~ 오후 10:30"
-    ]
+    ],
+    "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=https%3A%2F%2Fpostfiles.pstatic.net%2FMjAyNTA2MjFfOTYg%2FMDAxNzUwNDY0NTI0Mzkw.VMM7HBXXzSKFdC9jbX7Ge1J2hqTI2expgC9hWRcA40og.6dAeMPB6OXGzNPv9FLlvuVrMH-_MeYBJDvkJ33czHYog.JPEG%2FSE-95089e77-4dd8-11f0-865b-27776cc65b23.jpg%3Ftype%3Dw580"
   },
   {
     "이름": "컵넛 부산대정문점",
@@ -620,7 +652,8 @@
       "금요일: 오전 8:00 ~ 오후 9:00",
       "토요일: 오전 8:00 ~ 오후 9:00",
       "일요일: 오전 8:00 ~ 오후 9:00"
-    ]
+    ],
+    "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=https%3A%2F%2Fpostfiles.pstatic.net%2FMjAyNjA1MThfNjEg%2FMDAxNzc5MDc3ODUyOTYw.GJagunAPlrIuXdG01EwYiw_saeB4EyrVwPWy4Q-ldlIg.MudvSivdkyx3mJLdlqkEM_fLwVpXZw0MJCPyoijMiUkg.JPEG%2F6157740C%25EF%25BC%258DDE1F%25EF%25BC%258D48BA%25EF%25BC%258D876B%25EF%25BC%258D5CC35CE19F00.jpg%3Ftype%3Dw966"
   },
   {
     "이름": "밀림플랜트커피",
@@ -635,7 +668,8 @@
     "별점": 5,
     "리뷰수": 3,
     "전화번호": null,
-    "운영시간": []
+    "운영시간": [],
+    "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=http%3A%2F%2Ft1.kakaocdn.net%2Fmystore%2FED4FE16625EB4B4D8DB1A4D1059106E0"
   },
   {
     "이름": "번아웃커피 문창점",
@@ -658,7 +692,8 @@
       "금요일: 오전 9:00 ~ 오후 11:00",
       "토요일: 오전 9:00 ~ 오후 11:00",
       "일요일: 오전 9:00 ~ 오후 11:00"
-    ]
+    ],
+    "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=http%3A%2F%2Ft1.kakaocdn.net%2Ffiy_reboot%2Fplace%2FC59844082B2C4BEAA531ECA3186F1138"
   },
   {
     "이름": "로제이브커피스페셜티 본점",
@@ -681,7 +716,8 @@
       "금요일: 오전 8:00 ~ 오후 11:00",
       "토요일: 오전 8:00 ~ 오후 8:00",
       "일요일: 오전 8:00 ~ 오후 8:00"
-    ]
+    ],
+    "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flocal%2FkakaomapPhoto%2Freview%2Ff121a4aadd61513e175100f80faf0e9bb298a751%3Foriginal"
   },
   {
     "이름": "킹스네일커피",
@@ -704,7 +740,8 @@
       "금요일: 오전 10:00 ~ 오후 8:00",
       "토요일: 오전 11:00 ~ 오후 8:00",
       "일요일: 오전 11:00 ~ 오후 6:00"
-    ]
+    ],
+    "사진": "http://staticmap.kakao.com/staticmap/og?type=place&srs=wgs84&size=400x200&service=placeweb&m=129.0840404491676%2C35.231060735952724"
   },
   {
     "이름": "긱스타",
@@ -727,7 +764,8 @@
       "금요일: 24시간 영업",
       "토요일: 24시간 영업",
       "일요일: 24시간 영업"
-    ]
+    ],
+    "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=https%3A%2F%2Fpostfiles.pstatic.net%2FMjAyNTAzMjdfNjEg%2FMDAxNzQzMDU2Nzg1NDAw.429cIXxoKTD_dvjbpH7zyrTzF_S8vFC1wisD1HwKc3cg.5GGL_ysqCyALBOPObZ-z0A3FrMe8SjCaPtHCBZpQKKQg.JPEG%2Fimage_1743056780.jpg%3Ftype%3Dw773"
   },
   {
     "이름": "카페누베",
@@ -750,7 +788,8 @@
       "금요일: 오전 11:00 ~ 오후 10:00",
       "토요일: 오전 11:00 ~ 오후 10:00",
       "일요일: 오전 11:00 ~ 오후 10:00"
-    ]
+    ],
+    "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=https%3A%2F%2Fpostfiles.pstatic.net%2FMjAyNjAzMDhfNjUg%2FMDAxNzcyOTY5MTM5MzE1.m7lh_3MqO3hE7YHFdIp1Lo6jH3BWOmX8JbOogJmOsZ4g.dWg6Cb8NWHEnQbItVs6_YbvQNuBjRwIOWdpXPKqHvvEg.JPEG%2FKakaoTalk_20260308_195739328_13.jpg%3Ftype%3Dw773"
   },
   {
     "이름": "할리데이온시티",
@@ -765,7 +804,8 @@
     "별점": 5,
     "리뷰수": 5,
     "전화번호": null,
-    "운영시간": []
+    "운영시간": [],
+    "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flocal%2FkakaomapPhoto%2Freview%2F8167affe8eac37cf9353cde5366ab1f54277a828%3Foriginal"
   },
   {
     "이름": "카페미엔느",
@@ -788,7 +828,8 @@
       "금요일: 오후 12:00~8:00",
       "토요일: 오후 12:00~8:00",
       "일요일: 오후 12:00~8:00"
-    ]
+    ],
+    "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flocal%2FkakaomapPhoto%2Freview%2Fc5aa9d9628c9b942da2624ebc65e9fac971d8985%3Foriginal"
   },
   {
     "이름": "타로보는남자",
@@ -803,7 +844,8 @@
     "별점": null,
     "리뷰수": null,
     "전화번호": null,
-    "운영시간": []
+    "운영시간": [],
+    "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=https%3A%2F%2Fpostfiles.pstatic.net%2FMjAyNTA3MjBfMjYz%2FMDAxNzUzMDEzMDMyNTk0.n3D3Z3ZzpDPuJTjTNyTa9eW0OTBhcWybH-6RJM1R0eog.9DlWTIkWarJsucXrban4jXy4KwU2sWPPkluVXD6tsi4g.JPEG%2FIMG%25EF%25BC%25BF8498.jpg%3Ftype%3Dw773"
   },
   {
     "이름": "오가닉커피스튜디오",
@@ -826,7 +868,8 @@
       "금요일: 오후 12:00~8:00",
       "토요일: 오후 12:00~8:00",
       "일요일: 오후 12:00~8:00"
-    ]
+    ],
+    "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=https%3A%2F%2Fpostfiles.pstatic.net%2FMjAyNjA1MjFfNDgg%2FMDAxNzc5MzUxMDkxNDg5.nIvSeLYuVo9cTZfbuj1veDSBGkTc1MAFMVL4Osa6lYgg.P1dp5cNxpnR4gVAvWZE0Omgoy4q5XURnXka7j5_-vcIg.JPEG%2Foutput%25EF%25BC%25BF1688762173.jpg%3Ftype%3Dw773"
   },
   {
     "이름": "몽벨쉘터 부산대점",
@@ -849,7 +892,8 @@
       "금요일: 오전 11:00 ~ 오후 8:30",
       "토요일: 오전 11:00 ~ 오후 8:30",
       "일요일: 오전 11:00 ~ 오후 8:30"
-    ]
+    ],
+    "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=http%3A%2F%2Ft1.kakaocdn.net%2Fmystore%2F5E3D3F1282BD4905B9293A16E3269A8A"
   },
   {
     "이름": "쏘쏘사라다 부산대본점",
@@ -872,7 +916,8 @@
       "금요일: 오전 11:00 ~ 오후 8:00",
       "토요일: 오전 11:00 ~ 오후 8:00",
       "일요일: 오전 11:00 ~ 오후 8:00"
-    ]
+    ],
+    "사진": null
   },
   {
     "이름": "보노베리 본점",
@@ -895,7 +940,8 @@
       "금요일: 오전 10:00 ~ 오후 10:30",
       "토요일: 오전 10:00 ~ 오후 10:30",
       "일요일: 오전 10:00 ~ 오후 10:30"
-    ]
+    ],
+    "사진": null
   },
   {
     "이름": "스타벅스 금정구청DT점",
@@ -918,7 +964,8 @@
       "금요일: 오전 7:00 ~ 오후 10:00",
       "토요일: 오전 7:00 ~ 오후 10:00",
       "일요일: 오전 7:00 ~ 오후 10:00"
-    ]
+    ],
+    "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flocal%2FkakaomapPhoto%2Freview%2Fd17cb40188f95e9c075a6af5120af0b431cab03f%3Foriginal"
   },
   {
     "이름": "논피니토",
@@ -941,7 +988,8 @@
       "금요일: 오전 11:00 ~ 오후 10:00",
       "토요일: 오전 11:00 ~ 오후 10:00",
       "일요일: 오전 11:00 ~ 오후 10:00"
-    ]
+    ],
+    "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=http%3A%2F%2Ft1.kakaocdn.net%2Fmystore%2FF0DE1DF1966348C8944291C01D8F108A"
   },
   {
     "이름": "스타벅스 온천장역DT점",
@@ -964,7 +1012,8 @@
       "금요일: 오전 7:00 ~ 오후 10:00",
       "토요일: 오전 7:00 ~ 오후 10:00",
       "일요일: 오전 7:00 ~ 오후 10:00"
-    ]
+    ],
+    "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=https%3A%2F%2Fpostfiles.pstatic.net%2FMjAyNjA0MTNfNyAg%2FMDAxNzc2MDY1NjUyOTA5.qggnKphhC33ImB0fMxDIfX6PCh4M20AGcnVuCkRtVVsg.EuzBuKKPav8MORCWrxL4KUY7X9QwQnOrqAhwhrP0F7Eg.JPEG%2F900_20260412_145743.jpg%3Ftype%3Dw773"
   },
   {
     "이름": "이흥용과자점 부산대직영점",
@@ -987,7 +1036,8 @@
       "금요일: 오전 8:30 ~ 오후 9:00",
       "토요일: 오전 8:30 ~ 오후 9:00",
       "일요일: 오전 8:30 ~ 오후 9:00"
-    ]
+    ],
+    "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=http%3A%2F%2Ft1.kakaocdn.net%2Fmystore%2F57C47F6B3D364B9092EE038971EACAA2"
   },
   {
     "이름": "앤티앤스 NC백화점부산대점",
@@ -1010,7 +1060,8 @@
       "금요일: 오전 10:30 ~ 오후 10:00",
       "토요일: 오전 10:30 ~ 오후 10:00",
       "일요일: 오전 10:30 ~ 오후 10:00"
-    ]
+    ],
+    "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F22608B34536ADF3914"
   },
   {
     "이름": "브런치앤디너 테라비 부산대점",
@@ -1025,7 +1076,8 @@
     "별점": null,
     "리뷰수": null,
     "전화번호": null,
-    "운영시간": []
+    "운영시간": [],
+    "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flocal%2FkakaomapPhoto%2Freview%2F25bbb2c979f893bf980236e0da5ee01fbb970904%3Foriginal"
   },
   {
     "이름": "블루그로토",
@@ -1040,7 +1092,8 @@
     "별점": 4.5,
     "리뷰수": 32,
     "전화번호": null,
-    "운영시간": []
+    "운영시간": [],
+    "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=http%3A%2F%2Ft1.daumcdn.net%2Flocal%2FkakaomapPhoto%2Freview%2Fe16d3cc31cd27eafda62e2f332821d2b8678c7bd%3Foriginal"
   },
   {
     "이름": "파리바게뜨 부산대역점",
@@ -1055,7 +1108,8 @@
     "별점": 3.6,
     "리뷰수": 8,
     "전화번호": null,
-    "운영시간": []
+    "운영시간": [],
+    "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F9938EC465AD577E91E"
   },
   {
     "이름": "어벤더치 부산대본점",
@@ -1078,7 +1132,8 @@
       "금요일: 오전 10:30 ~ 오후 9:30",
       "토요일: 오전 10:30 ~ 오후 9:30",
       "일요일: 오전 10:30 ~ 오후 9:30"
-    ]
+    ],
+    "사진": null
   },
   {
     "이름": "오네쉬 요거트&amp;그래놀라 부산대점",
@@ -1093,7 +1148,8 @@
     "별점": null,
     "리뷰수": null,
     "전화번호": null,
-    "운영시간": []
+    "운영시간": [],
+    "사진": null
   },
   {
     "이름": "컴포즈커피 부산대역점",
@@ -1116,7 +1172,8 @@
       "금요일: 오전 7:00 ~ 오후 10:00",
       "토요일: 오전 7:00 ~ 오후 10:00",
       "일요일: 오전 7:00 ~ 오후 10:00"
-    ]
+    ],
+    "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=https%3A%2F%2Fpostfiles.pstatic.net%2FMjAyNTA5MjJfMTIz%2FMDAxNzU4NTM2NzY5NTUx.9fAVKqns8Oc0gtAeS4b56sratvcM0B4A_sIpEMpzP7cg.b56KDU-PeaiexMo2WVc5cSLJseCBxtUUHspkyUjKRhwg.PNG%2FPhoto_1.png%3Ftype%3Dw773"
   },
   {
     "이름": "채비 사주타로 카페",
@@ -1139,6 +1196,7 @@
       "금요일: 오전 10:30 ~ 오후 10:30",
       "토요일: 오전 10:30 ~ 오후 10:30",
       "일요일: 오전 10:30 ~ 오후 10:30"
-    ]
+    ],
+    "사진": "https://img1.kakaocdn.net/cthumb/local/C800x400.q50/?fname=https%3A%2F%2Fpostfiles.pstatic.net%2FMjAyNjA1MTJfNTAg%2FMDAxNzc4NTUyNzQ5NTI0.7XFHhw8CB7ReZWpQTTIKcYmuM1tfDzssTxcwHoj49kIg.cuJRAeDkbhcnITkwywyenTS0bIrMRQYuTHSFBrxqasQg.JPEG%2F%25EB%25B6%2580%25EC%2582%25B0%25EB%258C%2580_%25ED%2583%2580%25EB%25A1%259C_-_%25E3%2585%25A3%25E3%2584%25B4%25EC%2595%2584%25EB%259F%25AC%25E3%2585%25A3_-_03.jpg%3Ftype%3Dw966"
   }
 ]

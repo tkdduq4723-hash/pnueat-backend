@@ -3,10 +3,14 @@ from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from pydantic import BaseModel
 from datetime import datetime, timedelta
 from jose import jwt, JWTError
+import httpx, json, urllib.parse
+from fastapi.responses import RedirectResponse
 from google.oauth2 import id_token
 from google.auth.transport import requests as google_requests
-from app.core.config import GOOGLE_CLIENT_ID, JWT_SECRET, JWT_ALGORITHM, JWT_EXPIRE_DAYS
+from app.core.config import GOOGLE_CLIENT_ID, KAKAO_API_KEY, KAKAO_CLIENT_SECRET, JWT_SECRET, JWT_ALGORITHM, JWT_EXPIRE_DAYS
 from app.services import user_service
+
+KAKAO_REDIRECT_URI = "http://127.0.0.1:8000/api/auth/kakao/callback"
 
 router = APIRouter(prefix="/api/auth")
 bearer = HTTPBearer(auto_error=False)
@@ -16,8 +20,16 @@ class GoogleTokenRequest(BaseModel):
     token: str
 
 
+class KakaoTokenRequest(BaseModel):
+    access_token: str
+
+
 class BookmarkRequest(BaseModel):
     bookmarks: list[str]
+
+
+class VisitedRequest(BaseModel):
+    visited: list[str]
 
 
 def create_jwt(email: str) -> str:
@@ -49,8 +61,8 @@ def google_login(body: GoogleTokenRequest):
             google_requests.Request(),
             GOOGLE_CLIENT_ID,
         )
-    except Exception:
-        raise HTTPException(status_code=401, detail="구글 토큰 검증 실패")
+    except Exception as e:
+        raise HTTPException(status_code=401, detail=f"구글 토큰 검증 실패: {e}")
 
     email = info["email"]
     name = info.get("name", "")
@@ -74,3 +86,70 @@ def get_bookmarks(user=Depends(get_current_user)):
 @router.post("/bookmarks")
 def save_bookmarks(body: BookmarkRequest, user=Depends(get_current_user)):
     return user_service.set_bookmarks(user["email"], body.bookmarks)
+
+
+@router.get("/visited")
+def get_visited_list(user=Depends(get_current_user)):
+    return user_service.get_visited(user["email"])
+
+
+@router.post("/visited")
+def save_visited(body: VisitedRequest, user=Depends(get_current_user)):
+    return user_service.set_visited(user["email"], body.visited)
+
+
+@router.get("/kakao/url")
+def kakao_auth_url():
+    url = (
+        "https://kauth.kakao.com/oauth/authorize"
+        f"?client_id={KAKAO_API_KEY}"
+        f"&redirect_uri={urllib.parse.quote(KAKAO_REDIRECT_URI)}"
+        "&response_type=code"
+    )
+    return {"url": url}
+
+
+@router.get("/kakao/callback")
+async def kakao_callback(code: str):
+    # 1. 인가코드 → 액세스 토큰
+    try:
+        async with httpx.AsyncClient() as client:
+            payload = {
+                "grant_type": "authorization_code",
+                "client_id": KAKAO_API_KEY,
+                "redirect_uri": KAKAO_REDIRECT_URI,
+                "code": code,
+            }
+            if KAKAO_CLIENT_SECRET:
+                payload["client_secret"] = KAKAO_CLIENT_SECRET
+            res = await client.post("https://kauth.kakao.com/oauth/token", data=payload)
+            token_data = res.json()
+            if "access_token" not in token_data:
+                print(f"[KAKAO ERROR] token_data: {token_data}")
+                return RedirectResponse("/login?kakao_error=1")
+            access_token = token_data["access_token"]
+    except httpx.RequestError as e:
+        print(f"[KAKAO REQUEST ERROR] {e}")
+        return RedirectResponse("/login?kakao_error=1")
+
+    # 2. 액세스 토큰 → 사용자 정보
+    try:
+        async with httpx.AsyncClient() as client:
+            res = await client.get("https://kapi.kakao.com/v2/user/me",
+                headers={"Authorization": f"Bearer {access_token}"})
+            info = res.json()
+    except httpx.RequestError:
+        return RedirectResponse("/login?kakao_error=1")
+
+    kakao_account = info.get("kakao_account", {})
+    profile = kakao_account.get("profile", {})
+    email = kakao_account.get("email") or f"kakao_{info['id']}@kakao.local"
+    name = profile.get("nickname", "카카오 사용자")
+    picture = profile.get("thumbnail_image_url", "")
+
+    user = user_service.upsert_user(email, name, picture)
+    jwt_token = create_jwt(email)
+
+    # 3. 프론트엔드로 리다이렉트 (토큰 전달)
+    user_encoded = urllib.parse.quote(json.dumps(user, ensure_ascii=False))
+    return RedirectResponse(f"/?_kt={jwt_token}&_ku={user_encoded}")

@@ -75,3 +75,38 @@ async function pushBookmarks(bookmarks) {
     });
   } catch {}
 }
+
+// 가본 곳 서버 동기화
+async function syncVisited() {
+  const token = getToken();
+  if (!token) return;
+  try {
+    const res = await fetch('/api/auth/visited', {
+      headers: { 'Authorization': `Bearer ${token}` }
+    });
+    if (res.ok) {
+      const serverVisited = await res.json();
+      const local = JSON.parse(localStorage.getItem('visited') || '[]');
+      const merged = [...new Set([...local, ...serverVisited])];
+      localStorage.setItem('visited', JSON.stringify(merged));
+      if (merged.length !== serverVisited.length) {
+        await pushVisited(merged);
+      }
+    }
+  } catch {}
+}
+
+async function pushVisited(visited) {
+  const token = getToken();
+  if (!token) return;
+  try {
+    await fetch('/api/auth/visited', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${token}`,
+      },
+      body: JSON.stringify({ visited }),
+    });
+  } catch {}
+}
