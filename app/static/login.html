@@ -462,9 +462,10 @@
       showLoading();
       try {
         const res = await fetch('/api/auth/google/url');
-        const { url } = await res.json();
-        location.href = url;
-      } catch { showError(); }
+        const data = await res.json();
+        if (!data.url) { showError('구글 로그인 설정이 올바르지 않아요 (client_id 미설정).'); return; }
+        location.href = data.url;
+      } catch (e) { showError('구글 로그인 연결에 실패했어요: ' + e.message); }
     });
 
     // ── 카카오 로그인 (REST API 방식) ──
@@ -479,9 +480,10 @@
       }
     });
 
-    // 카카오 에러 감지
-    const kakaoError = new URLSearchParams(location.search).get('kakao_error');
-    if (kakaoError) showError('카카오 로그인에 실패했어요. 다시 시도해주세요.');
+    // 에러 감지
+    const _params = new URLSearchParams(location.search);
+    if (_params.get('kakao_error')) showError('카카오 로그인에 실패했어요. 다시 시도해주세요.');
+    if (_params.get('google_error')) showError('구글 로그인에 실패했어요. CLIENT_SECRET 설정을 확인해주세요.');
   </script>
 
 </body>
