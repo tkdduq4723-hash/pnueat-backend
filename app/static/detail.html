@@ -806,9 +806,6 @@
         L.marker([PNU.lat, PNU.lng], { icon: blackDot })
           .bindPopup('<span style="font-size:11px">부산대 정문</span>')
           .addTo(map);
-        map.fitBounds([[item.lat, item.lng], [PNU.lat, PNU.lng]], { padding: [20, 20] });
-      } else {
-        map.setView([item.lat, item.lng], 17);
       }
     }
 
