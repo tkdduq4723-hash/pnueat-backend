@@ -4,7 +4,7 @@ from app.core.config import DATA_DIR
 from app.core.utils import get_main_category
 from app.crawlers import naver, kakao
 
-FOOD_JSON = os.path.join(DATA_DIR, "food.json")
+FOOD_JSON = os.path.join(DATA_DIR, "restaurants.json")
 CAFE_JSON = os.path.join(DATA_DIR, "cafe.json")
 
 

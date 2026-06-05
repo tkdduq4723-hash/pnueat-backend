@@ -103,7 +103,7 @@ def reset_empty(fname):
         json.dump(items, f, ensure_ascii=False, indent=2)
 
 base = os.path.join(os.path.dirname(__file__), "..", "data")
-food_path = os.path.join(base, "food.json")
+food_path = os.path.join(base, "restaurants.json")
 cafe_path = os.path.join(base, "cafe.json")
 
 reset_empty(food_path)

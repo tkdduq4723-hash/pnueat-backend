@@ -73,6 +73,6 @@ if not API_KEY:
     sys.exit(1)
 
 base = os.path.join(os.path.dirname(__file__), "..", "data")
-enrich(os.path.join(base, "food.json"))
+enrich(os.path.join(base, "restaurants.json"))
 enrich(os.path.join(base, "cafe.json"))
 print("완료! 서버 재시작 후 반영됩니다.")

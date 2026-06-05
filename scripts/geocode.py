@@ -42,6 +42,6 @@ def process(fname: str):
 
 
 base = os.path.join(os.path.dirname(__file__), "..", "data")
-process(os.path.join(base, "food.json"))
+process(os.path.join(base, "restaurants.json"))
 process(os.path.join(base, "cafe.json"))
 print("완료!")
