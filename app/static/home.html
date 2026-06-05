@@ -726,8 +726,8 @@
       cafeData.slice(0, 7).map((item, idx) => makeRestCard(item, idx, 'cafeData')).join('');
   }
 
-  // 카카오 로그인 콜백 처리
-  (function() {
+  // 로그인 콜백 처리 (카카오/구글 공통)
+  (async function() {
     const params = new URLSearchParams(location.search);
     const kt = params.get('_kt');
     const ku = params.get('_ku');
@@ -735,21 +735,36 @@
       try {
         localStorage.setItem('jwt', kt);
         localStorage.setItem('user', ku);
-        const headers = { 'Content-Type': 'application/json', 'Authorization': `Bearer ${kt}` };
-        const localBookmarks = JSON.parse(localStorage.getItem('bookmarks') || '[]');
-        const localVisited   = JSON.parse(localStorage.getItem('visited')   || '[]');
-        if (localBookmarks.length > 0)
-          fetch('/api/auth/bookmarks', { method: 'POST', headers, body: JSON.stringify({ bookmarks: localBookmarks }) });
-        if (localVisited.length > 0)
-          fetch('/api/auth/visited',   { method: 'POST', headers, body: JSON.stringify({ visited: localVisited }) });
-      } catch {}
-      history.replaceState({}, '', '/');
-    }
-  })();
+        history.replaceState({}, '', '/');
 
-  load();
-  if (typeof renderUserBadge === 'function') renderUserBadge('authArea');
-  if (typeof syncBookmarks === 'function') syncBookmarks();
+        const headers = { 'Content-Type': 'application/json', 'Authorization': `Bearer ${kt}` };
+
+        // 1) 서버에서 저장된 목록 가져오기
+        const [serverBM, serverVI] = await Promise.all([
+          fetch('/api/auth/bookmarks', { headers }).then(r => r.ok ? r.json() : []),
+          fetch('/api/auth/visited',   { headers }).then(r => r.ok ? r.json() : []),
+        ]);
+
+        // 2) 로컬과 병합 (서버 우선)
+        const localBM = JSON.parse(localStorage.getItem('bookmarks') || '[]');
+        const localVI = JSON.parse(localStorage.getItem('visited')   || '[]');
+        const mergedBM = [...new Set([...serverBM, ...localBM])];
+        const mergedVI = [...new Set([...serverVI, ...localVI])];
+        localStorage.setItem('bookmarks', JSON.stringify(mergedBM));
+        localStorage.setItem('visited',   JSON.stringify(mergedVI));
+
+        // 3) 병합 결과 서버에 업로드
+        await Promise.all([
+          fetch('/api/auth/bookmarks', { method: 'POST', headers, body: JSON.stringify({ bookmarks: mergedBM }) }),
+          fetch('/api/auth/visited',   { method: 'POST', headers, body: JSON.stringify({ visited: mergedVI }) }),
+        ]);
+      } catch {}
+    }
+
+    load();
+    if (typeof renderUserBadge === 'function') renderUserBadge('authArea');
+    if (typeof syncBookmarks === 'function') syncBookmarks();
+  })();
 </script>
 </body>
 </html>
