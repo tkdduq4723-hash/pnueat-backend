@@ -591,6 +591,7 @@
     let searchQuery = '';
     let currentView = 'list';
     let bookmarks = JSON.parse(localStorage.getItem('bookmarks') || '[]');
+    let visited = JSON.parse(localStorage.getItem('visited') || '[]');
     let showBookmarksOnly = false;
     let leafletMap = null;
     let leafletMarkers = [];
@@ -767,6 +768,7 @@
         const distText = [walk, dist].filter(Boolean).join(' · ');
         const isCafe = item._type === 'cafe';
         const saved = isBookmarked(item['이름']);
+        const gone = visited.includes(item['이름']);
         const photo = item['사진'] || (item['사진목록'] && item['사진목록'][0]);
         const thumbHtml = photo
           ? `<img src="${photo}" style="width:100%;height:100%;object-fit:cover;border-radius:8px;" loading="lazy" onerror="this.parentElement.innerHTML='${getEmoji(item)}';">`
@@ -778,11 +780,15 @@
               <div class="card-name">${item['이름']}</div>
               <div class="card-meta">
                 <div class="tag ${isCafe ? 'cafe' : ''}">${item['대분류'] || item['카테고리']}</div>
+                ${gone ? '<div class="tag" style="background:#e8faf0;color:#2ecc71;font-size:10px">✅ 가본 곳</div>' : ''}
               </div>
               <div class="card-desc">📍 ${item['주소'] || '-'}</div>
               <div class="card-bottom">
                 <div class="card-dist">${distText}</div>
-                <div class="bookmark-btn" data-idx="${idx}">${saved ? '🔖' : '🤍'}</div>
+                <div style="display:flex;gap:4px">
+                  <div class="bookmark-btn visited-btn" data-idx="${idx}" title="가본 곳">${gone ? '✅' : '🔲'}</div>
+                  <div class="bookmark-btn" data-idx="${idx}">${saved ? '🔖' : '🤍'}</div>
+                </div>
               </div>
             </div>
           </div>`;
@@ -961,8 +967,22 @@
     });
 
     document.getElementById('listView').addEventListener('click', e => {
+      const vBtn = e.target.closest('.visited-btn');
+      if (vBtn) {
+        const idx = parseInt(vBtn.dataset.idx);
+        const item = window._renderedItems?.[idx];
+        if (!item) return;
+        const name = item['이름'];
+        const i = visited.indexOf(name);
+        if (i === -1) visited.push(name);
+        else visited.splice(i, 1);
+        localStorage.setItem('visited', JSON.stringify(visited));
+        pushVisited(visited);
+        render();
+        return;
+      }
       const btn = e.target.closest('.bookmark-btn');
-      if (btn) {
+      if (btn && !btn.classList.contains('visited-btn')) {
         const idx = parseInt(btn.dataset.idx);
         const item = window._renderedItems?.[idx];
         if (!item) return;
@@ -991,8 +1011,10 @@
 
     loadData();
     renderUserBadge('authArea');
-    syncBookmarks().then(() => {
+    Promise.all([syncBookmarks(), syncVisited()]).then(() => {
       bookmarks = JSON.parse(localStorage.getItem('bookmarks') || '[]');
+      visited = JSON.parse(localStorage.getItem('visited') || '[]');
+      render();
     });
   </script>
 </body>

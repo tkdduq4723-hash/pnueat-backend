@@ -773,7 +773,10 @@
     async function loadMap() {
       const mapDiv = document.getElementById('detailMap');
 
-      if (!item.lat || !item.lng) {
+      const hasCoord = item.lat && item.lng &&
+        !(Math.abs(item.lat - PNU.lat) < 0.0001 && Math.abs(item.lng - PNU.lng) < 0.0001);
+
+      if (!hasCoord) {
         mapDiv.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#aaa;font-size:13px">위치 정보 없음</div>';
         return;
       }
@@ -798,11 +801,15 @@
         .bindPopup(`<b style="font-size:12px">${item['이름']}</b>`)
         .addTo(map);
 
-      L.marker([PNU.lat, PNU.lng], { icon: blackDot })
-        .bindPopup('<span style="font-size:11px">부산대 정문</span>')
-        .addTo(map);
-
-      map.fitBounds([[item.lat, item.lng], [PNU.lat, PNU.lng]], { padding: [20, 20] });
+      const sameLoc = Math.abs(item.lat - PNU.lat) < 0.001 && Math.abs(item.lng - PNU.lng) < 0.001;
+      if (!sameLoc) {
+        L.marker([PNU.lat, PNU.lng], { icon: blackDot })
+          .bindPopup('<span style="font-size:11px">부산대 정문</span>')
+          .addTo(map);
+        map.fitBounds([[item.lat, item.lng], [PNU.lat, PNU.lng]], { padding: [20, 20] });
+      } else {
+        map.setView([item.lat, item.lng], 17);
+      }
     }
 
     loadItem();

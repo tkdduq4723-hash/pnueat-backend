@@ -46,13 +46,23 @@ for fpath_rel, items in by_file.items():
             changed = True
         if fill.get("사진목록"):
             target["사진목록"] = fill["사진목록"]
-            if not target.get("사진"):
-                target["사진"] = fill["사진목록"][0]
+            target["사진"] = fill["사진목록"][0]
+            changed = True
+        if fill.get("전화번호") and not target.get("전화번호"):
+            target["전화번호"] = fill["전화번호"]
+            changed = True
+        if fill.get("운영시간") and not target.get("운영시간"):
+            target["운영시간"] = fill["운영시간"]
+            changed = True
+        if fill.get("lat") is not None and fill.get("lng") is not None:
+            target["lat"] = fill["lat"]
+            target["lng"] = fill["lng"]
             changed = True
 
         if changed:
             updated += 1
-            print(f"  반영: {fill['name']} — 별점:{target.get('별점')} 사진:{len(target.get('사진목록') or [])}장")
+            coord = f" 좌표:({fill.get('lat')},{fill.get('lng')})" if fill.get("lat") else ""
+            print(f"  반영: {fill['name']} — 별점:{target.get('별점')} 사진:{len(target.get('사진목록') or [])}장{coord}")
 
     with open(fpath, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
