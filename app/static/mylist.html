@@ -375,7 +375,7 @@
               <div class="card-bottom">
                 <div class="card-dist">${dist}</div>
                 <div style="display:flex;gap:4px">
-                  ${mainTab === 'saved' ? `<div class="action-btn move-btn" data-idx="${idx}" title="가본 곳으로 이동">✅</div>` : ''}
+                  ${mainTab === 'saved' ? `<div class="action-btn move-btn" data-idx="${idx}" title="가본 곳으로 이동">✅</div>` : `<div class="action-btn save-btn" data-idx="${idx}" title="저장한 곳으로 이동">🔖</div>`}
                   <div class="action-btn remove-btn" data-idx="${idx}">🗑️</div>
                 </div>
               </div>
@@ -393,11 +393,26 @@
       removeBookmark(name);
     }
 
+    function moveToSaved(name) {
+      if (!bookmarks.includes(name)) {
+        bookmarks.push(name);
+        localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
+        pushBookmarks(bookmarks);
+      }
+      removeVisited(name);
+    }
+
     document.getElementById('listScroll').addEventListener('click', e => {
       const moveBtn = e.target.closest('.move-btn');
       if (moveBtn) {
         const item = window._mylistItems?.[parseInt(moveBtn.dataset.idx)];
         if (item) moveToVisited(item['이름']);
+        return;
+      }
+      const saveBtn = e.target.closest('.save-btn');
+      if (saveBtn) {
+        const item = window._mylistItems?.[parseInt(saveBtn.dataset.idx)];
+        if (item) moveToSaved(item['이름']);
         return;
       }
       const removeBtn = e.target.closest('.remove-btn');
