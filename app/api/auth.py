@@ -3,14 +3,17 @@ from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from pydantic import BaseModel
 from datetime import datetime, timedelta
 from jose import jwt, JWTError
-import httpx, json, urllib.parse
+import httpx, json, os, urllib.parse
 from fastapi.responses import RedirectResponse
 from google.oauth2 import id_token
 from google.auth.transport import requests as google_requests
 from app.core.config import GOOGLE_CLIENT_ID, KAKAO_API_KEY, KAKAO_CLIENT_SECRET, JWT_SECRET, JWT_ALGORITHM, JWT_EXPIRE_DAYS
 from app.services import user_service
 
-KAKAO_REDIRECT_URI = "http://127.0.0.1:8000/api/auth/kakao/callback"
+KAKAO_REDIRECT_URI = os.getenv(
+    "KAKAO_REDIRECT_URI",
+    "http://127.0.0.1:8000/api/auth/kakao/callback"
+)
 
 router = APIRouter(prefix="/api/auth")
 bearer = HTTPBearer(auto_error=False)

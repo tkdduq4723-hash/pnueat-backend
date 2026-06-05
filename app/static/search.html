@@ -785,10 +785,7 @@
               <div class="card-desc">📍 ${item['주소'] || '-'}</div>
               <div class="card-bottom">
                 <div class="card-dist">${distText}</div>
-                <div style="display:flex;gap:4px">
-                  <div class="bookmark-btn visited-btn" data-idx="${idx}" title="가본 곳">${gone ? '✅' : '🔲'}</div>
-                  <div class="bookmark-btn" data-idx="${idx}">${saved ? '🔖' : '🤍'}</div>
-                </div>
+                <div class="bookmark-btn" data-idx="${idx}">${saved ? '🔖' : '🤍'}</div>
               </div>
             </div>
           </div>`;
@@ -967,22 +964,8 @@
     });
 
     document.getElementById('listView').addEventListener('click', e => {
-      const vBtn = e.target.closest('.visited-btn');
-      if (vBtn) {
-        const idx = parseInt(vBtn.dataset.idx);
-        const item = window._renderedItems?.[idx];
-        if (!item) return;
-        const name = item['이름'];
-        const i = visited.indexOf(name);
-        if (i === -1) visited.push(name);
-        else visited.splice(i, 1);
-        localStorage.setItem('visited', JSON.stringify(visited));
-        pushVisited(visited);
-        render();
-        return;
-      }
       const btn = e.target.closest('.bookmark-btn');
-      if (btn && !btn.classList.contains('visited-btn')) {
+      if (btn) {
         const idx = parseInt(btn.dataset.idx);
         const item = window._renderedItems?.[idx];
         if (!item) return;
